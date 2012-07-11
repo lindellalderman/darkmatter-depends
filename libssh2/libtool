@@ -325,7 +325,7 @@ variables_saved_for_relink="PATH LD_LIBRARY_PATH LD_RUN_PATH GCC_EXEC_PREFIX COM
 link_all_deplibs=no
 
 # Compile-time system search path for libraries
-sys_lib_search_path_spec="/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter/lib /lib64/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2 /usr/lib/x86_64-linux-gnu /lib /usr/lib"
+sys_lib_search_path_spec="/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib /lib64/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2 /usr/lib/x86_64-linux-gnu /lib /usr/lib"
 
 # Run-time system search path for libraries
 sys_lib_dlsearch_path_spec="/lib /usr/lib /usr/lib/nvidia-173 /usr/lib32/nvidia-173 /lib32 /usr/lib32 /usr/lib32/alsa-lib /usr/lib/alsa-lib /usr/local/lib /lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu "
@@ -7488,7 +7488,7 @@ postdeps="-lstdc++ -lm -lgcc_s -lc -lgcc_s"
 
 # The library search path used internally by the compiler when linking
 # a shared library.
-compiler_lib_search_path="-L/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter/lib -L/lib64/x86_64-linux-gnu -L/usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2 -L/usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/../../.. -L/usr/lib/x86_64-linux-gnu"
+compiler_lib_search_path="-L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -L/lib64/x86_64-linux-gnu -L/usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2 -L/usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/../../.. -L/usr/lib/x86_64-linux-gnu"
 
 # Method to check whether dependent libraries are shared objects.
 deplibs_check_method="pass_all"
@@ -7568,7 +7568,7 @@ variables_saved_for_relink="PATH LD_LIBRARY_PATH LD_RUN_PATH GCC_EXEC_PREFIX COM
 link_all_deplibs=no
 
 # Compile-time system search path for libraries
-sys_lib_search_path_spec="/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter/lib /lib64/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2 /usr/lib/x86_64-linux-gnu /lib /usr/lib"
+sys_lib_search_path_spec="/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib /lib64/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2 /usr/lib/x86_64-linux-gnu /lib /usr/lib"
 
 # Run-time system search path for libraries
 sys_lib_dlsearch_path_spec="/lib /usr/lib /usr/lib/nvidia-173 /usr/lib32/nvidia-173 /lib32 /usr/lib32 /usr/lib32/alsa-lib /usr/lib/alsa-lib /usr/local/lib /lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu "

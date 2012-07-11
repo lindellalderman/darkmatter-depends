@@ -13,8 +13,8 @@ SHLIB_MAJOR=0
 SHLIB_MINOR=9.8
 SHLIB_EXT=.so.$(SHLIB_MAJOR).$(SHLIB_MINOR)
 PLATFORM=linux-x86_64
-OPTIONS=enable-shared enable-zlib-dynamic --prefix=/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter --openssldir=/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter/share/openssl no-asm no-camellia no-capieng no-cms no-gmp no-krb5 no-mdc2 no-montasm no-rc5 no-rfc3779 no-seed no-threads no-tlsext
-CONFIGURE_ARGS=linux-x86_64 shared no-threads zlib-dynamic no-asm no-krb5 --prefix=/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter --openssldir=/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter/share/openssl
+OPTIONS=enable-shared enable-zlib-dynamic --prefix=/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter --openssldir=/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/share/openssl no-asm no-camellia no-capieng no-cms no-gmp no-krb5 no-mdc2 no-montasm no-rc5 no-rfc3779 no-seed no-threads no-tlsext
+CONFIGURE_ARGS=linux-x86_64 shared no-threads zlib-dynamic no-asm no-krb5 --prefix=/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter --openssldir=/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/share/openssl
 SHLIB_TARGET=linux-shared
 
 # HERE indicates where this Makefile lives.  This can be used to indicate
@@ -26,10 +26,10 @@ HERE=.
 # for, say, /usr/ and yet have everything installed to /tmp/somedir/usr/.
 # Normally it is left empty.
 INSTALL_PREFIX=
-INSTALLTOP=/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter
+INSTALLTOP=/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter
 
 # Do not edit this manually. Use Configure --openssldir=DIR do change this!
-OPENSSLDIR=/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter/share/openssl
+OPENSSLDIR=/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/share/openssl
 
 # NO_IDEA - Define to build without the IDEA algorithm
 # NO_RC4  - Define to build without the RC4 algorithm

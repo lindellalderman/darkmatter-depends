@@ -21,7 +21,7 @@ RL_LIBRARY_VERSION = 6.0
 SHELL = /bin/sh
 RM = rm -f
 
-prefix = /usr/lib64/darkmatter
+prefix = /usr/local/lib64/darkmatter
 exec_prefix = ${prefix}
 
 datarootdir = ${prefix}/share
@@ -32,7 +32,7 @@ datadir = ${datarootdir}
 VPATH = .
 top_srcdir = ..
 #BUILD_DIR = .
-BUILD_DIR = /home/lindell/git/dm-stack/readline
+BUILD_DIR = /home/lindell/git/darkmatter-depends/readline
 installdir = $(datadir)/readline
 
 INSTALL = /usr/bin/install -c
@@ -49,12 +49,12 @@ DEFS = -DHAVE_CONFIG_H
 CC = cc
 CFLAGS = -fpic -fPIC -fpic -fPIC
 LOCAL_CFLAGS =  -DREADLINE_LIBRARY -DRL_LIBRARY_VERSION='"$(RL_LIBRARY_VERSION)"'
-CPPFLAGS = -I/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter/include -I/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter/include/ncurses -I/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter/include/libxml2
+CPPFLAGS = -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2
 
 INCLUDES = -I$(srcdir) -I$(top_srcdir) -I..
 
 CCFLAGS  = $(DEFS) $(LOCAL_CFLAGS) $(CPPFLAGS) $(INCLUDES) $(CFLAGS)
-LDFLAGS = -g -L.. -L/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -L/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -lc -lm
+LDFLAGS = -g -L.. -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm
 
 PURIFY = 
 

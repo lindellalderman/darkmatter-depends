@@ -38,7 +38,7 @@ SHELL		= /bin/sh
 
 DESTDIR		= 
 srcdir		= .
-prefix		= /usr/lib64/darkmatter
+prefix		= /usr/local/lib64/darkmatter
 exec_prefix	= ${prefix}
 datadir		= ${prefix}/share
 mandir		= ${prefix}/man
@@ -73,8 +73,8 @@ mostlyclean :
 clean:	mostlyclean
 	rm -f terminfo.5
 
-../edit_man.sed : make_sed.sh /home/lindell/git/dm-stack/ncurses/man/man_db.renames
-	sh $(srcdir)/make_sed.sh /home/lindell/git/dm-stack/ncurses/man/man_db.renames >../edit_man.sed
+../edit_man.sed : make_sed.sh /home/lindell/git/darkmatter-depends/ncurses/man/man_db.renames
+	sh $(srcdir)/make_sed.sh /home/lindell/git/darkmatter-depends/ncurses/man/man_db.renames >../edit_man.sed
 
 distclean realclean: clean
 	rm -f Makefile ../edit_man.* ../man_alias.*

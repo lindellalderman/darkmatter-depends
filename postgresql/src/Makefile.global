@@ -34,7 +34,7 @@ MAJORVERSION = 8.4
 
 # Support for VPATH builds
 vpath_build = no
-abs_top_srcdir = /home/lindell/git/dm-stack/postgresql
+abs_top_srcdir = /home/lindell/git/darkmatter-depends/postgresql
 
 ifneq ($(vpath_build),yes)
 top_srcdir = $(top_builddir)
@@ -46,7 +46,7 @@ srcdir = $(top_srcdir)/$(subdir)
 endif
 
 # Saved arguments from configure
-configure_args =  '--prefix=/usr/lib64/darkmatter' '--with-pam' '--with-openssl' '--enable-thread-safety' '--with-gnu-ld' 'CC=cc' 'CFLAGS=-fpic -fPIC -fpic -fPIC -pthread' 'LDFLAGS=-L/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -L/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -lc -lm' 'LIBS=-lc -lm' 'CPPFLAGS=-I/usr/lib64/darkmatter/include -I/usr/lib64/darkmatter/include/ncurses -I/usr/lib64/darkmatter/include/libxml2' 'LDFLAGS_SL=-L/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -L/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib'
+configure_args =  '--prefix=/usr/local/lib64/darkmatter' '--with-pam' '--with-openssl' '--enable-thread-safety' '--with-gnu-ld' 'CC=cc' 'CFLAGS=-fpic -fPIC -fpic -fPIC -pthread' 'LDFLAGS=-L/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm' 'LIBS=-lc -lm' 'CPPFLAGS=-I/usr/local/lib64/darkmatter/include -I/usr/local/lib64/darkmatter/include/ncurses -I/usr/local/lib64/darkmatter/include/libxml2' 'LDFLAGS_SL=-L/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib'
 
 
 ##########################################################################
@@ -66,7 +66,7 @@ ifndef PGXS
 # Note that prefix, exec_prefix, and datarootdir aren't defined in a PGXS build;
 # makefiles may only use the derived variables such as bindir.
 
-prefix := /usr/lib64/darkmatter
+prefix := /usr/local/lib64/darkmatter
 exec_prefix := ${prefix}
 datarootdir := ${prefix}/share
 
@@ -200,7 +200,7 @@ DOCBOOK2MAN	=
 # Compilers
 
 CPP = cc -E
-CPPFLAGS = -I/usr/lib64/darkmatter/include -I/usr/lib64/darkmatter/include/ncurses -I/usr/lib64/darkmatter/include/libxml2 -D_GNU_SOURCE 
+CPPFLAGS = -I/usr/local/lib64/darkmatter/include -I/usr/local/lib64/darkmatter/include/ncurses -I/usr/local/lib64/darkmatter/include/libxml2 -D_GNU_SOURCE 
 
 ifdef PGXS
 override CPPFLAGS := -I$(includedir_server) -I$(includedir_internal) $(CPPFLAGS)
@@ -238,8 +238,8 @@ OSSP_UUID_LIBS =
 LD = /usr/bin/ld
 with_gnu_ld = yes
 ld_R_works = 
-LDFLAGS = -L/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -L/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -lc -lm  -Wl,--as-needed
-LDFLAGS_SL = -L/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -L/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib
+LDFLAGS = -L/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm  -Wl,--as-needed
+LDFLAGS_SL = -L/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib
 LDREL = -r
 LDOUT = -o
 RANLIB = ranlib

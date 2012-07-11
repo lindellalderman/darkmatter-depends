@@ -47,12 +47,12 @@ DIST_SOURCES =
 am__tty_colors = \
 red=; grn=; lgn=; blu=; std=
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = perllibdir=/home/lindell/git/dm-stack/automake"/lib:./lib" /home/lindell/git/dm-stack/automake/aclocal --acdir=m4
-AMTAR = ${SHELL} /home/lindell/git/dm-stack/automake/lib/missing --run tar
+ACLOCAL = perllibdir=/home/lindell/git/darkmatter-depends/automake"/lib:./lib" /home/lindell/git/darkmatter-depends/automake/aclocal --acdir=m4
+AMTAR = ${SHELL} /home/lindell/git/darkmatter-depends/automake/lib/missing --run tar
 APIVERSION = 1.9
-AUTOCONF = ${SHELL} /home/lindell/git/dm-stack/automake/lib/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/lindell/git/dm-stack/automake/lib/missing --run autoheader
-AUTOMAKE = perllibdir=/home/lindell/git/dm-stack/automake"/lib:./lib" /home/lindell/git/dm-stack/automake/automake --libdir=lib
+AUTOCONF = ${SHELL} /home/lindell/git/darkmatter-depends/automake/lib/missing --run autoconf
+AUTOHEADER = ${SHELL} /home/lindell/git/darkmatter-depends/automake/lib/missing --run autoheader
+AUTOMAKE = perllibdir=/home/lindell/git/darkmatter-depends/automake"/lib:./lib" /home/lindell/git/darkmatter-depends/automake/automake --libdir=lib
 AWK = mawk
 CYGPATH_W = echo
 DEFS = -DPACKAGE_NAME=\"GNU\ Automake\" -DPACKAGE_TARNAME=\"automake\" -DPACKAGE_VERSION=\"1.9\" -DPACKAGE_STRING=\"GNU\ Automake\ 1.9\" -DPACKAGE_BUGREPORT=\"bug-automake@gnu.org\" -DPACKAGE_URL=\"http://www.gnu.org/software/automake/\" -DPACKAGE=\"automake\" -DVERSION=\"1.9\"
@@ -71,7 +71,7 @@ LIBOBJS =
 LIBS = -lc -lm
 LN = ln
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /home/lindell/git/dm-stack/automake/lib/missing --run makeinfo
+MAKEINFO = ${SHELL} /home/lindell/git/darkmatter-depends/automake/lib/missing --run makeinfo
 MKDIR_P = /bin/mkdir -p
 MODIFICATION_DELAY = 2
 PACKAGE = automake
@@ -88,10 +88,10 @@ SHELL = /bin/bash
 STRIP = 
 TEX = 
 VERSION = 1.9
-abs_builddir = /home/lindell/git/dm-stack/automake/tests
-abs_srcdir = /home/lindell/git/dm-stack/automake/tests
-abs_top_builddir = /home/lindell/git/dm-stack/automake
-abs_top_srcdir = /home/lindell/git/dm-stack/automake
+abs_builddir = /home/lindell/git/darkmatter-depends/automake/tests
+abs_srcdir = /home/lindell/git/darkmatter-depends/automake/tests
+abs_top_builddir = /home/lindell/git/darkmatter-depends/automake
+abs_top_srcdir = /home/lindell/git/darkmatter-depends/automake
 am__leading_dot = .
 am__tar = ${AMTAR} chof - "$$tardir"
 am__untar = ${AMTAR} xf -
@@ -111,7 +111,7 @@ host_alias =
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/lindell/git/dm-stack/automake/lib/install-sh
+install_sh = ${SHELL} /home/lindell/git/darkmatter-depends/automake/lib/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -121,7 +121,7 @@ mkdir_p = /bin/mkdir -p
 oldincludedir = /usr/include
 pdfdir = ${docdir}
 pkgvdatadir = ${datadir}/automake-1.9
-prefix = /home/lindell/git/dm-stack/.build/usr/lib64/darkmatter
+prefix = /home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin

@@ -27,10 +27,10 @@ DEFS =
 LIBS = -lc -lm -lc
 
 CFLAGS = -fpic -fPIC -fpic -fPIC
-LDFLAGS = -L/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -L/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -lc -lm
+LDFLAGS = -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm
 
 # Common prefix for installation directories
-prefix = /usr/lib64/darkmatter
+prefix = /usr/local/lib64/darkmatter
 exec_prefix = ${prefix}
 binprefix = $(exec_prefix)
 manprefix = $(prefix)

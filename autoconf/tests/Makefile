@@ -84,11 +84,11 @@ SCRIPTS = $(noinst_SCRIPTS)
 SOURCES =
 DIST_SOURCES =
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/lindell/git/dm-stack/autoconf/build-aux/missing --run aclocal-1.11
-AMTAR = ${SHELL} /home/lindell/git/dm-stack/autoconf/build-aux/missing --run tar
-AUTOCONF = ${SHELL} /home/lindell/git/dm-stack/autoconf/build-aux/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/lindell/git/dm-stack/autoconf/build-aux/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/lindell/git/dm-stack/autoconf/build-aux/missing --run automake-1.11
+ACLOCAL = ${SHELL} /home/lindell/git/darkmatter-depends/autoconf/build-aux/missing --run aclocal-1.11
+AMTAR = ${SHELL} /home/lindell/git/darkmatter-depends/autoconf/build-aux/missing --run tar
+AUTOCONF = ${SHELL} /home/lindell/git/darkmatter-depends/autoconf/build-aux/missing --run autoconf
+AUTOHEADER = ${SHELL} /home/lindell/git/darkmatter-depends/autoconf/build-aux/missing --run autoheader
+AUTOMAKE = ${SHELL} /home/lindell/git/darkmatter-depends/autoconf/build-aux/missing --run automake-1.11
 AWK = mawk
 CYGPATH_W = echo
 DEFS = -DPACKAGE_NAME=\"GNU\ Autoconf\" -DPACKAGE_TARNAME=\"autoconf\" -DPACKAGE_VERSION=\"2.68-dirty\" -DPACKAGE_STRING=\"GNU\ Autoconf\ 2.68-dirty\" -DPACKAGE_BUGREPORT=\"bug-autoconf@gnu.org\" -DPACKAGE_URL=\"http://www.gnu.org/software/autoconf/\" -DPACKAGE=\"autoconf\" -DVERSION=\"2.68-dirty\"
@@ -100,7 +100,7 @@ EMACS = emacs
 EMACSLOADPATH = 
 EXPR = /usr/bin/expr
 GREP = /bin/grep
-HELP2MAN = ${SHELL} /home/lindell/git/dm-stack/autoconf/build-aux/missing --run help2man
+HELP2MAN = ${SHELL} /home/lindell/git/darkmatter-depends/autoconf/build-aux/missing --run help2man
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
@@ -112,7 +112,7 @@ LTLIBOBJS =
 M4 = /usr/bin/m4
 M4_DEBUGFILE = --debugfile
 M4_GNU = --gnu
-MAKEINFO = ${SHELL} /home/lindell/git/dm-stack/autoconf/build-aux/missing --run makeinfo
+MAKEINFO = ${SHELL} /home/lindell/git/darkmatter-depends/autoconf/build-aux/missing --run makeinfo
 MKDIR_P = /bin/mkdir -p
 PACKAGE = autoconf
 PACKAGE_BUGREPORT = bug-autoconf@gnu.org
@@ -130,10 +130,10 @@ SHELL = /bin/bash
 STRIP = 
 TEST_EMACS = emacs
 VERSION = 2.68-dirty
-abs_builddir = /home/lindell/git/dm-stack/autoconf/tests
-abs_srcdir = /home/lindell/git/dm-stack/autoconf/tests
-abs_top_builddir = /home/lindell/git/dm-stack/autoconf
-abs_top_srcdir = /home/lindell/git/dm-stack/autoconf
+abs_builddir = /home/lindell/git/darkmatter-depends/autoconf/tests
+abs_srcdir = /home/lindell/git/darkmatter-depends/autoconf/tests
+abs_top_builddir = /home/lindell/git/darkmatter-depends/autoconf
+abs_top_srcdir = /home/lindell/git/darkmatter-depends/autoconf
 ac_cv_dir_trailing_space = yes
 ac_cv_sh_n_works = no
 ac_cv_unsupported_fs_chars = 
@@ -160,7 +160,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/lindell/git/dm-stack/autoconf/build-aux/install-sh
+install_sh = ${SHELL} /home/lindell/git/darkmatter-depends/autoconf/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 lispdir = ${datarootdir}/emacs/site-lisp
@@ -170,7 +170,7 @@ mandir = ${datarootdir}/man
 mkdir_p = /bin/mkdir -p
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /home/lindell/git/dm-stack/.build/usr/lib64/darkmatter
+prefix = /home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
@@ -268,8 +268,8 @@ wrappers = autoconf autoheader autom4te autoreconf autoscan autoupdate ifnames
 CLEANFILES = wrapper.in $(wrappers) package.m4 mktests.tmp expr
 edit = sed \
 	-e 's|@wrap_program[@]|$@|g' \
-	-e 's|@abs_top_srcdir[@]|/home/lindell/git/dm-stack/autoconf|g' \
-	-e 's|@abs_top_builddir[@]|/home/lindell/git/dm-stack/autoconf|g' \
+	-e 's|@abs_top_srcdir[@]|/home/lindell/git/darkmatter-depends/autoconf|g' \
+	-e 's|@abs_top_builddir[@]|/home/lindell/git/darkmatter-depends/autoconf|g' \
 	-e "s|@configure_input[@]|Generated from $$input.|g"
 
 TESTSUITE_GENERATED_AT = \

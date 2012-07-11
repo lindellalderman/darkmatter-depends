@@ -46,7 +46,7 @@ ac_cv_env_CC_value='cc'
 ac_cv_env_CFLAGS_set='set'
 ac_cv_env_CFLAGS_value='-fpic -fPIC -fpic -fPIC'
 ac_cv_env_CPPFLAGS_set='set'
-ac_cv_env_CPPFLAGS_value='-I/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter/include -I/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter/include/ncurses -I/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter/include/libxml2'
+ac_cv_env_CPPFLAGS_value='-I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2'
 ac_cv_env_CPP_set=''
 ac_cv_env_CPP_value=''
 ac_cv_env_CXXCPP_set=''
@@ -56,7 +56,7 @@ ac_cv_env_CXXFLAGS_value='-fpic -fPIC -fpic -fPIC'
 ac_cv_env_CXX_set='set'
 ac_cv_env_CXX_value='g++'
 ac_cv_env_LDFLAGS_set='set'
-ac_cv_env_LDFLAGS_value='-L/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -L/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -lc -lm'
+ac_cv_env_LDFLAGS_value='-L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm'
 ac_cv_env_build_alias_set=''
 ac_cv_env_build_alias_value=''
 ac_cv_env_host_alias_set=''
@@ -200,7 +200,7 @@ cf_cv_struct_dirent64='no'
 cf_cv_subst_AR_OPTS='rv'
 cf_cv_sys_time_select='yes'
 cf_cv_system_name='linux-gnu'
-cf_cv_timestamp='Mon May 28 18:42:59 PDT 2012'
+cf_cv_timestamp='Tue Jul 10 20:08:05 PDT 2012'
 cf_cv_type_of_bool='unsigned char'
 cf_cv_type_sigaction='no'
 cf_cv_typeof_chtype='int'
@@ -221,7 +221,7 @@ cf_cv_working_poll='yes'
 #define HAVE_LONG_FILE_NAMES 1
 #define MIXEDCASE_FILENAMES 1
 #define USE_DATABASE 1
-#define TERMINFO_DIRS "/usr/lib64/darkmatter/share/terminfo"
+#define TERMINFO_DIRS "/usr/local/lib64/darkmatter/share/terminfo"
 #define TERMINFO "/lib64/terminfo"
 #define HAVE_BIG_CORE 1
 #define PURE_TERMINFO 1

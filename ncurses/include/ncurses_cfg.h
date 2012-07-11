@@ -54,7 +54,7 @@
 #define HAVE_LONG_FILE_NAMES 1
 #define MIXEDCASE_FILENAMES 1
 #define USE_DATABASE 1
-#define TERMINFO_DIRS "/usr/lib64/darkmatter/share/terminfo"
+#define TERMINFO_DIRS "/usr/local/lib64/darkmatter/share/terminfo"
 #define TERMINFO "/lib64/terminfo"
 #define HAVE_BIG_CORE 1
 #define PURE_TERMINFO 1

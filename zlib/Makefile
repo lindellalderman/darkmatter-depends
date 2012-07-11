@@ -25,7 +25,7 @@ CFLAGS=-fpic -fPIC -fpic -fPIC -D_LARGEFILE64_SOURCE=1
 #           -Wstrict-prototypes -Wmissing-prototypes
 
 SFLAGS=-fpic -fPIC -fpic -fPIC -D_LARGEFILE64_SOURCE=1
-LDFLAGS=-L/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -L/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -lc -lm -L. libz.a
+LDFLAGS=-L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm -L. libz.a
 TEST_LDFLAGS=-L. libz.a
 LDSHARED=cc -shared
 CPP=cc -E
@@ -44,7 +44,7 @@ TAR=tar
 SHELL=/bin/sh
 EXE=
 
-prefix =/usr/lib64/darkmatter
+prefix =/usr/local/lib64/darkmatter
 exec_prefix =${prefix}
 libdir =${exec_prefix}/lib
 sharedlibdir =${libdir}

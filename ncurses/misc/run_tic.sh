@@ -43,7 +43,7 @@ echo '** Building terminfo database, please wait...'
 
 : ${suffix=}
 : ${DESTDIR=}
-: ${prefix=/usr/lib64/darkmatter}
+: ${prefix=/usr/local/lib64/darkmatter}
 : ${exec_prefix=${prefix}}
 : ${bindir=${exec_prefix}/bin}
 : ${top_srcdir=..}

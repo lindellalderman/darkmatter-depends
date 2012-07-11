@@ -30,7 +30,7 @@
 #
 # Author: Thomas E. Dickey, 2006
 
-prefix="/usr/lib64/darkmatter"
+prefix="/usr/local/lib64/darkmatter"
 exec_prefix="${prefix}"
 
 bindir="${exec_prefix}/bin"
@@ -117,7 +117,7 @@ ENDECHO
 		echo "/lib64/terminfo"
 		;;
 	--terminfo-dirs)
-		echo "/usr/lib64/darkmatter/share/terminfo"
+		echo "/usr/local/lib64/darkmatter/share/terminfo"
 		;;
 	--termpath)
 		echo ""
