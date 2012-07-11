@@ -1,0 +1,16 @@
+include ../mklib/build.mk
+
+pkg_name := hiredis
+pkg_version := 0.10.1
+pkg_release := 1
+
+REMOVE_PATHS += $(LIB_DIR)/*hiredis* $(INCLUDE_DIR)/*hiredist*
+
+DESTDIRARG=PREFIX=$(BUILD_ROOT)$(PREFIX_DIR)
+
+define pkg_configure
+	@sed -i 's/LIBRARY_PATH/LIB_PATH/g' Makefile
+endef
+
+include ../mklib/pkggnu.mk
+include ../mklib/packages.mk

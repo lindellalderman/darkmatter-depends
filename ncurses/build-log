@@ -1,0 +1,22 @@
+uninstalling ncurses...
+rm -f /opt/darkmatter/bin/tic
+rm -f /opt/darkmatter/bin/toe
+rm -f /opt/darkmatter/bin/infotocap
+rm -f /opt/darkmatter/bin/reset
+rm -f /opt/darkmatter/bin/tset
+rm -f /opt/darkmatter/bin/tput
+rm -f /opt/darkmatter/lib/libncurs*
+rm -rf /opt/darkmatter/include/ncurses
+ncurses uninstall complete
+configuring ncurses...
+CC="gcc -Wl,-rpath=/opt/darkmatter/lib" CXX="g++ -Wl,-rpath=/opt/darkmatter/lib" LD_LIBRARY_PATH="/opt/darkmatter/lib" LD_RUN_PATH="/opt/darkmatter/lib" CFLAGS="-I/opt/darkmatter/include -I/usr/sfw/include -fPIC -I/opt/darkmatter/src/lib/ncurses/ncurses -I/opt/darkmatter/src/lib/ncurses/include -I/opt/darkmatter/src/lib/ncurses/test" CPPFLAGS="-I/opt/darkmatter/include -I/usr/sfw/include -fPIC -I/opt/darkmatter/src/lib/ncurses/ncurses -I/opt/darkmatter/src/lib/ncurses/include -I/opt/darkmatter/src/lib/ncurses/test" CXXFLAGS="-I/opt/darkmatter/include -I/usr/sfw/include -fPIC -I/opt/darkmatter/src/lib/ncurses/ncurses -I/opt/darkmatter/src/lib/ncurses/include -I/opt/darkmatter/src/lib/ncurses/test" LDFLAGS="-L/opt/darkmatter/lib -L/usr/sfw/lib -L/usr/lib -L/opt/darkmatter/src/lib/ncurses/lib -mimpure-text" LIBS="" PATH="/opt/darkmatter/sbin:/opt/darkmatter/bin:/opt/darkmatter/bin:/usr/sfw/bin:/usr/sfw/bin:/opt/darkmatter/bin:/usr/gnu/bin:/usr/bin/X11:/usr/sbin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin" ./configure --prefix=/opt/darkmatter --includedir=/opt/darkmatter/include --libdir=/opt/darkmatter/lib --bindir=/opt/darkmatter/bin --libexecdir=/opt/darkmatter/lib --sysconfdir=/opt/darkmatter/etc --mandir=/opt/darkmatter/man --enable-sigwinch --enable-rpath --without-progs --with-libtool --without-cxx-binding
+checking for egrep... grep -E
+Configuring NCURSES 5.7 ABI 5 (Sun Oct 17 03:23:15 PDT 2010)
+checking build system type... i386-pc-solaris2.11
+checking host system type... i386-pc-solaris2.11
+checking target system type... i386-pc-solaris2.11
+Configuring for solaris2.11
+checking for prefix... /opt/darkmatter
+checking for gcc... gcc -Wl,-rpath=/opt/darkmatter/lib
+checking for C compiler default output... configure: error: C compiler cannot create executables
+make: *** [conf] Error 77

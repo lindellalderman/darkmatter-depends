@@ -1,0 +1,13 @@
+autoconf/doc/autoconf.info
+autoconf/doc/standards.info
+automake/doc/automake.info
+automake/doc/automake.info-1
+automake/doc/automake.info-2
+gdbm/gdbm.info
+libtool/doc/libtool.info
+libtool/doc/libtool.info-1
+libtool/doc/libtool.info-2
+readline/doc/history.info
+readline/doc/readline.info
+readline/doc/rluserman.info
+stackless-python/Modules/_ctypes/libffi/doc/libffi.info

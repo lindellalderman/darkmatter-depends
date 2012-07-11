@@ -1,0 +1,11 @@
+include ../mklib/build.mk
+
+pkg_name    := bzip2
+pkg_version := 1.0.5
+pkg_release := 1
+
+DESTDIRARG = PREFIX=$(BUILD_ROOT)$(PREFIX_DIR)
+REMOVE_PATHS += $(BIN_DIR)/bz* $(BIN_DIR)/bunzip* $(INCLUDE_DIR)/bzlib* $(LIB_DIR)/libbz* $(MAN_DIR)/*/bz* $(SHARE_DIR)/man/*/bz*
+
+include ../mklib/pkggnu.mk
+include ../mklib/packages.mk

@@ -1,0 +1,11 @@
+--- Makefile.global.orig	Sun Oct 11 00:18:44 2009
++++ Makefile.global	Sun Oct 11 00:18:57 2009
+@@ -231,7 +231,7 @@
+ AR = ar
+ DLLTOOL = 
+ DLLWRAP = 
+-LIBS = -lxslt -lxml2 -lpam -lssl -lcrypto -lz -lreadline -ltermcap -lnsl -lsocket -lm 
++LIBS = -L$(libdir) -lxslt -lxml2 -lpam -lssl -lcrypto -lz -lreadline -ltermcap -lnsl -lsocket -lm 
+ LDAP_LIBS_FE = 
+ LDAP_LIBS_BE = 
+ OSSP_UUID_LIBS = 

@@ -1,0 +1,8 @@
+include ../mklib/build.mk
+
+pkg_name := jsonlib
+pkg_version := 1.3.7
+pkg_release := 1
+
+include ../mklib/pkgpy.mk
+include ../mklib/packages.mk

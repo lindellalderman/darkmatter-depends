@@ -1,0 +1,8 @@
+include ../mklib/build.mk
+
+pkg_name := setuptools
+pkg_version := 0.6c11
+pkg_release  := 1
+
+include ../mklib/pkgpy.mk
+include ../mklib/packages.mk

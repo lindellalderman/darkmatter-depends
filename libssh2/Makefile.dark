@@ -1,0 +1,15 @@
+include ../mklib/build.mk
+
+pkg_name := libssh2
+pkg_version := 0.18
+pkg_release := 1
+
+CONFIG_OPTS += --with-libz=$(BUILD_ROOT)$(PREFIX_DIR) --with-openssl=$(BUILD_ROOT)$(PREFIX_DIR)
+
+define pkg_remove
+	if [ -r $(BUILD_ROOT)$(INCLUDE_DIR)/libssh2* ]; then rm -rf $(BUILD_ROOT)$(INCLUDE_DIR)/libssh2* ; fi  || true
+	if [ -r $(BUILD_ROOT)$(LIB_DIR)/libssh2* ]; then rm -rf $(BUILD_ROOT)$(LIB_DIR)/libssh2* ; fi || true
+endef
+
+include ../mklib/pkggnu.mk
+include ../mklib/packages.mk

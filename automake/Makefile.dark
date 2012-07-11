@@ -1,0 +1,11 @@
+include ../mklib/build.mk
+
+pkg_name := automake
+pkg_version := 1.9
+pkg_release := 1
+
+CONFIG_OPTS := --prefix=$(BUILD_ROOT)$(PREFIX_DIR)
+BUILD_ROOT_ONLY := 1
+
+include ../mklib/pkggnu.mk
+include ../mklib/packages.mk

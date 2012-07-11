@@ -1,0 +1,330 @@
+
+## ----------------------- ##
+## Running config.status.  ##
+## ----------------------- ##
+
+This file was extended by config.status 2.52.20080325, executed with
+  CONFIG_FILES    = 
+  CONFIG_HEADERS  = 
+  CONFIG_LINKS    = 
+  CONFIG_COMMANDS = 
+  > ./config.status 
+on gluon
+
+config.status:17610: creating include/MKterm.h.awk
+config.status:17610: creating include/curses.head
+config.status:17610: creating include/termcap.h
+config.status:17610: creating include/unctrl.h
+config.status:17610: creating man/Makefile
+config.status:17610: creating include/Makefile
+config.status:17610: creating ncurses/Makefile
+config.status:17610: creating progs/Makefile
+config.status:17610: creating panel/Makefile
+config.status:17610: creating menu/Makefile
+config.status:17610: creating form/Makefile
+config.status:17610: creating test/Makefile
+config.status:17610: creating misc/Makefile
+config.status:17610: creating c++/Makefile
+config.status:17610: creating Ada95/gen/adacurses-config
+config.status:17610: creating misc/run_tic.sh
+config.status:17610: creating misc/ncurses-config
+config.status:17610: creating Makefile
+config.status:17707: creating include/ncurses_cfg.h
+
+## ----------------- ##
+## Cache variables.  ##
+## ----------------- ##
+
+ac_cv_build='x86_64-unknown-linux-gnu'
+ac_cv_build_alias='x86_64-unknown-linux-gnu'
+ac_cv_c_compiler_gnu='yes'
+ac_cv_c_const='yes'
+ac_cv_c_inline='inline'
+ac_cv_cxx_compiler_gnu='yes'
+ac_cv_env_CC_set='set'
+ac_cv_env_CC_value='cc'
+ac_cv_env_CFLAGS_set='set'
+ac_cv_env_CFLAGS_value='-fpic -fPIC -fpic -fPIC'
+ac_cv_env_CPPFLAGS_set='set'
+ac_cv_env_CPPFLAGS_value='-I/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter/include -I/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter/include/ncurses -I/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter/include/libxml2'
+ac_cv_env_CPP_set=''
+ac_cv_env_CPP_value=''
+ac_cv_env_CXXCPP_set=''
+ac_cv_env_CXXCPP_value=''
+ac_cv_env_CXXFLAGS_set='set'
+ac_cv_env_CXXFLAGS_value='-fpic -fPIC -fpic -fPIC'
+ac_cv_env_CXX_set='set'
+ac_cv_env_CXX_value='g++'
+ac_cv_env_LDFLAGS_set='set'
+ac_cv_env_LDFLAGS_value='-L/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -L/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -lc -lm'
+ac_cv_env_build_alias_set=''
+ac_cv_env_build_alias_value=''
+ac_cv_env_host_alias_set=''
+ac_cv_env_host_alias_value=''
+ac_cv_env_target_alias_set=''
+ac_cv_env_target_alias_value=''
+ac_cv_func_fseeko='yes'
+ac_cv_func_getcwd='yes'
+ac_cv_func_getegid='yes'
+ac_cv_func_geteuid='yes'
+ac_cv_func_gettimeofday='yes'
+ac_cv_func_getttynam='yes'
+ac_cv_func_issetugid='no'
+ac_cv_func_link='no'
+ac_cv_func_memmove='yes'
+ac_cv_func_poll='yes'
+ac_cv_func_remove='yes'
+ac_cv_func_select='yes'
+ac_cv_func_setbuf='yes'
+ac_cv_func_setbuffer='yes'
+ac_cv_func_setvbuf='yes'
+ac_cv_func_setvbuf_reversed='no'
+ac_cv_func_sigaction='yes'
+ac_cv_func_sigvec='yes'
+ac_cv_func_strdup='yes'
+ac_cv_func_strstr='yes'
+ac_cv_func_symlink='no'
+ac_cv_func_tcgetpgrp='yes'
+ac_cv_func_times='yes'
+ac_cv_func_unlink='yes'
+ac_cv_func_vsnprintf='yes'
+ac_cv_header_dirent_dirent_h='yes'
+ac_cv_header_fcntl_h='yes'
+ac_cv_header_getopt_h='yes'
+ac_cv_header_gpm_h='no'
+ac_cv_header_inttypes_h='yes'
+ac_cv_header_iostream='yes'
+ac_cv_header_limits_h='yes'
+ac_cv_header_locale_h='yes'
+ac_cv_header_memory_h='yes'
+ac_cv_header_poll_h='yes'
+ac_cv_header_stdc='yes'
+ac_cv_header_stdint_h='yes'
+ac_cv_header_stdlib_h='yes'
+ac_cv_header_string_h='yes'
+ac_cv_header_strings_h='yes'
+ac_cv_header_sys_bsdtypes_h='no'
+ac_cv_header_sys_ioctl_h='yes'
+ac_cv_header_sys_param_h='yes'
+ac_cv_header_sys_poll_h='yes'
+ac_cv_header_sys_select_h='yes'
+ac_cv_header_sys_stat_h='yes'
+ac_cv_header_sys_time_h='yes'
+ac_cv_header_sys_times_h='yes'
+ac_cv_header_sys_types_h='yes'
+ac_cv_header_termio_h='yes'
+ac_cv_header_termios_h='yes'
+ac_cv_header_time='yes'
+ac_cv_header_ttyent_h='yes'
+ac_cv_header_typeinfo='yes'
+ac_cv_header_unistd_h='yes'
+ac_cv_header_wctype_h='yes'
+ac_cv_host='x86_64-unknown-linux-gnu'
+ac_cv_host_alias='x86_64-unknown-linux-gnu'
+ac_cv_lib_dir_opendir='no'
+ac_cv_lib_util_openpty='yes'
+ac_cv_objext='o'
+ac_cv_path_CXX='/usr/bin/g++'
+ac_cv_path_LDCONFIG='/sbin/ldconfig'
+ac_cv_path_install='/usr/bin/install -c'
+ac_cv_prog_AWK='mawk'
+ac_cv_prog_CPP='cc -E'
+ac_cv_prog_CXXCPP='/usr/bin/g++ -E'
+ac_cv_prog_MAKE_LOWER_TAGS='yes'
+ac_cv_prog_MAKE_UPPER_TAGS='yes'
+ac_cv_prog_ac_ct_AR='ar'
+ac_cv_prog_ac_ct_CC='cc'
+ac_cv_prog_ac_ct_LD='ld'
+ac_cv_prog_ac_ct_RANLIB='ranlib'
+ac_cv_prog_cc_g='yes'
+ac_cv_prog_cc_stdc=''
+ac_cv_prog_cxx_g='yes'
+ac_cv_prog_egrep='grep -E'
+ac_cv_prog_gcc_traditional='no'
+ac_cv_prog_gnat_exists='no'
+ac_cv_prog_make_make_set='yes'
+ac_cv_sizeof_signed_char='1'
+ac_cv_sys_file_offset_bits='no'
+ac_cv_sys_large_files='no'
+ac_cv_sys_largefile_CC='no'
+ac_cv_sys_largefile_source='no'
+ac_cv_sys_long_file_names='yes'
+ac_cv_target='x86_64-unknown-linux-gnu'
+ac_cv_target_alias='x86_64-unknown-linux-gnu'
+ac_cv_type_signal='void'
+ac_cv_type_signed_char='yes'
+am_cv_langinfo_codeset='yes'
+cf_cv_1UL='1U'
+cf_cv_abi_version='5'
+cf_cv_ansi_cc='-DCC_HAS_PROTOS'
+cf_cv_builtin_bool='1'
+cf_cv_cc_bool_type='0'
+cf_cv_cc_u_d_options='yes'
+cf_cv_cpp_param_init='no'
+cf_cv_cpp_static_cast='yes'
+cf_cv_dcl_errno='yes'
+cf_cv_define_sigwinch='yes'
+cf_cv_do_symlinks='yes'
+cf_cv_enable_lp64='0'
+cf_cv_enable_opaque='NCURSES_OPAQUE'
+cf_cv_enable_reentrant='0'
+cf_cv_func_mkstemp='yes'
+cf_cv_func_nanosleep='yes'
+cf_cv_func_openpty='pty.h'
+cf_cv_func_vsscanf='vsscanf'
+cf_cv_gcc_inline='yes'
+cf_cv_gnu_source='yes'
+cf_cv_have_errno='no'
+cf_cv_have_isascii='yes'
+cf_cv_have_tcgetattr='yes'
+cf_cv_header_stdbool_h='1'
+cf_cv_lib_util='yes'
+cf_cv_libstdcpp='no'
+cf_cv_link_dataonly='yes'
+cf_cv_link_funcs='no'
+cf_cv_makeflags=''
+cf_cv_mixedcase='yes'
+cf_cv_need_libm='no'
+cf_cv_prog_CC_c_o='yes'
+cf_cv_prog_CXX_c_o='yes'
+cf_cv_regex='regex.h'
+cf_cv_rel_version='5.7'
+cf_cv_rm_so_locs='no'
+cf_cv_shared_soname='`basename $@ .${REL_VERSION}`.${ABI_VERSION}'
+cf_cv_shlib_version='rel'
+cf_cv_shlib_version_infix='no'
+cf_cv_sig_atomic_t='volatile sig_atomic_t'
+cf_cv_sizechange='yes'
+cf_cv_src_modules='ncurses progs panel menu form'
+cf_cv_struct_dirent64='no'
+cf_cv_subst_AR_OPTS='rv'
+cf_cv_sys_time_select='yes'
+cf_cv_system_name='linux-gnu'
+cf_cv_timestamp='Mon May 28 18:42:59 PDT 2012'
+cf_cv_type_of_bool='unsigned char'
+cf_cv_type_sigaction='no'
+cf_cv_typeof_chtype='int'
+cf_cv_typeof_mmask_t='long'
+cf_cv_unsigned_literals='yes'
+cf_cv_weak_symbols='no'
+cf_cv_working_poll='yes'
+
+## ------------ ##
+## confdefs.h.  ##
+## ------------ ##
+
+#define SYSTEM_NAME "linux-gnu"
+#define CC_HAS_PROTOS 1
+#ifdef __cplusplus
+#include <stdlib.h>
+#endif
+#define HAVE_LONG_FILE_NAMES 1
+#define MIXEDCASE_FILENAMES 1
+#define USE_DATABASE 1
+#define TERMINFO_DIRS "/usr/lib64/darkmatter/share/terminfo"
+#define TERMINFO "/lib64/terminfo"
+#define HAVE_BIG_CORE 1
+#define PURE_TERMINFO 1
+#define USE_HOME_TERMINFO 1
+#define USE_ROOT_ENVIRON 1
+#define HAVE_REMOVE 1
+#define HAVE_UNLINK 1
+#define HAVE_LANGINFO_CODESET 1
+#define HAVE_FSEEKO 1
+#define HAVE_CURSES_VERSION 1
+#define HAVE_HAS_KEY 1
+#define HAVE_RESIZETERM 1
+#define HAVE_RESIZE_TERM 1
+#define HAVE_USE_DEFAULT_COLORS 1
+#define HAVE_WRESIZE 1
+#define NCURSES_EXT_FUNCS 1
+#define NCURSES_NO_PADDING 1
+#define STDC_HEADERS 1
+#define HAVE_SYS_TYPES_H 1
+#define HAVE_SYS_STAT_H 1
+#define HAVE_STDLIB_H 1
+#define HAVE_STRING_H 1
+#define HAVE_MEMORY_H 1
+#define HAVE_STRINGS_H 1
+#define HAVE_INTTYPES_H 1
+#define HAVE_STDINT_H 1
+#define HAVE_UNISTD_H 1
+#define SIZEOF_SIGNED_CHAR 1
+#define USE_SIGWINCH 1
+#define USE_ASSUMED_COLOR 1
+#define USE_HASHMAP 1
+#define GCC_SCANF 1
+#define GCC_PRINTF 1
+#define GCC_UNUSED __attribute__((unused))
+#define GCC_NORETURN __attribute__((noreturn))
+#define NDEBUG 1
+#define HAVE_NC_ALLOC_H 1
+#define HAVE_GETTIMEOFDAY 1
+#define STDC_HEADERS 1
+#define HAVE_DIRENT_H 1
+#define TIME_WITH_SYS_TIME 1
+#define HAVE_REGEX_H_FUNCS 1
+#define HAVE_FCNTL_H 1
+#define HAVE_GETOPT_H 1
+#define HAVE_LIMITS_H 1
+#define HAVE_LOCALE_H 1
+#define HAVE_POLL_H 1
+#define HAVE_SYS_IOCTL_H 1
+#define HAVE_SYS_PARAM_H 1
+#define HAVE_SYS_POLL_H 1
+#define HAVE_SYS_SELECT_H 1
+#define HAVE_SYS_TIME_H 1
+#define HAVE_SYS_TIMES_H 1
+#define HAVE_TTYENT_H 1
+#define HAVE_UNISTD_H 1
+#define HAVE_WCTYPE_H 1
+#define HAVE_SYS_TIME_SELECT 1
+#define SIG_ATOMIC_T volatile sig_atomic_t
+#define TYPEOF_CHTYPE int
+#define HAVE_GETCWD 1
+#define HAVE_GETEGID 1
+#define HAVE_GETEUID 1
+#define HAVE_GETTTYNAM 1
+#define HAVE_POLL 1
+#define HAVE_REMOVE 1
+#define HAVE_SELECT 1
+#define HAVE_SETBUF 1
+#define HAVE_SETBUFFER 1
+#define HAVE_SETVBUF 1
+#define HAVE_SIGACTION 1
+#define HAVE_SIGVEC 1
+#define HAVE_STRDUP 1
+#define HAVE_STRSTR 1
+#define HAVE_TCGETPGRP 1
+#define HAVE_TIMES 1
+#define HAVE_VSNPRINTF 1
+#define HAVE_ISASCII 1
+#define HAVE_NANOSLEEP 1
+#define HAVE_TERMIO_H 1
+#define HAVE_TERMIOS_H 1
+#define HAVE_UNISTD_H 1
+#define HAVE_TCGETATTR 1
+#define HAVE_VSSCANF 1
+#define HAVE_MKSTEMP 1
+#define RETSIGTYPE void
+#define HAVE_SIZECHANGE 1
+#define HAVE_WORKING_POLL 1
+#define USE_OPENPTY_HEADER <pty.h>
+#define USE_XTERM_PTY 1
+#define HAVE_IOSTREAM 1
+#define HAVE_TYPEINFO 1
+#define IOSTREAM_NAMESPACE 1
+#define ETIP_NEEDS_MATH_H 1
+#define CPP_HAS_STATIC_CAST 1
+#define HAVE_SLK_COLOR 1
+#define HAVE_PANEL_H 1
+#define HAVE_LIBPANEL 1
+#define HAVE_MENU_H 1
+#define HAVE_LIBMENU 1
+#define HAVE_FORM_H 1
+#define HAVE_LIBFORM 1
+#define NCURSES_PATHSEP ':'
+#define NCURSES_VERSION_STRING "5.7.20081102"
+
+
+configure: exit 0

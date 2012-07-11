@@ -1,0 +1,11 @@
+include ../mklib/build.mk
+
+pkg_name := ares
+pkg_version := 1.7.4
+pkg_release := 1
+
+CONFIG_OPTS += --disable-thread --enable-shared   --enable-nonblocking 
+REMOVE_PATHS += $(LIB_DIR)/libcares*  $(LIB_DIR)/pkgconfig/libcares* 
+
+include ../mklib/pkggnu.mk
+include ../mklib/packages.mk

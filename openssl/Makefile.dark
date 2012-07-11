@@ -1,0 +1,32 @@
+include ../mklib/build.mk
+
+pkg_name := openssl
+pkg_version := 0.9.8i
+pkg_release := 1
+
+ifdef SUNOS
+ifndef 64BIT
+LDFLAGS+=-m32
+endif
+endif
+
+define pkg_postconfigure
+	cp apps/CA.pl.org apps/CA.pl || exit $?
+endef
+
+define pkg_configure
+	$(BUILD_FLAGS) ./config shared no-threads zlib-dynamic no-asm no-krb5 --prefix=$(BUILD_ROOT)$(PREFIX_DIR) --openssldir=$(BUILD_ROOT)$(SHARE_DIR)/openssl  || exit $?
+endef
+
+define pkg_preclean
+	if [ -r *.map ]; then rm -f *.map; fi || true
+	if [ -r *.dll ]; then rm -f *.dll; fi || true
+	if [ -r engines/*.dll ]; then rm -f engines/*.dll ; fi || true
+	if [ -r */lib ]; then rm -rf */lib ; fi || true
+	if [ -r */*/lib ]; then rm -rf */*/lib ; fi || true
+endef
+
+REMOVE_PATHS += $(LIB_DIR)/libssl* $(LIB_DIR)/engines* $(LIB_DIR)/libcrypto* $(LIB_DIR)/pkgconfig/libcrypto* $(LIB_DIR)/pkgconfig/libssl* 
+
+include ../mklib/pkggnu.mk
+include ../mklib/packages.mk

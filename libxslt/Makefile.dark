@@ -1,0 +1,11 @@
+include ../mklib/build.mk
+
+pkg_name := xslt
+pkg_version := 1.1.26
+pkg_release := 1
+
+CONFIG_OPTS += --with-libxml-src=../libxml2 --with-python=$(BUILD_ROOT)$(PREFIX_DIR) --with-gnu-ld
+REMOVE_PATHS += $(LIB_DIR)/libexslt* $(INCLUDE_DIR)/libexslt* $(LIB_DIR)/pkgconfig/libexslt* $(BIN_DIR)/xslt* $(MAN_DIR)/*/xslt* $(MAN_DIR)/*/lib*xslt* $(SHARE_DIR)/man/*/xslt* $(SHARE_DIR)/man/*/lib*xslt* $(LIB_DIR)/xslt*
+
+include ../mklib/pkggnu.mk
+include ../mklib/packages.mk

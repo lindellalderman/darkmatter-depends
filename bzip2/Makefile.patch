@@ -1,0 +1,54 @@
+--- Makefile.orig	2009-06-20 15:44:20.000000000 -0700
++++ Makefile	2010-10-17 12:25:28.741530231 -0700
+@@ -11,6 +11,7 @@
+ # This program is released under the terms of the license contained
+ # in the file LICENSE.
+ # ------------------------------------------------------------------
++include ../lib.mk
+ 
+ SHELL=/bin/sh
+ 
+@@ -21,10 +22,10 @@
+ LDFLAGS=
+ 
+ BIGFILES=-D_FILE_OFFSET_BITS=64
+-CFLAGS=-Wall -Winline -O2 -g $(BIGFILES)
++CFLAGS=-Wall -Winline -O2 -fPIC -g $(BIGFILES)
+ 
+ # Where you want it installed when you do 'make install'
+-PREFIX=/usr/local
++PREFIX=$(TOPDIR)
+ 
+ 
+ OBJS= blocksort.o  \
+@@ -99,14 +100,22 @@
+ 	cp -f bzdiff $(PREFIX)/bin/bzdiff
+ 	ln -s -f $(PREFIX)/bin/bzdiff $(PREFIX)/bin/bzcmp
+ 	chmod a+x $(PREFIX)/bin/bzdiff
+-	cp -f bzgrep.1 bzmore.1 bzdiff.1 $(PREFIX)/man/man1
+-	chmod a+r $(PREFIX)/man/man1/bzgrep.1
+-	chmod a+r $(PREFIX)/man/man1/bzmore.1
+-	chmod a+r $(PREFIX)/man/man1/bzdiff.1
+-	echo ".so man1/bzgrep.1" > $(PREFIX)/man/man1/bzegrep.1
+-	echo ".so man1/bzgrep.1" > $(PREFIX)/man/man1/bzfgrep.1
+-	echo ".so man1/bzmore.1" > $(PREFIX)/man/man1/bzless.1
+-	echo ".so man1/bzdiff.1" > $(PREFIX)/man/man1/bzcmp.1
++
++uninstall:
++	rm -f $(PREFIX)/bin/bzip2
++	rm -f $(PREFIX)/bin/bunzip2
++	rm -f $(PREFIX)/bin/bzcat
++	rm -f $(PREFIX)/bin/bzip2recover
++	rm -f $(PREFIX)/man/man1/bzip2.1
++	rm -f $(PREFIX)/include/bzlib.h
++	rm -f $(PREFIX)/lib/libbz2.a
++	rm -f $(PREFIX)/bin/bzgrep
++	rm -f $(PREFIX)/bin/bzegrep
++	rm -f $(PREFIX)/bin/bzfgrep
++	rm -f $(PREFIX)/bin/bzmore
++	rm -f $(PREFIX)/bin/bzless
++	rm -f $(PREFIX)/bin/bzdiff
++	rm -f $(PREFIX)/bin/bzcmp
+ 
+ clean: 
+ 	rm -f *.o libbz2.a bzip2 bzip2recover \

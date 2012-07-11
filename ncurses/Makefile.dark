@@ -1,0 +1,17 @@
+include ../mklib/build.mk
+
+pkg_name := ncurses
+pkg_version := 5.7
+pkg_release := 1
+
+CXXFLAGS += -fPIC
+ifdef SUNOS
+LDFLAGS += -Wl,-mimpure-text 
+endif
+CONFIG_OPTS += --enable-sigwinch
+# --with-libtool
+
+REMOVE_PATHS += $(BIN_DIR)/clear $(BIN_DIR)/terminfo $(BIN_DIR)/ncurs* $(BIN_DIR)/captoinfo $(BIN_DIR)/infocmp $(BIN_DIR)/tic $(BIN_DIR)/toe $(BIN_DIR)/infotocap $(BIN_DIR)/reset $(BUILDROOT)$(BIN_DIR)/tset $(BIN_DIR)/tput $(LIB_DIR)/libncurs* $(INCLUDE_DIR)/ncurses* $(LIB_DIR)/libpanel* $(LIB_DIR)/libmenu* $(LIB_DIR)/libform* $(SHARE_DIR)/tabset $(SHARE_DIR)/terminfo $(LIB_DIR)/terminfo 
+
+include ../mklib/pkggnu.mk
+include ../mklib/packages.mk

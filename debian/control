@@ -1,0 +1,14 @@
+Source: darkmatter-stack
+Section: devel
+Priority: extra
+Maintainer: Lindell Alderman <lindell.alderman@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), cmake, autoconf, automake, libtool, xutils-dev, patch, gcc, g++, git, psutils, texinfo, uuid-dev, uuid-runtime, libaio-dev, libaio1, ragel
+Standards-Version: 3.9.1
+Homepage: http://www.darkmatter.net/
+#Vcs-Git: git://git.debian.org/collab-maint/darkmatter-stack.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/darkmatter-stack.git;a=summary
+
+Package: darkmatter-stack
+Architecture: amd64 i386
+Depends: ${shlibs:Depends}, ${misc:Depends}, libgcc1, psutils, uuid-runtime, libaio1
+Description: 3rd party dependencies for DarkMatter

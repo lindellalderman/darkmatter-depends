@@ -1,0 +1,14 @@
+include ../mklib/build.mk
+
+pkg_name := zlib
+pkg_version := 1.2.5
+pkg_release := 1
+
+ifdef x86_64
+CONFIG_OPTS += --64
+endif
+
+REMOVE_PATHS += $(LIB_DIR)/libz* $(INCLUDE_DIR)/zconf*
+
+include ../mklib/pkggnu.mk
+include ../mklib/packages.mk

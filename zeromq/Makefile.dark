@@ -1,0 +1,10 @@
+include ../mklib/build.mk
+
+pkg_name := zeromq
+pkg_version := 2.1.7
+pkg_release := 1
+
+REMOVE_PATHS += $(INCLUDE_DIR)/*zmq* $(LIB_DIR)/*zmq* $(SHARE_DIR)/man/*/zmq_* $(MAN_DIR)/*/zmq_*
+
+include ../mklib/pkggnu.mk
+include ../mklib/packages.mk

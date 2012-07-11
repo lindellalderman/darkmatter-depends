@@ -1,0 +1,10 @@
+include ../mklib/build.mk
+
+pkg_name := epydoc
+pkg_version := 3.0.1
+pkg_release := 1
+
+REMOVE_PATHS += $(BIN_DIR)//apirst2html.py
+
+include ../mklib/pkgpy.mk
+include ../mklib/packages.mk

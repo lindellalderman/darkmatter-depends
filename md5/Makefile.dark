@@ -1,0 +1,30 @@
+include ../mklib/build.mk
+
+pkg_name := md5
+pkg_version := 1.6
+pkg_release := 1
+
+define pkg_configure
+	$(QUIET) echo "no configuration necessary"
+endef
+
+define pkg_clean
+	$(QUIET) echo "no cleaning necessary"
+endef
+
+define pkg_build
+	$(BUILD_FLAGS) $(CC) $(CPP_FLAGS) $(CFLAGS) -c md5.c || exit $?
+	$(BUILD_FLAGS) $(CC) $(CPP_FLAGS) $(CFLAGS) -c md5main.c || exit $?
+	$(BUILD_FLAGS) $(CC) $(LDFLAGS) -o md5 md5main.o md5.o $(LIBS) || exit $?
+endef
+
+define pkg_remove
+	rm -f $(BUILD_ROOT)$(BIN_DIR)/md5 || true
+endef
+
+define pkg_install
+	mkdir -p $(BUILD_ROOT)$(BIN_DIR) || exit $?
+	cp md5 $(BUILD_ROOT)$(BIN_DIR) || exit $?
+endef
+
+include ../mklib/packages.mk

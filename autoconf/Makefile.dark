@@ -1,0 +1,12 @@
+include ../mklib/build.mk
+
+pkg_name := autoconf
+pkg_version := 2.68
+pkg_release := 1
+
+CONFIG_OPTS := --prefix=$(BUILD_ROOT)$(PREFIX_DIR)
+BUILD_ROOT_ONLY := 1
+REMOVE_PATHS += $(SHARE_DIR)/emacs/site-lisp/auto*
+
+include ../mklib/pkggnu.mk
+include ../mklib/packages.mk

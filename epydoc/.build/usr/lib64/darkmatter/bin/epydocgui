@@ -1,0 +1,7 @@
+#!/home/lindell/git/dm-stack/.build/usr/lib64/darkmatter/bin/python
+#
+# Call the graphical interface for Epydoc.
+#
+
+from epydoc.gui import gui
+gui()

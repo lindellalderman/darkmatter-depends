@@ -1,0 +1,14 @@
+include ../mklib/build.mk
+
+pkg_name := gdbm
+pkg_version := 1.8.3
+pkg_release := 1
+
+REMOVE_PATHS = $(INCLUDE_DIR)/gdbm* $(LIB_DIR)/libgdbm* $(MAN_DIR)/*/gdbm* $(SHARE_DIR)/man/*/gdbm*
+
+define pkg_postconfigure
+	sed -i 's/\-o.*BINOWN.*-g.*BINGRP/$$(_blah_/g' Makefile
+endef
+
+include ../mklib/pkggnu.mk
+include ../mklib/packages.mk

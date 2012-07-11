@@ -1,0 +1,53 @@
+darkmatter-stack (0.5.8) unstable; urgency=low
+
+  * Add libeio to stack
+
+ -- Lindell Alderman <lindell.alderman@gmail.com>  Sat, 09 Jul 2011 23:51:04 -0700
+
+darkmatter-stack (0.5.7) unstable; urgency=low
+
+  * Add zeromq and hiredis to stack
+
+ -- Lindell Alderman <lindell.alderman@gmail.com>  Sat, 09 Jul 2011 23:51:04 -0700
+
+darkmatter-stack (0.5.6) unstable; urgency=low
+
+  * Clean up references to build root
+
+ -- Lindell Alderman <lindell.alderman@gmail.com>  Sat, 09 Jul 2011 23:51:04 -0700
+
+darkmatter-stack (0.5.5) unstable; urgency=low
+
+  * Testing single debian control file for amd64/i386
+
+ -- Lindell Alderman <lindell.alderman@gmail.com>  Sat, 09 Jul 2011 23:51:04 -0700
+
+darkmatter-stack (0.5.4) unstable; urgency=low
+
+  * Testing single debian control file for amd64/i386
+
+ -- Lindell Alderman <lindell.alderman@gmail.com>  Sat, 09 Jul 2011 23:51:04 -0700
+
+darkmatter-stack (0.5.3) unstable; urgency=low
+
+  * More cleanup
+
+ -- Lindell Alderman <lindell.alderman@gmail.com>  Sat, 09 Jul 2011 23:51:04 -0700
+
+darkmatter-stack (0.5.2) unstable; urgency=low
+
+  * Add darkmatter bashrc
+
+ -- Lindell Alderman <lindell.alderman@gmail.com>  Sat, 09 Jul 2011 23:51:04 -0700
+
+darkmatter-stack (0.5.1) unstable; urgency=low
+
+  * Add darkmatter bashrc
+
+ -- Lindell Alderman <lindell.alderman@gmail.com>  Sat, 09 Jul 2011 23:51:04 -0700
+
+darkmatter-stack (0.5.0) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Lindell Alderman <lindell.alderman@gmail.com>  Sat, 09 Jul 2011 02:05:41 -0700

@@ -1,0 +1,58 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+# Sample debian/rules that uses debhelper.
+# This file was originally written by Joey Hess and Craig Small.
+# As a special exception, when this file is copied by dh-make into a
+# dh-make output file, you may use that output file without restriction.
+# This special exception was added by Craig Small in version 0.37 of dh-make.
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+DEB_HOST_GNU_TYPE  ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
+DEB_BUILD_GNU_TYPE ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
+SRC_DIR := $(CURDIR)
+
+configure: .configure-stamp
+.configure-stamp:
+	dh_testdir
+	touch $@
+
+build-info:
+	$(MAKE) build-info PACKAGE=ubuntu
+
+clean: build-info
+	dh_testdir
+	$(MAKE) clean $(OPTS)
+	dh_clean .build-stamp .configure-stamp
+
+build: .build-stamp
+.build-stamp: .configure-stamp
+	dh_testdir
+	$(MAKE) PACKAGE=ubuntu
+	touch $@
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_prep
+	dh_installdirs
+	$(MAKE) install PACKAGE=ubuntu DESTDIR=$(SRC_DIR)/debian/darkmatter-stack
+
+binary-arch: install
+	dh_testdir
+	dh_testroot
+	dh_link
+	dh_strip
+	dh_compress -X.py
+	dh_fixperms
+	dh_installdeb
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb -- -Z bzip2
+
+binary-indep:
+
+binary: binary-indep binary-arch
+
+.PHONY: build-info configure build clean install binary-arch binary-indep binary

@@ -1,0 +1,30 @@
+include ../mklib/build.mk
+
+pkg_name := postgresql
+pkg_version := 8.4.0
+pkg_release := 1
+
+CFLAGS += -pthread
+BUILD_FLAGS += LDFLAGS_SL="$(LDFLAGS)"
+
+CONFIG_OPTS += --with-pam --with-openssl --enable-thread-safety --with-gnu-ld
+DESTDIRARG  = DESTDIR=$(BUILD_ROOT)
+
+MAKEFILE = GNUmakefile
+
+REMOVE_FILES += $(BIN_DIR)/c_rehash $(LIB_DIR)/libpg* $(LIB_DIR)/libpq* $(INCLUDE_DIR)/postgres* $(INCLUDE_DIR)/pg* $(INCLUDE_DIR)/sql* $(INCLUDE_DIR)/libpq* $(INCLUDE_DIR)/ecpg*
+
+define pkg_postconfigure
+	$(QUIET) echo Remove references to build root from Makefile.global
+	@find  -type f -name Makefile.global -exec sed -i 's/$(shell echo $(BUILD_ROOT) | sed 's/\//\\\//g')//g' "{}" \;
+endef
+
+define pkg_install
+	cd src/include && $(BUILD_FLAGS) $(MAKE) $(INSTALL_TARGET) $(if $(BUILD_ROOT_ONLY),,$(if $(DESTDIRARG),$(DESTDIRARG),$(DESTDIR)=$(BUILD_ROOT))) || exit $?
+	cd src/interfaces && $(BUILD_FLAGS) $(MAKE) $(INSTALL_TARGET) $(if $(BUILD_ROOT_ONLY),,$(if $(DESTDIRARG),$(DESTDIRARG),$(DESTDIR)=$(BUILD_ROOT))) || exit $?
+	cd src/bin/pg_config && $(BUILD_FLAGS) $(MAKE) $(INSTALL_TARGET) $(if $(BUILD_ROOT_ONLY),,$(if $(DESTDIRARG),$(DESTDIRARG),$(DESTDIR)=$(BUILD_ROOT))) || exit $?
+	cd doc && $(BUILD_FLAGS) $(MAKE) install $(if $(BUILD_ROOT_ONLY),,$(if $(DESTDIRARG),$(DESTDIRARG),$(DESTDIR)=$(BUILD_ROOT))) || exit $?
+endef
+
+include ../mklib/pkggnu.mk
+include ../mklib/packages.mk

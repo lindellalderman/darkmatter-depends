@@ -1,0 +1,10 @@
+include ../mklib/build.mk
+
+pkg_name := readline
+pkg_version := 6.0
+pkg_release := 1
+
+REMOVE_PATHS += $(LIB_DIR)/libhistory*
+
+include ../mklib/pkggnu.mk
+include ../mklib/packages.mk
