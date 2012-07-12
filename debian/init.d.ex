@@ -1,6 +1,6 @@
 #!/bin/sh
 ### BEGIN INIT INFO
-# Provides:          darkmatter-stack
+# Provides:          darkmatter-depends
 # Required-Start:    $network $local_fs
 # Required-Stop:
 # Default-Start:     2 3 4 5
@@ -15,9 +15,9 @@
 
 # PATH should only include /usr/* if it runs after the mountnfs.sh script
 PATH=/sbin:/usr/sbin:/bin:/usr/bin
-DESC=darkmatter-stack             # Introduce a short description here
-NAME=darkmatter-stack             # Introduce the short server's name here
-DAEMON=/usr/sbin/darkmatter-stack # Introduce the server's location here
+DESC=darkmatter-depends             # Introduce a short description here
+NAME=darkmatter-depends             # Introduce the short server's name here
+DAEMON=/usr/sbin/darkmatter-depends # Introduce the server's location here
 DAEMON_ARGS=""             # Arguments to run the daemon with
 PIDFILE=/var/run/$NAME.pid
 SCRIPTNAME=/etc/init.d/$NAME

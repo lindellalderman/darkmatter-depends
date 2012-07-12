@@ -1,5 +1,5 @@
 #!/bin/sh
-# postrm script for darkmatter-stack
+# postrm script for darkmatter-depends
 #
 # see: dh_installdeb(1)
 

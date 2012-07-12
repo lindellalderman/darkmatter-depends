@@ -1,5 +1,5 @@
 #!/bin/sh
-# postinst script for darkmatter-stack
+# postinst script for darkmatter-depends
 #
 # see: dh_installdeb(1)
 

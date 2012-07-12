@@ -16,16 +16,16 @@
 .\" .sp <n>    insert n+1 empty lines
 .\" for manpage-specific macros, see man(7)
 .SH NAME
-darkmatter-stack \- program to do something
+darkmatter-depends \- program to do something
 .SH SYNOPSIS
-.B darkmatter-stack
+.B darkmatter-depends
 .RI [ options ] " files" ...
 .br
 .B bar
 .RI [ options ] " files" ...
 .SH DESCRIPTION
 This manual page documents briefly the
-.B darkmatter-stack
+.B darkmatter-depends
 and
 .B bar
 commands.
@@ -33,7 +33,7 @@ commands.
 .\" TeX users may be more comfortable with the \fB<whatever>\fP and
 .\" \fI<whatever>\fP escape sequences to invode bold face and italics,
 .\" respectively.
-\fBdarkmatter-stack\fP is a program that...
+\fBdarkmatter-depends\fP is a program that...
 .SH OPTIONS
 These programs follow the usual GNU command line syntax, with long
 options starting with two dashes (`-').
@@ -53,7 +53,7 @@ The programs are documented fully by
 .IR "The Rise and Fall of a Fooish Bar" ,
 available via the Info system.
 .SH AUTHOR
-darkmatter-stack was written by <upstream author>.
+darkmatter-depends was written by <upstream author>.
 .PP
 This manual page was written by Lindell Alderman <lindell.alderman@gmail.com>,
 for the Debian project (and may be used by others).

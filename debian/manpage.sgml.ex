@@ -27,7 +27,7 @@ manpage.1: manpage.sgml
   <!ENTITY dhemail     "<email>lindell.alderman@gmail.com</email>">
   <!ENTITY dhusername  "Lindell Alderman">
   <!ENTITY dhucpackage "<refentrytitle>DARKMATTER-STACK</refentrytitle>">
-  <!ENTITY dhpackage   "darkmatter-stack">
+  <!ENTITY dhpackage   "darkmatter-depends">
 
   <!ENTITY debian      "<productname>Debian</productname>">
   <!ENTITY gnu         "<acronym>GNU</acronym>">

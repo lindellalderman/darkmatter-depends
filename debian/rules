@@ -37,7 +37,7 @@ install: build
 	dh_testroot
 	dh_prep
 	dh_installdirs
-	$(MAKE) install PACKAGE=ubuntu DESTDIR=$(SRC_DIR)/debian/darkmatter-stack
+	$(MAKE) install PACKAGE=ubuntu DESTDIR=$(SRC_DIR)/debian/darkmatter-depends
 
 binary-arch: install
 	dh_testdir
