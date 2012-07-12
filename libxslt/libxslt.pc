@@ -1,4 +1,4 @@
-prefix=/usr/local/lib64/darkmatter
+prefix=/usr/lib64/darkmatter
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
@@ -8,5 +8,5 @@ Name: libxslt
 Version: 1.1.26
 Description: XSLT library version 2.
 Requires: libxml-2.0
-Libs: -L${libdir} -lxslt -L/home/lindell/git/darkmatter-depends/libxml2 -L/usr/local/lib64/darkmatter/lib -lxml2 -L/usr/local/lib64/darkmatter/lib -lz -lm -lc -lm 
+Libs: -L${libdir} -lxslt -L/home/lindell/git/darkmatter-depends/libxml2 -L/usr/lib64/darkmatter/lib -lxml2 -L/usr/lib64/darkmatter/lib -lz -lm -lc -lm 
 Cflags: -I${includedir}

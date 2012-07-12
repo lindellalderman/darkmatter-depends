@@ -1,5 +1,5 @@
-s,@DATADIR@,/usr/local/lib64/darkmatter/share,g
-s,@TERMINFO@,/lib64/terminfo,g
+s,@DATADIR@,/usr/lib64/darkmatter/share,g
+s,@TERMINFO@,/usr/lib64/darkmatter/share/terminfo,g
 s,@NCURSES_MAJOR@,5,g
 s,@NCURSES_MINOR@,7,g
 s,@NCURSES_PATCH@,20081102,g

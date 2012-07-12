@@ -169,9 +169,9 @@ CC = cc
 CCDEPMODE = depmode=gcc3
 
 # Add -Werror if defined
-CFLAGS = -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -fvisibility=hidden 
+CFLAGS = -O2 -fpic -fPIC -fpic -fPIC -g0 -Wno-system-headers -fvisibility=hidden 
 CPP = cc -E
-CPPFLAGS = -isystem /home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2
+CPPFLAGS = -isystem /home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include -isystem /home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/ncurses -isystem /home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/libxml2 -isystem /home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include -isystem /home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/ncurses -isystem /home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/libxml2
 CURLDEBUG_FALSE = 
 CURLDEBUG_TRUE = #
 CYGPATH_W = echo
@@ -192,7 +192,7 @@ INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = ${SHELL} $(install_sh) -c -s
 LD = /usr/bin/ld -m elf_x86_64
-LDFLAGS = -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm
+LDFLAGS = -Wl,-Bsymbolic-functions -L/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/lib -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/lib -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -lc -lm
 LIBOBJS = 
 LIBS = -lrt -lc -lm
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
@@ -218,7 +218,7 @@ PACKAGE_STRING = c-ares 1.7.4
 PACKAGE_TARNAME = c-ares
 PACKAGE_URL = 
 PACKAGE_VERSION = 1.7.4
-PATH = /home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/bin:/sbin:/bin:/usr/sbin:/usr/bin
+PATH = /home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/bin:/sbin:/bin:/usr/sbin:/usr/bin
 PATH_SEPARATOR = :
 RANDOM_FILE = /dev/urandom
 RANLIB = ranlib
@@ -265,7 +265,7 @@ mandir = ${datarootdir}/man
 mkdir_p = mkdir -p --
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /usr/local/lib64/darkmatter
+prefix = /usr/lib64/darkmatter
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin

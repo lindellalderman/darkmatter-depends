@@ -58,7 +58,7 @@ MODEL		= normal
 DESTDIR		= 
 top_srcdir	= ..
 srcdir		= .
-prefix		= /usr/local/lib64/darkmatter
+prefix		= /usr/lib64/darkmatter
 exec_prefix	= ${prefix}
 bindir		= ${exec_prefix}/bin
 libdir		= ${exec_prefix}/lib
@@ -85,10 +85,10 @@ LN_S		= ln -s
 
 CC		= cc
 CPP		= cc -E
-CFLAGS		= -fpic -fPIC -fpic -fPIC  --param max-inline-insns-single=1200
+CFLAGS		= -g -O2 -fpic -fPIC -fpic -fPIC  --param max-inline-insns-single=1200
 
 INCDIR		= $(srcdir)/../include
-CPPFLAGS	= -DHAVE_CONFIG_H -I../ncurses -I$(srcdir) -I. -I../include -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -D_GNU_SOURCE -DNDEBUG -I${includedir}
+CPPFLAGS	= -DHAVE_CONFIG_H -I../ncurses -I$(srcdir) -I. -I../include  -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/ncurses -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/libxml2 -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/ncurses -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/libxml2 -D_GNU_SOURCE -DNDEBUG -I${includedir}
 
 CCFLAGS		= $(CPPFLAGS) $(CFLAGS)
 
@@ -113,7 +113,7 @@ CFLAGS_SHARED	= $(CCFLAGS) -fPIC
 CFLAGS_DEFAULT	= $(CFLAGS_NORMAL)
 
 LINK		= $(LIBTOOL)
-LDFLAGS		= -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm  -lc -lm
+LDFLAGS		= -Wl,-Bsymbolic-functions -L/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -lc -lm  -lc -lm
 
 SHLIB_DIRS	= -L../lib
 SHLIB_LIST	= $(SHLIB_DIRS) 
@@ -155,7 +155,7 @@ AUTO_SRC = \
 
 TEST_DEPS	= ../lib/libncurses.a
 TEST_ARGS	= -static -L../lib -lform -lmenu -lpanel -lncurses  -dynamic 
-TEST_LDFLAGS	=  $(TEST_ARGS) -lc -lm  -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm
+TEST_LDFLAGS	=  $(TEST_ARGS) -lc -lm  -Wl,-Bsymbolic-functions -L/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -lc -lm
 
 TEST_PROGS = \
 	captoinfo$x \
@@ -183,7 +183,7 @@ $(DESTDIR)$(libdir) :
 ../lib : ; mkdir $@
 
 ./fallback.c : $(tinfo)/MKfallback.sh
-	sh -e $(tinfo)/MKfallback.sh /lib64/terminfo ${top_srcdir}/misc/terminfo.src $(FALLBACK_LIST) >$@
+	sh -e $(tinfo)/MKfallback.sh /usr/lib64/darkmatter/share/terminfo ${top_srcdir}/misc/terminfo.src $(FALLBACK_LIST) >$@
 
 ./lib_gen.c : $(base)/MKlib_gen.sh ../include/curses.h
 	sh -e $(base)/MKlib_gen.sh "$(CPP) $(CPPFLAGS)" "$(AWK)" generated <../include/curses.h >$@

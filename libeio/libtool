@@ -132,7 +132,7 @@ old_postuninstall_cmds=""
 LTCC="cc"
 
 # LTCC compiler flags.
-LTCFLAGS="-O3 -fpic -fPIC -fpic -fPIC"
+LTCFLAGS="-O3 -g -O2 -fpic -fPIC -fpic -fPIC"
 
 # Take the output of nm and produce a listing of raw symbols and C names.
 global_symbol_pipe="sed -n -e 's/^.*[	 ]\\([ABCDGIRSTW][ABCDGIRSTW]*\\)[	 ][	 ]*\\([_A-Za-z][_A-Za-z0-9]*\\)\$/\\1 \\2 \\2/p'"
@@ -234,7 +234,7 @@ finish_eval=""
 hardcode_into_libs=yes
 
 # Compile-time system search path for libraries.
-sys_lib_search_path_spec="/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib /lib64/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2 /usr/lib/x86_64-linux-gnu /lib /usr/lib"
+sys_lib_search_path_spec="/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/lib /lib64/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2 /usr/lib/x86_64-linux-gnu /lib /usr/lib"
 
 # Run-time system search path for libraries.
 sys_lib_dlsearch_path_spec="/lib /usr/lib /usr/lib/nvidia-173 /usr/lib32/nvidia-173 /lib32 /usr/lib32 /usr/lib32/alsa-lib /usr/lib/alsa-lib /usr/local/lib /lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu "

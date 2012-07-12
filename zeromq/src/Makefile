@@ -169,13 +169,13 @@ AUTOMAKE = ${SHELL} /home/lindell/git/darkmatter-depends/zeromq/config/missing -
 AWK = mawk
 CC = cc -std=gnu99
 CCDEPMODE = depmode=gcc3
-CFLAGS = -fpic -fPIC -fpic -fPIC
+CFLAGS = -g -O2 -fpic -fPIC -fpic -fPIC
 CPP = cc -std=gnu99 -E
-CPPFLAGS = -pedantic -Werror -Wall -D_GNU_SOURCE -D_REENTRANT -D_THREAD_SAFE -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2
+CPPFLAGS = -pedantic -Werror -Wall -D_GNU_SOURCE -D_REENTRANT -D_THREAD_SAFE  -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/ncurses -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/libxml2 -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/ncurses -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/libxml2
 CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=gcc3
-CXXFLAGS = -fpic -fPIC -fpic -fPIC
+CXXFLAGS = -g -O2 -fpic -fPIC -fpic -fPIC
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
@@ -195,7 +195,7 @@ INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LD = /usr/bin/ld -m elf_x86_64
-LDFLAGS = -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm
+LDFLAGS = -Wl,-Bsymbolic-functions -L/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -lc -lm
 LIBOBJS = 
 LIBS = -luuid -lrt -lpthread -lc -lm
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
@@ -226,7 +226,7 @@ PACKAGE_VERSION = 2.1.7
 PATH_SEPARATOR = :
 PKG_CONFIG = 
 PKG_CONFIG_LIBDIR = 
-PKG_CONFIG_PATH = /home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/pkgconfig
+PKG_CONFIG_PATH = /home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/lib/pkgconfig
 RANLIB = ranlib
 SED = /bin/sed
 SET_MAKE = 
@@ -281,7 +281,7 @@ pdfdir = ${docdir}
 pgm_basename = libpgm-5.1.115~dfsg
 pgm_srcdir = 
 pgm_subdir = 
-prefix = /usr/local/lib64/darkmatter
+prefix = /usr/lib64/darkmatter
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin

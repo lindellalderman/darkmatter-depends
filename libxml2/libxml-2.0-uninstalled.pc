@@ -8,5 +8,5 @@ Name: libXML
 Version: 2.7.8
 Description: libXML library version2.
 Requires:
-Libs: -L${libdir} -lxml2  -L/usr/local/lib64/darkmatter/lib -lz  -lm -lc -lm
+Libs: -L${libdir} -lxml2  -L/usr/lib64/darkmatter/lib -lz  -lm -lc -lm
 Cflags: -I${includedir} -I${includedir}/libxml2 

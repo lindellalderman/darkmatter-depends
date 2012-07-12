@@ -18,6 +18,6 @@ use vars qw(
     $Cpreprocessor
     );
 
-$Cpreprocessor = 'cc -E -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include';
+$Cpreprocessor = 'cc -E -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include -isystem /home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include -isystem /home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/ncurses -isystem /home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/libxml2 -isystem /home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include -isystem /home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/ncurses -isystem /home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/libxml2 -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include';
 
 1;

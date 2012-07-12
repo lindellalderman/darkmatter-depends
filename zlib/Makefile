@@ -18,14 +18,14 @@
 
 CC=cc
 
-CFLAGS=-fpic -fPIC -fpic -fPIC -D_LARGEFILE64_SOURCE=1
+CFLAGS=-g -O2 -fpic -fPIC -fpic -fPIC -D_LARGEFILE64_SOURCE=1
 #CFLAGS=-O -DMAX_WBITS=14 -DMAX_MEM_LEVEL=7
 #CFLAGS=-g -DDEBUG
 #CFLAGS=-O3 -Wall -Wwrite-strings -Wpointer-arith -Wconversion \
 #           -Wstrict-prototypes -Wmissing-prototypes
 
-SFLAGS=-fpic -fPIC -fpic -fPIC -D_LARGEFILE64_SOURCE=1
-LDFLAGS=-L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm -L. libz.a
+SFLAGS=-g -O2 -fpic -fPIC -fpic -fPIC -D_LARGEFILE64_SOURCE=1
+LDFLAGS=-Wl,-Bsymbolic-functions -L/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -lc -lm -L. libz.a
 TEST_LDFLAGS=-L. libz.a
 LDSHARED=cc -shared
 CPP=cc -E
@@ -44,7 +44,7 @@ TAR=tar
 SHELL=/bin/sh
 EXE=
 
-prefix =/usr/local/lib64/darkmatter
+prefix =/usr/lib64/darkmatter
 exec_prefix =${prefix}
 libdir =${exec_prefix}/lib
 sharedlibdir =${libdir}

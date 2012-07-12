@@ -55,7 +55,7 @@ MODEL		= ../objects
 DESTDIR		= 
 top_srcdir	= ..
 srcdir		= .
-prefix		= /usr/local/lib64/darkmatter
+prefix		= /usr/lib64/darkmatter
 exec_prefix	= ${prefix}
 bindir		= ${exec_prefix}/bin
 libdir		= ${exec_prefix}/lib
@@ -78,10 +78,10 @@ LN_S		= ln -s
 
 CC		= cc
 CPP		= cc -E
-CFLAGS		= -fpic -fPIC -fpic -fPIC  --param max-inline-insns-single=1200
+CFLAGS		= -g -O2 -fpic -fPIC -fpic -fPIC  --param max-inline-insns-single=1200
 
 INCDIR		= $(top_srcdir)/include
-CPPFLAGS	= -I../progs -I$(srcdir) -DHAVE_CONFIG_H -I. -I../include -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -D_GNU_SOURCE -DNDEBUG -I${includedir}
+CPPFLAGS	= -I../progs -I$(srcdir) -DHAVE_CONFIG_H -I. -I../include  -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/ncurses -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/libxml2 -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/ncurses -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/libxml2 -D_GNU_SOURCE -DNDEBUG -I${includedir}
 
 CCFLAGS		= $(CPPFLAGS) $(CFLAGS)
 
@@ -99,7 +99,7 @@ LOCAL_LIBDIR	= /home/lindell/git/darkmatter-depends/ncurses/lib
 
 LD		= ld
 LINK		=  $(LIBTOOL_LINK)
-LDFLAGS		=  -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm
+LDFLAGS		=  -Wl,-Bsymbolic-functions -L/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -lc -lm
 
 LDFLAGS_LIBTOOL	= $(LDFLAGS) $(CFLAGS_LIBTOOL)
 LDFLAGS_NORMAL	= $(LDFLAGS) $(CFLAGS_NORMAL)

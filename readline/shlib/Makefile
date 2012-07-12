@@ -51,7 +51,7 @@ SHELL = /bin/sh
 
 host_os = linux-gnu
 
-prefix = /usr/local/lib64/darkmatter
+prefix = /usr/lib64/darkmatter
 exec_prefix = ${prefix}
 includedir = ${prefix}/include
 bindir = ${exec_prefix}/bin
@@ -62,10 +62,10 @@ localedir = ${datarootdir}/locale
 # Support an alternate destination root directory for package building
 DESTDIR =
 
-CFLAGS = -fpic -fPIC -fpic -fPIC
+CFLAGS = -g -O2 -fpic -fPIC -fpic -fPIC
 LOCAL_CFLAGS =  -DRL_LIBRARY_VERSION='"$(RL_LIBRARY_VERSION)"'
-CPPFLAGS = -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2
-LDFLAGS = -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm  -fpic -fPIC -fpic -fPIC
+CPPFLAGS =  -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/ncurses -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/libxml2 -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/ncurses -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/libxml2
+LDFLAGS = -Wl,-Bsymbolic-functions -L/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -lc -lm  -g -O2 -fpic -fPIC -fpic -fPIC
 
 DEFS = -DHAVE_CONFIG_H 
 LOCAL_DEFS = 
@@ -84,7 +84,7 @@ SHOBJ_LDFLAGS = -shared -Wl,-soname,$@
 SHOBJ_XLDFLAGS = 
 SHOBJ_LIBS = 
 
-SHLIB_XLDFLAGS = -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm -Wl,-rpath,$(libdir) -Wl,-soname,`basename $@ $(SHLIB_MINOR)`
+SHLIB_XLDFLAGS = -Wl,-Bsymbolic-functions -L/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -lc -lm -Wl,-rpath,$(libdir) -Wl,-soname,`basename $@ $(SHLIB_MINOR)`
 SHLIB_LIBS = 
 
 SHLIB_DOT = .

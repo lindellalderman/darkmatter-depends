@@ -20,7 +20,7 @@ topdir = ..
 srcdir = .
 VPATH = .
 
-prefix = /usr/local/lib64/darkmatter
+prefix = /usr/lib64/darkmatter
 
 datarootdir = ${prefix}/share
 

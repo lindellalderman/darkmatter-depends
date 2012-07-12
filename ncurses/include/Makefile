@@ -44,7 +44,7 @@ THIS		= Makefile
 
 DESTDIR		= 
 srcdir		= .
-prefix		= /usr/local/lib64/darkmatter
+prefix		= /usr/lib64/darkmatter
 exec_prefix	= ${prefix}
 includedir	= ${prefix}/include/ncurses
 

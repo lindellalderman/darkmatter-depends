@@ -4,7 +4,7 @@
 #              | (_|_____| (_| | | |  __/\__ \
 #               \___|     \__,_|_|  \___||___/
 #
-prefix=/usr/local/lib64/darkmatter
+prefix=/usr/lib64/darkmatter
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

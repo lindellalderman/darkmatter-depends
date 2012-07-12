@@ -5,7 +5,7 @@
 # AdaCurses.
 #
 
-prefix="/usr/local/lib64/darkmatter"
+prefix="/usr/lib64/darkmatter"
 exec_prefix="${prefix}"
 libdir="${exec_prefix}/lib"
 

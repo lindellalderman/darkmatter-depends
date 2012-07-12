@@ -48,7 +48,7 @@ PURIFY =
 
 SHELL = /bin/sh
 
-prefix = /usr/local/lib64/darkmatter
+prefix = /usr/lib64/darkmatter
 exec_prefix = ${prefix}
 
 datarootdir = ${prefix}/share
@@ -71,9 +71,9 @@ DESTDIR =
 ETAGS = etags -tw
 CTAGS = ctags -tw
 
-CFLAGS = -fpic -fPIC -fpic -fPIC
+CFLAGS = -g -O2 -fpic -fPIC -fpic -fPIC
 LOCAL_CFLAGS =  -DRL_LIBRARY_VERSION='"$(RL_LIBRARY_VERSION)"'
-CPPFLAGS = -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2
+CPPFLAGS =  -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/ncurses -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/libxml2 -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/ncurses -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/libxml2
 
 DEFS = -DHAVE_CONFIG_H 
 LOCAL_DEFS = 
@@ -90,7 +90,7 @@ CCFLAGS = $(XCCFLAGS) $(LOCAL_CFLAGS) $(CFLAGS)
 GCC_LINT_FLAGS = -ansi -Wall -Wshadow -Wpointer-arith -Wcast-qual \
 		 -Wwrite-strings -Wstrict-prototypes \
 		 -Wmissing-prototypes -Wno-implicit -pedantic
-GCC_LINT_CFLAGS = $(XCCFLAGS) $(GCC_LINT_FLAGS) -fpic -fPIC -fpic -fPIC 
+GCC_LINT_CFLAGS = $(XCCFLAGS) $(GCC_LINT_FLAGS) -g -O2 -fpic -fPIC -fpic -fPIC 
 
 .c.o:
 	${RM} $@

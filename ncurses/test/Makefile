@@ -44,7 +44,7 @@ o		= .o
 
 MODEL		= ../objects
 srcdir		= .
-prefix		= /usr/local/lib64/darkmatter
+prefix		= /usr/lib64/darkmatter
 exec_prefix	= ${prefix}
 libdir		= ${exec_prefix}/lib
 includedir	= ${prefix}/include/ncurses
@@ -57,8 +57,8 @@ LIBTOOL_LINK	= ${CC}
 CC		= cc
 CPP		= cc -E
 
-CFLAGS		= -fpic -fPIC -fpic -fPIC  --param max-inline-insns-single=1200 
-CPPFLAGS	=  -I../test -I$(srcdir) -DHAVE_CONFIG_H -I. -I../include -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -D_GNU_SOURCE -DNDEBUG -I${includedir}
+CFLAGS		= -g -O2 -fpic -fPIC -fpic -fPIC  --param max-inline-insns-single=1200 
+CPPFLAGS	=  -I../test -I$(srcdir) -DHAVE_CONFIG_H -I. -I../include  -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/ncurses -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/libxml2 -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/ncurses -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/libxml2 -D_GNU_SOURCE -DNDEBUG -I${includedir}
 
 CCFLAGS		= $(CPPFLAGS) $(CFLAGS)
 
@@ -80,7 +80,7 @@ TEST_LIBS	= -lutil
 LD		= ld
 LINK		=  $(LIBTOOL_LINK) $(CFLAGS)
 
-LDFLAGS		=   -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm
+LDFLAGS		=   -Wl,-Bsymbolic-functions -L/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -lc -lm
 
 LDFLAGS_LIBTOOL	= $(LDFLAGS) $(CFLAGS_LIBTOOL)
 LDFLAGS_NORMAL	= $(LDFLAGS) $(CFLAGS_NORMAL)
