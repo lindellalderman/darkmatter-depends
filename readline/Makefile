@@ -29,7 +29,7 @@ PACKAGE_VERSION = 6.0
 srcdir = .
 VPATH = .
 top_srcdir = .
-BUILD_DIR = /root/darkmatter-depends/readline
+BUILD_DIR = /home/lindell/git/darkmatter-depends/readline
 
 INSTALL = /usr/bin/install -c
 INSTALL_PROGRAM = ${INSTALL}
@@ -73,7 +73,7 @@ CTAGS = ctags -tw
 
 CFLAGS = -fpic -fPIC -fpic -fPIC
 LOCAL_CFLAGS =  -DRL_LIBRARY_VERSION='"$(RL_LIBRARY_VERSION)"'
-CPPFLAGS = -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2
+CPPFLAGS = -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2
 
 DEFS = -DHAVE_CONFIG_H 
 LOCAL_DEFS = 

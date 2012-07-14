@@ -10,9 +10,9 @@ if test -n "${ZSH_VERSION+set}" && (emulate sh) >/dev/null 2>&1; then
   alias -g '${1+"$@"}'='"$@"'
 fi
 
-perllibdir="/root/darkmatter-depends/automake/tests/.././lib:/root/darkmatter-depends/automake/tests/../lib"
+perllibdir="/home/lindell/git/darkmatter-depends/automake/lib:/home/lindell/git/darkmatter-depends/automake/lib"
 export perllibdir
 # Most of the files are in $srcdir/../m4.  However amversion.m4 is
 # generated in ../m4, so we include that directory in the search path too.
-exec /root/darkmatter-depends/automake/tests/.././aclocal \
-     -I /root/darkmatter-depends/automake/tests/.././m4 --acdir=/root/darkmatter-depends/automake/tests/../m4 ${1+"$@"}
+exec /home/lindell/git/darkmatter-depends/automake/aclocal \
+     -I /home/lindell/git/darkmatter-depends/automake/m4 --acdir=/home/lindell/git/darkmatter-depends/automake/m4 ${1+"$@"}

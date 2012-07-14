@@ -1,9 +1,8 @@
-This is automake.info, produced by makeinfo version 4.7 from
+This is automake.info, produced by makeinfo version 4.13 from
 automake.texi.
 
-   This manual is for GNU Automake (version 1.9, 28 July 2004), a
-program which creates GNU standards-compliant Makefiles from template
-files.
+This manual is for GNU Automake (version 1.9, 14 July 2012), a program
+which creates GNU standards-compliant Makefiles from template files.
 
    Copyright (C) 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 2004 Free Software Foundation, Inc.
@@ -36,7 +35,7 @@ File: automake.info,  Node: Top,  Next: Introduction,  Up: (dir)
 GNU Automake
 ************
 
-This manual is for GNU Automake (version 1.9, 28 July 2004), a program
+This manual is for GNU Automake (version 1.9, 14 July 2012), a program
 which creates GNU standards-compliant Makefiles from template files.
 
    Copyright (C) 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
@@ -399,12 +398,12 @@ conformance.
      standard is actually published (which may never happen).
 
    For more information on the precise implications of the strictness
-level, see *Note Gnits::.
+level, see *note Gnits::.
 
    Automake also has a special "cygnus" mode which is similar to
 strictness but handled differently.  This mode is useful for packages
 which are put into a "Cygnus" style tree (e.g., the GCC tree).  For
-more information on this mode, see *Note Cygnus::.
+more information on this mode, see *note Cygnus::.
 
 
 File: automake.info,  Node: Uniform,  Next: Canonicalization,  Prev: Strictness,  Up: Generalities
@@ -696,7 +695,7 @@ processing, and has a manual and a test suite.
    Here is the `configure.ac' from GNU Hello.  *Please note:* The calls
 to `AC_INIT' and `AM_INIT_AUTOMAKE' in this example use a deprecated
 syntax.  For the current approach, see the description of
-`AM_INIT_AUTOMAKE' in *Note Public macros::.
+`AM_INIT_AUTOMAKE' in *note Public macros::.
 
      dnl Process this file with autoconf to produce a configure script.
      AC_INIT(src/hello.c)
@@ -907,7 +906,7 @@ purpose.
 
 `--cygnus'
      Causes the generated `Makefile.in's to follow Cygnus rules, instead
-     of GNU or Gnits rules.  For more information, see *Note Cygnus::.
+     of GNU or Gnits rules.  For more information, see *note Cygnus::.
 
 `-f'
 `--force-missing'
@@ -918,15 +917,15 @@ purpose.
 
 `--foreign'
      Set the global strictness to `foreign'.  For more information, see
-     *Note Strictness::.
+     *note Strictness::.
 
 `--gnits'
      Set the global strictness to `gnits'.  For more information, see
-     *Note Gnits::.
+     *note Gnits::.
 
 `--gnu'
      Set the global strictness to `gnu'.  For more information, see
-     *Note Gnits::.  This is the default strictness.
+     *note Gnits::.  This is the default strictness.
 
 `--help'
      Print a summary of the command line options and exit.
@@ -934,7 +933,7 @@ purpose.
 `-i'
 `--ignore-deps'
      This disables the dependency tracking feature in generated
-     `Makefile's; see *Note Dependencies::.
+     `Makefile's; see *note Dependencies::.
 
 `--include-deps'
      This enables the dependency tracking feature.  This feature is
@@ -1117,7 +1116,7 @@ their effects are:
 `AC_CANONICAL_HOST'
      Automake will ensure that `config.guess' and `config.sub' exist.
      Also, the `Makefile' variables `host_alias' and `host_triplet' are
-     introduced.  See *Note Getting the Canonical System Type:
+     introduced.  See *note Getting the Canonical System Type:
      (autoconf)Canonicalizing.  
 
 `AC_CANONICAL_SYSTEM'
@@ -1191,7 +1190,7 @@ their effects are:
      any `Makefile.am' if `AC_PATH_XTRA' is called.
 
 `AM_C_PROTOTYPES'
-     This is required when using automatic de-ANSI-fication; see *Note
+     This is required when using automatic de-ANSI-fication; see *note
      ANSI::.  
 
 `AM_GNU_GETTEXT'
@@ -1215,7 +1214,7 @@ their effects are:
      `m4_include' is seldom used by `configure.ac' authors, but can
      appear in `aclocal.m4' when `aclocal' detects that some required
      macros come from files local to your package (as opposed to macros
-     installed in a system-wide directory, see *Note Invoking
+     installed in a system-wide directory, see *note Invoking
      aclocal::).
 
 
@@ -1698,7 +1697,7 @@ before doing so: people tend to work faster when they aren't flooded by
 mails.
 
    Another situation where `aclocal' is commonly used is to manage
-macros which are used locally by the package, *Note Local Macros::.
+macros which are used locally by the package, *note Local Macros::.
 
 
 File: automake.info,  Node: Local Macros,  Next: Future of aclocal,  Prev: Extending aclocal,  Up: configure
@@ -1742,7 +1741,7 @@ not really care about the rebuild rules, you should define
    When `aclocal -I m4' is run, it will build a `aclocal.m4' that
 `m4_include's any file from `m4/' that defines a required macro.
 Macros not found locally will still be searched in system-wide
-directories, as explained in *Note Macro search path::.
+directories, as explained in *note Macro search path::.
 
    Custom macros should be distributed for the same reason that
 `configure.ac' is: so that other people have all the sources of your
@@ -1778,7 +1777,7 @@ install Automake just to use `aclocal', but do not use `automake'
 otherwise is an indication of how that feature is misplaced.
 
    The new implementation will probably be done slightly differently.
-For instance it could enforce the `m4/'-style layout discussed in *Note
+For instance it could enforce the `m4/'-style layout discussed in *note
 Local Macros::, and take care of copying (and even updating)
 third-party macros from `/usr/share/aclocal/' into the local `m4/'
 directory.
@@ -1854,7 +1853,7 @@ building of various sorts can occur.  The rules for many targets (e.g.
 in all specified subdirectories.  Note that the directories listed in
 `SUBDIRS' are not required to contain `Makefile.am's; only `Makefile's
 (after configuration).  This allows inclusion of libraries from
-packages which do not use Automake (such as `gettext'; see also *Note
+packages which do not use Automake (such as `gettext'; see also *note
 Third-Party Makefiles::).
 
    In packages that use subdirectories, the top-level `Makefile.am' is
@@ -2275,7 +2274,7 @@ programs can share a single source file, which must be listed in each
 the distribution but otherwise ignored.  In case it isn't obvious, you
 should not include the header file generated by `configure' in a
 `_SOURCES' variable; this file should not be distributed.  Lex (`.l')
-and Yacc (`.y') files can also be listed; see *Note Yacc and Lex::.
+and Yacc (`.y') files can also be listed; see *note Yacc and Lex::.
 
 
 File: automake.info,  Node: Linking,  Next: Conditional Sources,  Prev: Program Sources,  Up: A Program
@@ -2435,7 +2434,7 @@ definition, while listing all optionally built programs in
      libexec_PROGRAMS = $(RMT)
      EXTRA_PROGRAMS = mt rmt
 
-   As explained in *Note EXEEXT::, Automake will rewrite
+   As explained in *note EXEEXT::, Automake will rewrite
 `bin_PROGRAMS', `libexec_PROGRAMS', and `EXTRA_PROGRAMS', appending
 `$(EXEEXT)' to each binary.  Obviously it cannot rewrite values
 obtained at run-time through `configure' substitutions, therefore you
@@ -2650,7 +2649,7 @@ Conditional Sources::).  The only difference is that `_LIBADD' should
 be used instead of `_LDADD' and that it should mention libtool objects
 (`.lo' files).
 
-   So, to mimic the `hello' example from *Note Conditional Sources::,
+   So, to mimic the `hello' example from *note Conditional Sources::,
 we could build a `libhello.la' library using either `hello-linux.c' or
 `hello-generic.c' with the following `Makefile.am'.
 
@@ -2827,7 +2826,7 @@ with a message such as
      object `foo.$(OBJEXT)' created both with libtool and without
 
    A workaround for this issue is to ensure that these two objects get
-different basenames.  As explained in *Note renamed objects::, this
+different basenames.  As explained in *note renamed objects::, this
 happens automatically when per-targets flags are used.
 
      bin_PROGRAMS = prog
@@ -2992,7 +2991,7 @@ libraries differ.
      file like `sample.c' will be compiled to produce `sample.o'.
      However, if the program's `_CFLAGS' variable is set, then the
      object file will be named, for instance, `maude-sample.o'.  (See
-     also *Note renamed objects::.)
+     also *note renamed objects::.)
 
      In compilations with per-target flags, the ordinary `AM_' form of
      the flags variable is _not_ automatically included in the
@@ -3070,7 +3069,7 @@ modules (`moduleN.la'), each defined in its own file (`moduleN.c').
 
    Finally, there is one situation where this default source computation
 needs to be avoided: when a target should not be built from sources.
-We already saw such an example in *Note true::; this happens when all
+We already saw such an example in *note true::; this happens when all
 the constituents of a target have already been compiled and need just
 to be combined using a `_LDADD' variable.  Then it is necessary to
 define an empty `_SOURCES' variable, so that automake does not compute
@@ -3386,7 +3385,7 @@ C++::).
 
    (1) Much, if not most, of the information in the following sections
 pertaining to preprocessing Fortran 77 programs was taken almost
-verbatim from *Note Catalogue of Rules: (make)Catalogue of Rules.
+verbatim from *note Catalogue of Rules: (make)Catalogue of Rules.
 
 
 File: automake.info,  Node: Preprocessing Fortran 77,  Next: Compiling Fortran 77 Files,  Up: Fortran 77 Support
@@ -3633,7 +3632,7 @@ rudimentary support for other languages, support for which will be
 improved based on user demand.
 
    Some limited support for adding your own languages is available via
-the suffix rule handling; see *Note Suffixes::.
+the suffix rule handling; see *note Suffixes::.
 
 
 File: automake.info,  Node: ANSI,  Next: Dependencies,  Prev: Support for Other Languages,  Up: Programs
@@ -4525,7 +4524,7 @@ File: automake.info,  Node: Man pages,  Prev: Texinfo,  Up: Documentation
 ==============
 
 A package can also include man pages (but see the GNU standards on this
-matter, *Note Man Pages: (standards)Man Pages.)  Man pages are declared
+matter, *note Man Pages: (standards)Man Pages.)  Man pages are declared
 using the `MANS' primary.  Generally the `man_MANS' variable is used.
 Man pages are automatically installed in the correct subdirectory of
 `mandir', based on the file extension.  
@@ -4663,7 +4662,7 @@ to be installed, the above command would install
 `/tmp/staging/gnu/bin/foo' and `/tmp/staging/gnu/share/aclocal/foo.m4'.
 
    This feature is commonly used to build install images and packages.
-For more information, see *Note Makefile Conventions:
+For more information, see *note Makefile Conventions:
 (standards)Makefile Conventions.
 
    Support for `DESTDIR' is implemented by coding it directly into the
@@ -4926,7 +4925,7 @@ distributions in various formats.  Their targets are:
      Generate a compressed tar archive of the distribution.  
 
    The rule `dist' (and its historical synonym `dist-all') will create
-archives in all the enabled formats, *Note Options::.  By default, only
+archives in all the enabled formats, *note Options::.  By default, only
 the `dist-gzip' target is hooked to `dist'.
 
 
@@ -5251,9 +5250,9 @@ understood options are:
      `filename-length-max=99' option to catch filenames too long.
 
      `tar-ustar' selects the ustar format defined by POSIX 1003.1-1988.
-     This format is believed to be old enough to be portable.  It
-     fully supports empty directories.  It can stores filenames with up
-     to 256 characters, provided that the filename can be split at
+     This format is believed to be old enough to be portable.  It fully
+     supports empty directories.  It can stores filenames with up to
+     256 characters, provided that the filename can be split at
      directory separator in two parts, first of them being at most 155
      bytes long. So, in most cases the maximum file name length will be
      shorter than 256 characters.  However you may run against broken
@@ -6104,7 +6103,7 @@ All files in CVS
 
         * Or `configure.ac' uses `AM_MAINTAINER_MODE', which will
           disable all these rebuild rules by default.  This is further
-          discussed in *Note maintainer-mode::.
+          discussed in *note maintainer-mode::.
 
    * Although we focused on spurious rebuilds, the converse can also
      happen.  CVS's timestamp handling can also let you think an
@@ -6160,7 +6159,7 @@ or update files in your package.
 
    These files, whether they are kept under CVS or not, raise similar
 concerns about version mismatch between developers' tools.  The Gettext
-manual has a section about this, see *Note CVS Issues: (gettext)CVS
+manual has a section about this, see *note CVS Issues: (gettext)CVS
 Issues.
 
 
@@ -6317,7 +6316,7 @@ File: automake.info,  Node: distcleancheck,  Next: renamed objects,  Prev: wildc
 
 This is a diagnostic you might encounter while running `make distcheck'.
 
-   As explained in *Note Dist::, `make distcheck' attempts to build and
+   As explained in *note Dist::, `make distcheck' attempts to build and
 check your package for errors like this one.
 
    `make distcheck' will perform a `VPATH' build of your package, and
@@ -6424,7 +6423,7 @@ cross-compilation does not matter.
      distributing it.
 
    For desperate cases, it's always possible to disable this check by
-setting `distcleancheck_listfiles' as documented in *Note Dist::.  Make
+setting `distcleancheck_listfiles' as documented in *note Dist::.  Make
 sure you do understand the reason why `make distcheck' complains before
 you do this.  `distcleancheck_listfiles' is a way to _hide_ errors, not
 to fix them.  You can always do better.

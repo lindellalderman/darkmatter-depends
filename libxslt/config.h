@@ -29,7 +29,7 @@
 #define HAVE_FTIME 1
 
 /* Define if gcrypt library is available. */
-/* #undef HAVE_GCRYPT */
+#define HAVE_GCRYPT 1
 
 /* Define to 1 if you have the `gettimeofday' function. */
 #define HAVE_GETTIMEOFDAY 1

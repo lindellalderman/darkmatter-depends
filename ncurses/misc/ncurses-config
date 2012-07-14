@@ -114,7 +114,7 @@ ENDECHO
 		echo "${mandir}"
 		;;
 	--terminfo)
-		echo "/usr/local/lib64/darkmatter/share/terminfo"
+		echo "/lib64/terminfo"
 		;;
 	--terminfo-dirs)
 		echo "/usr/local/lib64/darkmatter/share/terminfo"

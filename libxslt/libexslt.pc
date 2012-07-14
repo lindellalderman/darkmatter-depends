@@ -8,5 +8,5 @@ Name: libexslt
 Version: 0.8.15
 Description: EXSLT Extension library
 Requires: libxml-2.0
-Libs: -L${libdir} -lexslt -lxslt -L/root/darkmatter-depends/libxml2 -L/usr/local/lib64/darkmatter/lib -lxml2 -L/usr/local/lib64/darkmatter/lib -lz -lm -lc -lm  
+Libs: -L${libdir} -lexslt -lxslt -L/home/lindell/git/darkmatter-depends/libxml2 -L/usr/local/lib64/darkmatter/lib -lxml2 -L/usr/local/lib64/darkmatter/lib -lz -lm -lc -lm  -L/lib/x86_64-linux-gnu -lgcrypt
 Cflags: -I${includedir}

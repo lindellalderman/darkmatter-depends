@@ -73,8 +73,8 @@ mostlyclean :
 clean:	mostlyclean
 	rm -f terminfo.5
 
-../edit_man.sed : make_sed.sh no
-	sh $(srcdir)/make_sed.sh no >../edit_man.sed
+../edit_man.sed : make_sed.sh /home/lindell/git/darkmatter-depends/ncurses/man/man_db.renames
+	sh $(srcdir)/make_sed.sh /home/lindell/git/darkmatter-depends/ncurses/man/man_db.renames >../edit_man.sed
 
 distclean realclean: clean
 	rm -f Makefile ../edit_man.* ../man_alias.*

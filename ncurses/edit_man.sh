@@ -9,9 +9,9 @@ NCURSES_MINOR="7"
 NCURSES_PATCH="20081102"
 
 NCURSES_OSPEED="short"
-TERMINFO="/usr/local/lib64/darkmatter/share/terminfo"
+TERMINFO="/lib64/terminfo"
 
-MKDIRS="sh /root/darkmatter-depends/ncurses/mkdirs.sh"
+MKDIRS="sh /home/lindell/git/darkmatter-depends/ncurses/mkdirs.sh"
 
 INSTALL="/usr/bin/install -c"
 INSTALL_DATA="${INSTALL} -m 644"
@@ -61,8 +61,8 @@ case $i in #(vi
 	fi
 
 	# replace variables in man page
-	if test ! -f /root/darkmatter-depends/ncurses/man_alias.sed ; then
-cat >>/root/darkmatter-depends/ncurses/man_alias.sed <<-CF_EOF2
+	if test ! -f /home/lindell/git/darkmatter-depends/ncurses/man_alias.sed ; then
+cat >>/home/lindell/git/darkmatter-depends/ncurses/man_alias.sed <<-CF_EOF2
 		s,@DATADIR@,$datadir,g
 		s,@TERMINFO@,$TERMINFO,g
 		s,@NCURSES_MAJOR@,$NCURSES_MAJOR,g
@@ -77,7 +77,7 @@ s,@TIC@,tic,
 s,@TOE@,toe,
 s,@TPUT@,tput,
 CF_EOF2
-		echo "...made /root/darkmatter-depends/ncurses/man_alias.sed"
+		echo "...made /home/lindell/git/darkmatter-depends/ncurses/man_alias.sed"
 	fi
 
 	aliases=
@@ -88,15 +88,16 @@ CF_EOF2
 		echo .. skipped $cf_source
 		continue
 	fi
-	aliases=`sed -f $top_srcdir/man/manlinks.sed $inalias |sed -f /root/darkmatter-depends/ncurses/man_alias.sed | sort -u`
-	# perform program transformations for section 1 man pages
-	if test $section = 1 ; then
-		cf_target=$cf_subdir${section}/`echo $cf_source|sed "${transform}"`
-	else
-		cf_target=$cf_subdir${section}/$cf_source
+	aliases=`sed -f $top_srcdir/man/manlinks.sed $inalias |sed -f /home/lindell/git/darkmatter-depends/ncurses/man_alias.sed | sort -u`
+	cf_target=`grep "^$cf_source" /home/lindell/git/darkmatter-depends/ncurses/man/man_db.renames | mawk '{print $2}'`
+	if test -z "$cf_target" ; then
+		echo '? missing rename for '$cf_source
+		cf_target="$cf_source"
 	fi
-	sed	-f /root/darkmatter-depends/ncurses/man_alias.sed \
-		< $i >$TMP
+	cf_target="$cf_subdir${section}/${cf_target}"
+
+	sed	-f /home/lindell/git/darkmatter-depends/ncurses/man_alias.sed \
+		< $i | sed -f /home/lindell/git/darkmatter-depends/ncurses/edit_man.sed >$TMP
 if test $cf_tables = yes ; then
 	tbl $TMP >$TMP.out
 	mv $TMP.out $TMP

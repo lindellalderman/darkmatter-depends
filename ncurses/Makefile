@@ -46,7 +46,7 @@ prefix		= /usr/local/lib64/darkmatter
 exec_prefix	= ${prefix}
 
 bindir		= ${exec_prefix}/bin
-ticdir		= /usr/local/lib64/darkmatter/share/terminfo
+ticdir		= /lib64/terminfo
 includedir	= ${prefix}/include/ncurses
 libdir		= ${exec_prefix}/lib
 mandir		= ${prefix}/man
@@ -54,7 +54,7 @@ mandir		= ${prefix}/man
 INSTALL		= /usr/bin/install -c
 INSTALL_DATA	= ${INSTALL} -m 644
 
-DIRS_TO_MAKE	= lib obj_lo
+DIRS_TO_MAKE	= lib objects obj_g
 
 all ::	$(DIRS_TO_MAKE)
 

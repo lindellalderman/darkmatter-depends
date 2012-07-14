@@ -68,7 +68,7 @@
 #define HAVE_SYS_STAT_H 1
 
 /* syscall(__NR_syncfs) is available */
-#define HAVE_SYS_SYNCFS 1
+/* #undef HAVE_SYS_SYNCFS */
 
 /* Define to 1 if you have the <sys/syscall.h> header file. */
 #define HAVE_SYS_SYSCALL_H 1

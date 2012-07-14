@@ -87,8 +87,8 @@
 
 #if !(defined(VMS) || defined(__VMS)) /* VMS uses logical names instead */
 #if defined(HEADER_CRYPTLIB_H) && !defined(OPENSSLDIR)
-#define ENGINESDIR "/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/engines"
-#define OPENSSLDIR "/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/share/openssl"
+#define ENGINESDIR "/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/engines"
+#define OPENSSLDIR "/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/share/openssl"
 #endif
 #endif
 

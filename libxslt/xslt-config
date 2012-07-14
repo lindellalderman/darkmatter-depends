@@ -89,11 +89,11 @@ while test $# -gt 0; do
     shift
 done
 
-the_libs="-L${libdir} -lxslt -L/root/darkmatter-depends/libxml2 -L/usr/local/lib64/darkmatter/lib -lxml2 -L/usr/local/lib64/darkmatter/lib -lz -lm -lc -lm "
+the_libs="-L${libdir} -lxslt -L/home/lindell/git/darkmatter-depends/libxml2 -L/usr/local/lib64/darkmatter/lib -lxml2 -L/usr/local/lib64/darkmatter/lib -lz -lm -lc -lm "
 if test "$includedir" != "/usr/include"; then
-    the_flags="$the_flags -I$includedir `/root/darkmatter-depends/libxml2/xml2-config --cflags`"
+    the_flags="$the_flags -I$includedir `/home/lindell/git/darkmatter-depends/libxml2/xml2-config --cflags`"
 else
-    the_flags="$the_flags `/root/darkmatter-depends/libxml2/xml2-config --cflags`"
+    the_flags="$the_flags `/home/lindell/git/darkmatter-depends/libxml2/xml2-config --cflags`"
 fi
 
 if $cflags; then
