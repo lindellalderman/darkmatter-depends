@@ -598,7 +598,7 @@ s,@GREP@,|#_!!_#|/bin/grep,g
 s,@EGREP@,|#_!!_#|/bin/grep -E,g
 s,@ELF_SYS@,|#_!!_#|true,g
 s,@LDFLAGS_SL@,|#_!!_#|-L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl\,-rpath -Wl\,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl\,-rpath -Wl\,/usr/local/lib64/darkmatter/lib,g
-s,@LD@,|#_!!_#|/usr/x86_64-suse-linux/bin/ld,g
+s,@LD@,|#_!!_#|/usr/bin/ld,g
 CEOF
 cat >"$tmp/subs-2.sed" <<\CEOF
 /@[a-zA-Z_][a-zA-Z_0-9]*@/!b end
@@ -635,10 +635,10 @@ s,@ZIC@,|#_!!_#|,g
 s,@OSSP_UUID_LIBS@,|#_!!_#|,g
 s,@HAVE_IPV6@,|#_!!_#|yes,g
 s,@LIBOBJS@,|#_!!_#| ${LIBOBJDIR}strlcat$U.o ${LIBOBJDIR}strlcpy$U.o,g
-s,@acx_pthread_config@,|#_!!_#|no,g
+s,@acx_pthread_config@,|#_!!_#|,g
 s,@PTHREAD_CC@,|#_!!_#|cc,g
-s,@PTHREAD_LIBS@,|#_!!_#|,g
-s,@PTHREAD_CFLAGS@,|#_!!_#| -D_REENTRANT -D_THREAD_SAFE -D_POSIX_PTHREAD_SEMANTICS,g
+s,@PTHREAD_LIBS@,|#_!!_#| -lpthread     ,g
+s,@PTHREAD_CFLAGS@,|#_!!_#|  -pthread  -D_REENTRANT -D_THREAD_SAFE -D_POSIX_PTHREAD_SEMANTICS,g
 s,@LDAP_LIBS_FE@,|#_!!_#|,g
 s,@LDAP_LIBS_BE@,|#_!!_#|,g
 s,@HAVE_POSIX_SIGNALS@,|#_!!_#|yes,g
@@ -1087,7 +1087,7 @@ s,^\([	 #]*\)[^	 ]*\([	 ]*SIZEOF_OFF_T\)[	 (].*,\1define\2 8 ,
 s,^\([	 #]*\)[^	 ]*\([	 ]*USE_SYSV_SEMAPHORES\)[	 (].*,\1define\2 1 ,
 s,^\([	 #]*\)[^	 ]*\([	 ]*USE_SYSV_SHARED_MEMORY\)[	 (].*,\1define\2 1 ,
 s,^\([	 #]*\)[^	 ]*\([	 ]*MEMSET_LOOP_LIMIT\)[	 (].*,\1define\2 1024 ,
-s,^\([	 #]*\)[^	 ]*\([	 ]*PG_VERSION_STR\)[	 (].*,\1define\2 "PostgreSQL 8.4.0 on x86_64-unknown-linux-gnu\, compiled by GCC cc (SUSE Linux) 4.6.2\, 64-bit" ,
+s,^\([	 #]*\)[^	 ]*\([	 ]*PG_VERSION_STR\)[	 (].*,\1define\2 "PostgreSQL 8.4.0 on x86_64-unknown-linux-gnu\, compiled by GCC cc (GCC) 4.4.6 20120305 (Red Hat 4.4.6-4)\, 64-bit" ,
 s,^\([	 #]*\)[^	 ]*\([	 ]*PG_VERSION_NUM\)[	 (].*,\1define\2 80400 ,
 s/ $//
 s,^[	 #]*u.*,/* & */,

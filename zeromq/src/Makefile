@@ -194,13 +194,13 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-LD = /usr/x86_64-suse-linux/bin/ld -m elf_x86_64
+LD = /usr/bin/ld -m elf_x86_64
 LDFLAGS = -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm
 LIBOBJS = 
 LIBS = -luuid -lrt -lpthread -lc -lm
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIBZMQ_EXTRA_CFLAGS = 
-LIBZMQ_EXTRA_CXXFLAGS = 
+LIBZMQ_EXTRA_CXXFLAGS = -fvisibility=hidden 
 LIBZMQ_EXTRA_LDFLAGS = 
 LIPO = 
 LN_S = ln -s
@@ -208,7 +208,7 @@ LTLIBOBJS =
 LTVER = 1:0:0
 MAKEINFO = ${SHELL} /root/darkmatter-depends/zeromq/config/missing --run makeinfo
 MKDIR_P = /bin/mkdir -p
-NM = /usr/bin/nm
+NM = /usr/bin/nm -B
 NMEDIT = 
 OBJDUMP = objdump
 OBJEXT = o
@@ -432,7 +432,7 @@ libzmq_la_SOURCES = \
 
 libzmq_la_LDFLAGS = -version-info 1:0:0 
 #libzmq_la_LDFLAGS = -no-undefined -avoid-version -version-info 1:0:0 
-libzmq_la_CXXFLAGS = 
+libzmq_la_CXXFLAGS = -fvisibility=hidden 
 #libzmq_la_CPPFLAGS = -I$(top_srcdir)//include/
 #libzmq_la_LIBADD = $(top_srcdir)//libpgm_noinst.la
 all: platform.hpp

@@ -35,7 +35,7 @@ if test "X${CDPATH+set}" = Xset; then CDPATH=:; export CDPATH; fi
 
 # ### BEGIN LIBTOOL CONFIG
 
-# Libtool was configured on host linux-j0lx:
+# Libtool was configured on host centos64:
 
 # Shell to use when invoking shell scripts.
 SHELL="/bin/sh"
@@ -70,13 +70,13 @@ CC="cc"
 with_gcc=yes
 
 # The linker used to build libraries.
-LD="/usr/x86_64-suse-linux/bin/ld"
+LD="/usr/bin/ld"
 
 # Whether we need hard or soft links.
 LN_S="ln -s"
 
 # A BSD-compatible nm program.
-NM="/usr/bin/nm"
+NM="/usr/bin/nm -B"
 
 # A symbol stripping program
 STRIP=strip
@@ -117,13 +117,13 @@ pic_flag=" -fPIC"
 pic_mode=default
 
 # Does compiler simultaneously support -c and -o options?
-compiler_c_o="no"
+compiler_c_o="yes"
 
 # Can we write directly to a .lo ?
-compiler_o_lo="no"
+compiler_o_lo="yes"
 
 # Must we lock files when doing compilation ?
-need_locks="yes"
+need_locks="no"
 
 # Do we need the lib prefix for modules?
 need_lib_prefix=no

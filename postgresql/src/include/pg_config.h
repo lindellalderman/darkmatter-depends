@@ -659,7 +659,7 @@
 #define PG_VERSION_NUM 80400
 
 /* A string containing the version number, platform, and C compiler */
-#define PG_VERSION_STR "PostgreSQL 8.4.0 on x86_64-unknown-linux-gnu, compiled by GCC cc (SUSE Linux) 4.6.2, 64-bit"
+#define PG_VERSION_STR "PostgreSQL 8.4.0 on x86_64-unknown-linux-gnu, compiled by GCC cc (GCC) 4.4.6 20120305 (Red Hat 4.4.6-4), 64-bit"
 
 /* Define to 1 to allow profiling output to be saved separately for each
    process. */

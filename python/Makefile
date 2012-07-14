@@ -35,7 +35,7 @@ MAINCC=		$(CC)
 LINKCC=		$(PURIFY) $(MAINCC)
 AR=		ar
 RANLIB=		ranlib
-SVNVERSION=	svnversion $(srcdir)
+SVNVERSION=	echo Unversioned directory
 
 GNULD=          yes
 
@@ -80,7 +80,7 @@ SLPFLAGS=	-fno-omit-frame-pointer -O2
 
 
 # Machine-dependent subdirectories
-MACHDEP=	linux3
+MACHDEP=	linux2
 
 # Install prefix for architecture-independent files
 prefix=		/usr/local/lib64/darkmatter
