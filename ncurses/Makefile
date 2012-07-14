@@ -54,7 +54,7 @@ mandir		= ${prefix}/man
 INSTALL		= /usr/bin/install -c
 INSTALL_DATA	= ${INSTALL} -m 644
 
-DIRS_TO_MAKE	= lib objects obj_g
+DIRS_TO_MAKE	= lib obj_lo
 
 all ::	$(DIRS_TO_MAKE)
 

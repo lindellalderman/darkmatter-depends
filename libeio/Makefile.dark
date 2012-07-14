@@ -8,5 +8,9 @@ pkg_release := 1
 
 REMOVE_PATHS = $(LIB_DIR)/libeio* $(INCLUDE_DIR)/eio.h
 
+define pkg_preconfigure
+	./autogen.sh
+endef
+
 include ../mklib/pkggnu.mk
 include ../mklib/packages.mk

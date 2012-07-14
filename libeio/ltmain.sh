@@ -1,1 +1,1 @@
-/usr/share/libtool/config/ltmain.sh
+/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/share/libtool/config/ltmain.sh
