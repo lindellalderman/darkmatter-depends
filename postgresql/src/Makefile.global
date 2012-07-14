@@ -34,7 +34,7 @@ MAJORVERSION = 8.4
 
 # Support for VPATH builds
 vpath_build = no
-abs_top_srcdir = /home/lindell/git/darkmatter-depends/postgresql
+abs_top_srcdir = /root/darkmatter-depends/postgresql
 
 ifneq ($(vpath_build),yes)
 top_srcdir = $(top_builddir)
@@ -46,7 +46,7 @@ srcdir = $(top_srcdir)/$(subdir)
 endif
 
 # Saved arguments from configure
-configure_args =  '--prefix=/usr/local/lib64/darkmatter' '--with-pam' '--with-openssl' '--enable-thread-safety' '--with-gnu-ld' 'CC=cc' 'CFLAGS=-fpic -fPIC -fpic -fPIC -pthread' 'LDFLAGS=-L/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm' 'LIBS=-lc -lm' 'CPPFLAGS=-I/usr/local/lib64/darkmatter/include -I/usr/local/lib64/darkmatter/include/ncurses -I/usr/local/lib64/darkmatter/include/libxml2' 'LDFLAGS_SL=-L/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib'
+configure_args =  '--prefix=/usr/local/lib64/darkmatter' '--with-pam' '--with-openssl' '--enable-thread-safety' '--with-gnu-ld' 'CC=cc' 'CFLAGS=-fpic -fPIC -fpic -fPIC -pthread' 'LDFLAGS=-L/lib64 -L/usr/lib64 -L/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm' 'LIBS=-lc -lm' 'CPPFLAGS=-I/usr/local/lib64/darkmatter/include -I/usr/local/lib64/darkmatter/include/ncurses -I/usr/local/lib64/darkmatter/include/libxml2' 'LDFLAGS_SL=-L/lib64 -L/usr/lib64 -L/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib'
 
 
 ##########################################################################
@@ -184,8 +184,8 @@ TCL_INCLUDE_SPEC	=
 TCL_SHARED_BUILD	= 
 TCL_SHLIB_LD_LIBS	= 
 
-PTHREAD_CFLAGS		=  -D_REENTRANT -D_THREAD_SAFE -D_POSIX_PTHREAD_SEMANTICS
-PTHREAD_LIBS		= 
+PTHREAD_CFLAGS		=   -pthread  -D_REENTRANT -D_THREAD_SAFE -D_POSIX_PTHREAD_SEMANTICS
+PTHREAD_LIBS		=  -lpthread     
 
 have_docbook	= no
 DOCBOOKSTYLE	= 
@@ -238,8 +238,8 @@ OSSP_UUID_LIBS =
 LD = /usr/bin/ld
 with_gnu_ld = yes
 ld_R_works = 
-LDFLAGS = -L/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm  -Wl,--as-needed
-LDFLAGS_SL = -L/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib
+LDFLAGS = -L/lib64 -L/usr/lib64 -L/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm  -Wl,--as-needed
+LDFLAGS_SL = -L/lib64 -L/usr/lib64 -L/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib
 LDREL = -r
 LDOUT = -o
 RANLIB = ranlib
@@ -261,7 +261,7 @@ perl_embed_ldflags	=
 
 # Miscellaneous
 
-AWK	= mawk
+AWK	= gawk
 LN_S	= ln -s
 MSGFMT  = 
 MSGMERGE = 

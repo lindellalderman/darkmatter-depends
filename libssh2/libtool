@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /bin/sh
 
 # libtoolT - Provide generalized library-building support services.
 # Generated automatically by  (GNU libssh2 0.18)
@@ -44,10 +44,10 @@ available_tags=" CXX"
 
 # ### BEGIN LIBTOOL CONFIG
 
-# Libtool was configured on host gluon:
+# Libtool was configured on host centos64:
 
 # Shell to use when invoking shell scripts.
-SHELL="/bin/bash"
+SHELL="/bin/sh"
 
 # Whether or not to build shared libraries.
 build_libtool_libs=yes
@@ -103,7 +103,7 @@ LD="/usr/bin/ld -m elf_x86_64"
 LN_S="ln -s"
 
 # A BSD-compatible nm program.
-NM="/usr/bin/nm"
+NM="/usr/bin/nm -B"
 
 # A symbol stripping program
 STRIP="strip"
@@ -147,7 +147,7 @@ pic_flag=" -fPIC -DPIC"
 pic_mode=default
 
 # What is the maximum length of a command?
-max_cmd_len=3458764513820540925
+max_cmd_len=1966080
 
 # Does compiler simultaneously support -c and -o options?
 compiler_c_o="yes"
@@ -171,7 +171,7 @@ dlopen_self=unknown
 dlopen_self_static=unknown
 
 # Compiler flag to prevent dynamic linking.
-link_static_flag="-static"
+link_static_flag=""
 
 # Compiler flag to turn off builtin functions.
 no_builtin_flag=" -fno-builtin"
@@ -325,10 +325,10 @@ variables_saved_for_relink="PATH LD_LIBRARY_PATH LD_RUN_PATH GCC_EXEC_PREFIX COM
 link_all_deplibs=no
 
 # Compile-time system search path for libraries
-sys_lib_search_path_spec="/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib /lib64/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2 /usr/lib/x86_64-linux-gnu /lib /usr/lib"
+sys_lib_search_path_spec="/usr/lib/gcc/x86_64-redhat-linux/4.4.6 /usr/lib64 /lib64 /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib"
 
 # Run-time system search path for libraries
-sys_lib_dlsearch_path_spec="/lib /usr/lib /usr/lib/nvidia-173 /usr/lib32/nvidia-173 /lib32 /usr/lib32 /usr/lib32/alsa-lib /usr/lib/alsa-lib /usr/local/lib /lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu "
+sys_lib_dlsearch_path_spec="/lib /usr/lib "
 
 # Fix the shell variable $srcfile for the compiler.
 fix_srcfile_path=""
@@ -7290,10 +7290,10 @@ disable_libs=static
 # End:
 # ### BEGIN LIBTOOL TAG CONFIG: CXX
 
-# Libtool was configured on host gluon:
+# Libtool was configured on host centos64:
 
 # Shell to use when invoking shell scripts.
-SHELL="/bin/bash"
+SHELL="/bin/sh"
 
 # Whether or not to build shared libraries.
 build_libtool_libs=yes
@@ -7349,7 +7349,7 @@ LD="/usr/bin/ld -m elf_x86_64"
 LN_S="ln -s"
 
 # A BSD-compatible nm program.
-NM="/usr/bin/nm"
+NM="/usr/bin/nm -B"
 
 # A symbol stripping program
 STRIP="strip"
@@ -7393,7 +7393,7 @@ pic_flag=" -fPIC -DPIC"
 pic_mode=default
 
 # What is the maximum length of a command?
-max_cmd_len=3458764513820540925
+max_cmd_len=1966080
 
 # Does compiler simultaneously support -c and -o options?
 compiler_c_o="yes"
@@ -7417,7 +7417,7 @@ dlopen_self=unknown
 dlopen_self_static=unknown
 
 # Compiler flag to prevent dynamic linking.
-link_static_flag="-static"
+link_static_flag=""
 
 # Compiler flag to turn off builtin functions.
 no_builtin_flag=" -fno-builtin"
@@ -7472,11 +7472,11 @@ striplib="strip --strip-unneeded"
 
 # Dependencies to place before the objects being linked to create a
 # shared library.
-predep_objects="/usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/../../../crti.o /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/crtbeginS.o"
+predep_objects="/usr/lib/gcc/x86_64-redhat-linux/4.4.6/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.4.6/crtbeginS.o"
 
 # Dependencies to place after the objects being linked to create a
 # shared library.
-postdep_objects="/usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/crtendS.o /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/../../../crtn.o"
+postdep_objects="/usr/lib/gcc/x86_64-redhat-linux/4.4.6/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/4.4.6/../../../../lib64/crtn.o"
 
 # Dependencies to place before the objects being linked to create a
 # shared library.
@@ -7488,7 +7488,7 @@ postdeps="-lstdc++ -lm -lgcc_s -lc -lgcc_s"
 
 # The library search path used internally by the compiler when linking
 # a shared library.
-compiler_lib_search_path="-L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -L/lib64/x86_64-linux-gnu -L/usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2 -L/usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/../../.. -L/usr/lib/x86_64-linux-gnu"
+compiler_lib_search_path="-L/usr/lib/gcc/x86_64-redhat-linux/4.4.6 -L/usr/lib/gcc/x86_64-redhat-linux/4.4.6 -L/usr/lib/gcc/x86_64-redhat-linux/4.4.6/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -L/usr/lib/gcc/x86_64-redhat-linux/4.4.6/../../.."
 
 # Method to check whether dependent libraries are shared objects.
 deplibs_check_method="pass_all"
@@ -7568,10 +7568,10 @@ variables_saved_for_relink="PATH LD_LIBRARY_PATH LD_RUN_PATH GCC_EXEC_PREFIX COM
 link_all_deplibs=no
 
 # Compile-time system search path for libraries
-sys_lib_search_path_spec="/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib /lib64/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2 /usr/lib/x86_64-linux-gnu /lib /usr/lib"
+sys_lib_search_path_spec="/usr/lib/gcc/x86_64-redhat-linux/4.4.6 /usr/lib64 /lib64 /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib"
 
 # Run-time system search path for libraries
-sys_lib_dlsearch_path_spec="/lib /usr/lib /usr/lib/nvidia-173 /usr/lib32/nvidia-173 /lib32 /usr/lib32 /usr/lib32/alsa-lib /usr/lib/alsa-lib /usr/local/lib /lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu "
+sys_lib_dlsearch_path_spec="/lib /usr/lib "
 
 # Fix the shell variable $srcfile for the compiler.
 fix_srcfile_path=""

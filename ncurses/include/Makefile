@@ -51,7 +51,7 @@ includedir	= ${prefix}/include/ncurses
 INSTALL		= /usr/bin/install -c
 INSTALL_DATA	= ${INSTALL} -m 644
 
-AWK		= mawk
+AWK		= gawk
 LN_S		= ln -s
 
 VERSION		= 5.7
@@ -107,8 +107,8 @@ parametrized.h: $(TERMINFO_CAPS) $(srcdir)/MKparametrized.sh
 tags:
 	ctags *.[ch]
 
-TAGS:
-	etags *.[ch]
+#TAGS:
+#	etags *.[ch]
 
 mostlyclean ::
 	-rm -f core tags TAGS *~ *.bak *.i *.ln *.atac trace

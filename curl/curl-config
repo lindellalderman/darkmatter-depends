@@ -70,7 +70,7 @@ while test $# -gt 0; do
         ;;
 
     --ca)
-	echo ""/etc/ssl/certs/ca-certificates.crt""
+	echo ""/etc/pki/tls/certs/ca-bundle.crt""
 	;;
 
     --cc)
@@ -142,18 +142,18 @@ while test $# -gt 0; do
 	   CURLLIBDIR=""
 	fi
 	if test "Xno" = "Xyes"; then
-	  echo ${CURLLIBDIR}-lcurl -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -lcares -lssh2 -lssl -lcrypto -lrt -lc -lm -lssl -lcrypto -ldl -lz -lssh2 -lc -lm
+	  echo ${CURLLIBDIR}-lcurl -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -lcares -lssh2 -lssl -lcrypto -lrt -lc -lm -lssl -lcrypto -ldl -lz -lssh2 -lc -lm
 	else
-	  echo ${CURLLIBDIR}-lcurl -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -lc -lm
+	  echo ${CURLLIBDIR}-lcurl -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -lc -lm
 	fi
 	;;
 
     --static-libs)
-	echo ${exec_prefix}/lib/libcurl.a -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -lcares -lssh2 -lssl -lcrypto -lrt -lc -lm -lssl -lcrypto -ldl -lz -lssh2 -lc -lm
+	echo ${exec_prefix}/lib/libcurl.a -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -lcares -lssh2 -lssl -lcrypto -lrt -lc -lm -lssl -lcrypto -ldl -lz -lssh2 -lc -lm
 	;;
 
     --configure)
-      echo " '--prefix=/usr/local/lib64/darkmatter' '--with-ssl=/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter' '--with-libssh2=/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter' '--enable-ares=/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter' '--disable-ldap' '--disable-ldaps' '--enable-telnet' '--enable-tftp' '--enable-ftp' '--enable-http' '--enable-crypto-auth' '--enable-cookies' '--enable-static' '--enable-shared' 'CC=cc' 'CFLAGS=-fpic -fPIC -fpic -fPIC' 'LDFLAGS=-L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm' 'LIBS=-lc -lm' 'CPPFLAGS=-I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2'"
+      echo " '--prefix=/usr/local/lib64/darkmatter' '--with-ssl=/root/darkmatter-depends/.build/usr/local/lib64/darkmatter' '--with-libssh2=/root/darkmatter-depends/.build/usr/local/lib64/darkmatter' '--enable-ares=/root/darkmatter-depends/.build/usr/local/lib64/darkmatter' '--disable-ldap' '--disable-ldaps' '--enable-telnet' '--enable-tftp' '--enable-ftp' '--enable-http' '--enable-crypto-auth' '--enable-cookies' '--enable-static' '--enable-shared' 'CC=cc' 'CFLAGS=-fpic -fPIC -fpic -fPIC' 'LDFLAGS=-L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm' 'LIBS=-lc -lm' 'CPPFLAGS=-I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2'"
     ;;
 
     *)

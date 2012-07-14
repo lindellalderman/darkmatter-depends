@@ -65,13 +65,13 @@ test -z "$VERBOSE" && {
 }
 
 # Make sure we override the user shell.
-SHELL='/bin/bash'
+SHELL='/bin/sh'
 export SHELL
 # User can override various tools used.
 test -z "$PERL" && PERL='/usr/bin/perl'
 test -z "$MAKE" && MAKE=make
-test -z "$AUTOCONF" && AUTOCONF="${SHELL} /home/lindell/git/darkmatter-depends/automake/lib/missing --run autoconf"
-test -z "$AUTOHEADER" && AUTOHEADER="${SHELL} /home/lindell/git/darkmatter-depends/automake/lib/missing --run autoheader"
+test -z "$AUTOCONF" && AUTOCONF="${SHELL} /root/darkmatter-depends/automake/lib/missing --run autoconf"
+test -z "$AUTOHEADER" && AUTOHEADER="${SHELL} /root/darkmatter-depends/automake/lib/missing --run autoheader"
 test -z "$AUTOUPDATE" && AUTOUPDATE=autoupdate
 test -z "$MISSING" && MISSING=`pwd`/../lib/missing
 test -z "$ACLOCAL" && ACLOCAL="aclocal-1.9"
@@ -264,7 +264,7 @@ echo "=== Running test $0"
 # Use `-I $srcdir/../m4' in addition to `--acdir=$srcdir/../m4', because the
 # other `-I' directories added for libtool and gettext might contain
 # files from an old version of Automake that we don't want to use.
-aclocaldir='/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/share/aclocal'
+aclocaldir='/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/share/aclocal'
 extra_includes=""
 if [ -f $aclocaldir/dirlist ] ; then
    extra_includes=`(tmp_inc=""

@@ -49,7 +49,7 @@ echo '** Building terminfo database, please wait...'
 : ${top_srcdir=..}
 : ${srcdir=.}
 : ${datadir=${prefix}/share}
-: ${ticdir=/lib64/terminfo}
+: ${ticdir=/usr/local/lib64/darkmatter/share/terminfo}
 : ${source=${top_srcdir}/misc/terminfo.src}
 : ${LN_S="ln -s"}
 : ${THAT_CC=cc}

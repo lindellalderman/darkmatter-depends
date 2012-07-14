@@ -61,7 +61,7 @@ CC		= cc
 HOSTCC		= ${CC}
 
 tabsetdir	= $(datadir)/tabset
-ticdir		= /lib64/terminfo
+ticdir		= /usr/local/lib64/darkmatter/share/terminfo
 ticfile		= $(ticdir).db
 source		= ${top_srcdir}/misc/terminfo.src
 
@@ -133,7 +133,7 @@ uninstall.libs :
 
 tags :
 
-TAGS :
+#TAGS :
 
 mostlyclean :
 	-rm -f terminfo.tmp

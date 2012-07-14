@@ -248,7 +248,7 @@
 
 #define HAVE_POSIX_SIGSETJMP 1
 
-/* #undef CTYPE_NON_ASCII */
+#define CTYPE_NON_ASCII 1
 
 /* modify settings or make new ones based on what autoconf tells us. */
 

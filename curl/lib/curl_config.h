@@ -5,7 +5,7 @@
 /* #undef BUILDING_LIBCURL */
 
 /* Location of default ca bundle */
-#define CURL_CA_BUNDLE "/etc/ssl/certs/ca-certificates.crt"
+#define CURL_CA_BUNDLE "/etc/pki/tls/certs/ca-bundle.crt"
 
 /* Location of default ca path */
 /* #undef CURL_CA_PATH */
@@ -667,7 +667,7 @@
 /* #undef HAVE_STRNICMP */
 
 /* Define to 1 if you have the <stropts.h> header file. */
-#define HAVE_STROPTS_H 1
+/* #undef HAVE_STROPTS_H */
 
 /* Define to 1 if you have the strstr function. */
 #define HAVE_STRSTR 1

@@ -6,7 +6,7 @@
 
 my $openssl;
 
-my $dir = "/home/lindell/git/darkmatter-depends/.build/usr/local/lib64/darkmatter/share/openssl";
+my $dir = "/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/share/openssl";
 
 if(defined $ENV{OPENSSL}) {
 	$openssl = $ENV{OPENSSL};
