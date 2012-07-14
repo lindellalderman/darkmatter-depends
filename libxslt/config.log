@@ -1084,7 +1084,7 @@ configure:12220: $? = 0
 configure:12220: result: yes
 configure:12220: checking for _stat
 configure:12220: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/root/darkmatter-depends/libxml2/.libs -lc -lm conftest.c -lc -lm >&5
-/tmp/ccWfRLL7.o: In function `main':
+/tmp/ccnSNyVN.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `_stat'
 collect2: ld returned 1 exit status
 configure:12220: $? = 1

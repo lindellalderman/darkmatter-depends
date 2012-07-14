@@ -317,7 +317,7 @@ configure:7048: $? = 0
 configure:7066: result: yes
 configure:7077: checking for library containing setproctitle
 configure:7118: cc -o conftest -fpic -fPIC -fpic -fPIC -pthread -Wall -Wmissing-prototypes -Wpointer-arith -Wdeclaration-after-statement -Wendif-labels -fno-strict-aliasing -fwrapv -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -D_GNU_SOURCE  -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm  conftest.c -lm -lc -lm >&5
-/tmp/ccCPtdhc.o: In function `main':
+/tmp/ccmOIcjw.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `setproctitle'
 collect2: ld returned 1 exit status
 configure:7124: $? = 1
@@ -359,7 +359,7 @@ configure: failed program was:
 |   return 0;
 | }
 configure:7118: cc -o conftest -fpic -fPIC -fpic -fPIC -pthread -Wall -Wmissing-prototypes -Wpointer-arith -Wdeclaration-after-statement -Wendif-labels -fno-strict-aliasing -fwrapv -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -D_GNU_SOURCE  -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm  conftest.c -lutil  -lm -lc -lm >&5
-/tmp/ccvYIo2e.o: In function `main':
+/tmp/ccHOxfyC.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `setproctitle'
 collect2: ld returned 1 exit status
 configure:7124: $? = 1
@@ -403,7 +403,7 @@ configure: failed program was:
 configure:7152: result: no
 configure:7160: checking for library containing dlopen
 configure:7201: cc -o conftest -fpic -fPIC -fpic -fPIC -pthread -Wall -Wmissing-prototypes -Wpointer-arith -Wdeclaration-after-statement -Wendif-labels -fno-strict-aliasing -fwrapv -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -D_GNU_SOURCE  -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm  conftest.c -lm -lc -lm >&5
-/tmp/ccR6RyJg.o: In function `main':
+/tmp/ccmY2XbD.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `dlopen'
 collect2: ld returned 1 exit status
 configure:7207: $? = 1
@@ -453,7 +453,7 @@ configure:7290: $? = 0
 configure:7318: result: none required
 configure:7326: checking for library containing shl_load
 configure:7367: cc -o conftest -fpic -fPIC -fpic -fPIC -pthread -Wall -Wmissing-prototypes -Wpointer-arith -Wdeclaration-after-statement -Wendif-labels -fno-strict-aliasing -fwrapv -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -D_GNU_SOURCE  -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm  conftest.c -ldl -lm -lc -lm >&5
-/tmp/ccBcsiPq.o: In function `main':
+/tmp/ccjJ62CN.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `shl_load'
 collect2: ld returned 1 exit status
 configure:7373: $? = 1
@@ -542,7 +542,7 @@ configure:7544: $? = 0
 configure:7572: result: none required
 configure:7580: checking for library containing crypt
 configure:7621: cc -o conftest -fpic -fPIC -fpic -fPIC -pthread -Wall -Wmissing-prototypes -Wpointer-arith -Wdeclaration-after-statement -Wendif-labels -fno-strict-aliasing -fwrapv -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -D_GNU_SOURCE  -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm  conftest.c -ldl -lm -lc -lm >&5
-/tmp/ccPle8Vs.o: In function `main':
+/tmp/cc8PFf4W.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `crypt'
 collect2: ld returned 1 exit status
 configure:7627: $? = 1
@@ -3774,7 +3774,7 @@ configure:16392: $? = 0
 configure:16410: result: yes
 configure:16330: checking for getpeereid
 configure:16386: cc -o conftest -fpic -fPIC -fpic -fPIC -pthread -Wall -Wmissing-prototypes -Wpointer-arith -Wdeclaration-after-statement -Wendif-labels -fno-strict-aliasing -fwrapv -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -D_GNU_SOURCE  -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm  conftest.c -lpam -lssl -lcrypto -lz -lreadline -lncurses -lcrypt -ldl -lm -lc -lm >&5
-/tmp/ccivJqY6.o: In function `main':
+/tmp/ccJFWmeB.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `getpeereid'
 collect2: ld returned 1 exit status
 configure:16392: $? = 1
@@ -3901,7 +3901,7 @@ configure: failed program was:
 configure:16410: result: no
 configure:16330: checking for getpeerucred
 configure:16386: cc -o conftest -fpic -fPIC -fpic -fPIC -pthread -Wall -Wmissing-prototypes -Wpointer-arith -Wdeclaration-after-statement -Wendif-labels -fno-strict-aliasing -fwrapv -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -D_GNU_SOURCE  -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm  conftest.c -lpam -lssl -lcrypto -lz -lreadline -lncurses -lcrypt -ldl -lm -lc -lm >&5
-/tmp/cc0TNp2b.o: In function `main':
+/tmp/cc6TjHsG.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `getpeerucred'
 collect2: ld returned 1 exit status
 configure:16392: $? = 1
@@ -4041,7 +4041,7 @@ configure:16392: $? = 0
 configure:16410: result: yes
 configure:16330: checking for pstat
 configure:16386: cc -o conftest -fpic -fPIC -fpic -fPIC -pthread -Wall -Wmissing-prototypes -Wpointer-arith -Wdeclaration-after-statement -Wendif-labels -fno-strict-aliasing -fwrapv -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -D_GNU_SOURCE  -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm  conftest.c -lpam -lssl -lcrypto -lz -lreadline -lncurses -lcrypt -ldl -lm -lc -lm >&5
-/tmp/ccKgyfQy.o: In function `main':
+/tmp/ccJ2ONx2.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `pstat'
 collect2: ld returned 1 exit status
 configure:16392: $? = 1
@@ -4175,7 +4175,7 @@ configure:16392: $? = 0
 configure:16410: result: yes
 configure:16330: checking for setproctitle
 configure:16386: cc -o conftest -fpic -fPIC -fpic -fPIC -pthread -Wall -Wmissing-prototypes -Wpointer-arith -Wdeclaration-after-statement -Wendif-labels -fno-strict-aliasing -fwrapv -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -D_GNU_SOURCE  -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm  conftest.c -lpam -lssl -lcrypto -lz -lreadline -lncurses -lcrypt -ldl -lm -lc -lm >&5
-/tmp/ccQoimXI.o: In function `main':
+/tmp/ccXw5Bdc.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `setproctitle'
 collect2: ld returned 1 exit status
 configure:16392: $? = 1
@@ -4961,7 +4961,7 @@ configure:17615: $? = 0
 configure:17633: result: yes
 configure:17553: checking for strlcat
 configure:17609: cc -o conftest -fpic -fPIC -fpic -fPIC -pthread -Wall -Wmissing-prototypes -Wpointer-arith -Wdeclaration-after-statement -Wendif-labels -fno-strict-aliasing -fwrapv -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -D_GNU_SOURCE  -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm  conftest.c -lpam -lssl -lcrypto -lz  -lncurses -lcrypt -ldl -lm -lc -lm >&5
-/tmp/ccBeJhTB.o: In function `main':
+/tmp/ccDMPwm9.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `strlcat'
 collect2: ld returned 1 exit status
 configure:17615: $? = 1
@@ -5122,7 +5122,7 @@ configure: failed program was:
 configure:17633: result: no
 configure:17553: checking for strlcpy
 configure:17609: cc -o conftest -fpic -fPIC -fpic -fPIC -pthread -Wall -Wmissing-prototypes -Wpointer-arith -Wdeclaration-after-statement -Wendif-labels -fno-strict-aliasing -fwrapv -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -D_GNU_SOURCE  -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm  conftest.c -lpam -lssl -lcrypto -lz  -lncurses -lcrypt -ldl -lm -lc -lm >&5
-/tmp/ccZ3GepI.o: In function `main':
+/tmp/cc8gmbhe.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `strlcpy'
 collect2: ld returned 1 exit status
 configure:17615: $? = 1
@@ -5345,7 +5345,7 @@ configure:18789: $? = 0
 configure:18806: result: yes
 configure:18816: checking for optreset
 configure:18842: cc -o conftest -fpic -fPIC -fpic -fPIC -pthread -Wall -Wmissing-prototypes -Wpointer-arith -Wdeclaration-after-statement -Wendif-labels -fno-strict-aliasing -fwrapv -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -D_GNU_SOURCE  -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm  conftest.c -lpam -lssl -lcrypto -lz -lreadline -lncurses -lcrypt -ldl -lm -lc -lm >&5
-/tmp/ccMtAetH.o: In function `main':
+/tmp/ccsHvgLg.o: In function `main':
 conftest.c:(.text+0x7): undefined reference to `optreset'
 collect2: ld returned 1 exit status
 configure:18848: $? = 1
@@ -7564,7 +7564,6 @@ config.status:722: creating GNUmakefile
 config.status:722: creating src/Makefile.global
 config.status:722: creating src/include/pg_config.h
 config.status:722: creating src/interfaces/ecpg/include/ecpg_config.h
-config.status:1101: src/interfaces/ecpg/include/ecpg_config.h is unchanged
 config.status:1118: linking ./src/backend/port/tas/dummy.s to src/backend/port/tas.s
 config.status:1118: linking ./src/backend/port/dynloader/linux.c to src/backend/port/dynloader.c
 config.status:1118: linking ./src/backend/port/sysv_sema.c to src/backend/port/pg_sema.c

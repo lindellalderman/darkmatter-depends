@@ -61,7 +61,7 @@ configure:2569: result: x86_64-unknown-linux-gnu
 configure:2598: autobuild project... libssh2
 configure:2604: autobuild revision... 0.18
 configure:2609: autobuild hostname... centos64
-configure:2620: autobuild timestamp... 20120714-010710
+configure:2620: autobuild timestamp... 20120714-012229
 configure:2628: checking host system type
 configure:2643: result: x86_64-unknown-linux-gnu
 configure:2691: checking for style of include used by make

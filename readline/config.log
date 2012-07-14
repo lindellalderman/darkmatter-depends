@@ -1574,7 +1574,7 @@ configure:7493: $? = 0
 configure:7509: result: yes
 configure:7533: checking for tgetent
 configure:7589: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
-/tmp/ccVIrYso.o: In function `main':
+/tmp/ccssdTgh.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `tgetent'
 collect2: ld returned 1 exit status
 configure:7596: $? = 1
@@ -2010,7 +2010,7 @@ configure:8459: $? = 0
 configure:8479: result: yes
 configure:8488: checking for mbscmp
 configure:8544: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
-/tmp/ccHnWucN.o: In function `main':
+/tmp/cc0PT0MJ.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `mbscmp'
 collect2: ld returned 1 exit status
 configure:8551: $? = 1
