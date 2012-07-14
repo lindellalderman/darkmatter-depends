@@ -29,7 +29,7 @@ PACKAGE_VERSION = 6.0
 srcdir = .
 VPATH = .
 top_srcdir = .
-BUILD_DIR = /home/lindell/git/darkmatter-depends/readline
+BUILD_DIR = /root/darkmatter-depends/readline
 
 INSTALL = /usr/bin/install -c
 INSTALL_PROGRAM = ${INSTALL}
@@ -78,7 +78,7 @@ CPPFLAGS =  -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/i
 DEFS = -DHAVE_CONFIG_H 
 LOCAL_DEFS = 
 
-TERMCAP_LIB = -lncurses
+TERMCAP_LIB = -ltermcap
 
 # For libraries which include headers from other libraries.
 INCLUDES = -I. -I$(srcdir)

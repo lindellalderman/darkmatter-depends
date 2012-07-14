@@ -10,6 +10,6 @@ if test -n "${ZSH_VERSION+set}" && (emulate sh) >/dev/null 2>&1; then
   alias -g '${1+"$@"}'='"$@"'
 fi
 
-perllibdir="/home/lindell/git/darkmatter-depends/automake/lib:/home/lindell/git/darkmatter-depends/automake/lib"
+perllibdir="/root/darkmatter-depends/automake/tests/.././lib:/root/darkmatter-depends/automake/tests/../lib"
 export perllibdir
-exec /home/lindell/git/darkmatter-depends/automake/automake --libdir=/home/lindell/git/darkmatter-depends/automake/lib ${1+"$@"}
+exec /root/darkmatter-depends/automake/tests/.././automake --libdir=/root/darkmatter-depends/automake/tests/../lib ${1+"$@"}

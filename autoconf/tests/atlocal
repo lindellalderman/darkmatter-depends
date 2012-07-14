@@ -24,7 +24,7 @@ EGREP='/bin/grep -E'
 SED='/bin/sed'
 
 # We need to know if sh -n is ok.
-ac_cv_sh_n_works='no'
+ac_cv_sh_n_works='yes'
 
 # Check whether the underlying system can manage some unusual
 # symbols in file names.

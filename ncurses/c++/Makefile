@@ -44,7 +44,7 @@ o		= .o
 MODEL		= ../objects
 DESTDIR		= 
 srcdir		= .
-prefix		= /usr/lib64/darkmatter
+prefix		= /usr/local/lib64/darkmatter
 exec_prefix	= ${prefix}
 libdir		= ${exec_prefix}/lib
 includedir	= ${prefix}/include/ncurses
@@ -69,11 +69,11 @@ RANLIB		= ranlib
 
 CXX		= /usr/bin/g++
 CPP		= /usr/bin/g++ -E
-CXXFLAGS	= -g -O2 -fpic -fPIC -fpic -fPIC 
+CXXFLAGS	= -fpic -fPIC -fpic -fPIC 
 CXXLIBS		= 
 
 INCDIR		= ../include
-CPPFLAGS	= -I../c++ -I$(INCDIR) -I$(srcdir) -DHAVE_CONFIG_H -I. -I../include  -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/ncurses -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/libxml2 -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/ncurses -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/libxml2 -D_GNU_SOURCE -DNDEBUG -I${includedir}
+CPPFLAGS	= -I../c++ -I$(INCDIR) -I$(srcdir) -DHAVE_CONFIG_H -I. -I../include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -D_GNU_SOURCE -DNDEBUG -I${includedir}
 
 CC		= ${CXX}
 CCFLAGS		= $(CPPFLAGS) $(CXXFLAGS)
@@ -91,7 +91,7 @@ NCURSES_MINOR	= 7
 REL_VERSION     = 5.7
 ABI_VERSION	= 5
 
-LOCAL_LIBDIR	= /home/lindell/git/darkmatter-depends/ncurses/lib
+LOCAL_LIBDIR	= /root/darkmatter-depends/ncurses/lib
 
 LINK		=  $(LIBTOOL_LINK) 
 SHLIB_DIRS	= -L../lib
@@ -113,7 +113,7 @@ LINK_SHARED	= $(LINK_FLAGS)
 
 TEST_ARGS	= -static -L../lib -lform -lmenu -lpanel -lncurses  -dynamic 
 
-LDFLAGS		= $(TEST_ARGS) -Wl,-Bsymbolic-functions -L/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -lc -lm \
+LDFLAGS		= $(TEST_ARGS) -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm \
 	 -lc -lm  $(CXXLIBS)
 
 LDFLAGS_LIBTOOL	= $(LDFLAGS) $(CFLAGS_LIBTOOL)

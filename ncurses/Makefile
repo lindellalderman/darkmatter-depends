@@ -42,11 +42,11 @@ NCURSES_MAJOR	= 5
 NCURSES_MINOR	= 7
 NCURSES_PATCH	= 20081102
 
-prefix		= /usr/lib64/darkmatter
+prefix		= /usr/local/lib64/darkmatter
 exec_prefix	= ${prefix}
 
 bindir		= ${exec_prefix}/bin
-ticdir		= /usr/lib64/darkmatter/share/terminfo
+ticdir		= /usr/local/lib64/darkmatter/share/terminfo
 includedir	= ${prefix}/include/ncurses
 libdir		= ${exec_prefix}/lib
 mandir		= ${prefix}/man

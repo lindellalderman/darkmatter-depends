@@ -51,7 +51,7 @@ o		= .o
 MODEL		= normal
 DESTDIR		= 
 srcdir		= .
-prefix		= /usr/lib64/darkmatter
+prefix		= /usr/local/lib64/darkmatter
 exec_prefix	= ${prefix}
 bindir		= ${exec_prefix}/bin
 libdir		= ${exec_prefix}/lib
@@ -71,15 +71,15 @@ INSTALL_DATA	= ${INSTALL} -m 644
 
 AR		= ar
 AR_OPTS		= rv
-AWK		= mawk
+AWK		= gawk
 LD		= ld
 LN_S		= ln -s
 
 CC		= cc
 CPP		= cc -E
-CFLAGS		= -g -O2 -fpic -fPIC -fpic -fPIC  --param max-inline-insns-single=1200
+CFLAGS		= -fpic -fPIC -fpic -fPIC  --param max-inline-insns-single=1200
 
-CPPFLAGS	= -I../ncurses -DHAVE_CONFIG_H -I. -I../include  -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/ncurses -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/libxml2 -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/ncurses -I/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/include/libxml2 -D_GNU_SOURCE -DNDEBUG -I${includedir}
+CPPFLAGS	= -I../ncurses -DHAVE_CONFIG_H -I. -I../include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -D_GNU_SOURCE -DNDEBUG -I${includedir}
 
 CCFLAGS		= $(CPPFLAGS) $(CFLAGS)
 
@@ -92,7 +92,7 @@ CFLAGS_SHARED	= $(CCFLAGS) -fPIC
 CFLAGS_DEFAULT	= $(CFLAGS_NORMAL)
 
 LINK		= $(LIBTOOL_LINK)
-LDFLAGS		= -Wl,-Bsymbolic-functions -L/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -L/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/lib64/darkmatter/lib -lc -lm  -lc -lm
+LDFLAGS		= -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm  -lc -lm
 
 SHLIB_DIRS	= -L../lib
 SHLIB_LIST	= $(SHLIB_DIRS) -lncurses 
@@ -148,8 +148,8 @@ MENU_PRIV_H = \
 tags:
 	ctags *.[ch]
 
-TAGS:
-	etags *.[ch]
+#TAGS:
+#	etags *.[ch]
 
 mostlyclean ::
 	-rm -f core tags TAGS *~ *.bak *.i *.ln *.atac trace

@@ -53,7 +53,12 @@ pkg-configure:
 	$(QUIET) echo
 	$(call pkg_predistclean)
 	$(call pkg_distclean)
+	# Make sure these files never exist before build
+	rm -rf Makefile config.status config.log autom4te.cache
 	$(call pkg_clean)
+	@find . -name "*.[oa]" -exec rm -vf "{}" \;
+	@find . -name "*.so" -exec rm -vf "{}" \;
+	@find . -name "*.so.*" -exec rm -vf "{}" \;
 	$(call pkg_preconfigure)
 	$(call pkg_configure)
 	$(call pkg_postconfigure)

@@ -52,6 +52,10 @@ UBUNTU=1
 DEBIAN=1
 endif
 
+ifeq (CentOS,$(shell cat /etc/redhat-release 2> /dev/null | cut -d' ' -f1 ))
+REDHAT=1
+endif
+
 OS_RELEASE := $(shell uname -r)
 
 OS := $(shell uname -s)
@@ -72,7 +76,8 @@ endif
 DIST_ARCH := i386
 DIST_EXT := tar
 ifdef REDHAT
-BUILD_DEPENDS = cmake autoconf imake patch gcc gcc-c++ git psutils texinfo uuid-devel
+BUILD_DEPENDS = cmake autoconf imake patch gcc gcc-c++ git psutils texinfo uuid-devel libaio-devel libaio 
+
 BUILD_DEPEND_INSTALL = yum install -y
 ifdef x86_64
 DIST_ARCH := x86_64

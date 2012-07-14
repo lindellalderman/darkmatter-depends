@@ -120,7 +120,7 @@
 /* #undef LTDL_DLOPEN_DEPLIBS */
 
 /* Define to the system default library search path. */
-#define LT_DLSEARCH_PATH "/lib:/usr/lib:/usr/lib/nvidia-173:/usr/lib32/nvidia-173:/lib32:/usr/lib32:/usr/lib32/alsa-lib:/usr/lib/alsa-lib:/usr/local/lib:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu"
+#define LT_DLSEARCH_PATH "/lib:/usr/lib"
 
 /* The archive extension */
 #define LT_LIBEXT "a"

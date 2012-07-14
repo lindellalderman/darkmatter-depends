@@ -30,12 +30,12 @@ srcdir=		.
 
 
 CC=		cc -pthread
-CXX=		g++ -pthread
+CXX=		g++ -pthread -pthread
 MAINCC=		$(CC)
 LINKCC=		$(PURIFY) $(MAINCC)
 AR=		ar
 RANLIB=		ranlib
-SVNVERSION=	svnversion $(srcdir)
+SVNVERSION=	echo Unversioned directory
 
 GNULD=          yes
 
@@ -138,7 +138,7 @@ MACOSX_DEPLOYMENT_TARGET=
 OTHER_LIBTOOL_OPT=
 
 # Environment to run shared python without installed libraries
-RUNSHARED=       LD_LIBRARY_PATH=/home/lindell/git/darkmatter-depends/python:/home/lindell/git/darkmatter-depends/.build/usr/lib64/darkmatter/lib
+RUNSHARED=       LD_LIBRARY_PATH=/root/darkmatter-depends/python:/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib
 
 # Modes for directories, executables and data files created by the
 # install process.  Default to user-only-writable for all file types.

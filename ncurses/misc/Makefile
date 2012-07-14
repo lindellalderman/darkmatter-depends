@@ -51,7 +51,7 @@ CF_MFLAGS 	=
 DESTDIR		= 
 top_srcdir	= ..
 srcdir		= .
-prefix		= /usr/lib64/darkmatter
+prefix		= /usr/local/lib64/darkmatter
 exec_prefix	= ${prefix}
 bindir		= ${exec_prefix}/bin
 libdir		= ${exec_prefix}/lib
@@ -61,7 +61,7 @@ CC		= cc
 HOSTCC		= ${CC}
 
 tabsetdir	= $(datadir)/tabset
-ticdir		= /usr/lib64/darkmatter/share/terminfo
+ticdir		= /usr/local/lib64/darkmatter/share/terminfo
 ticfile		= $(ticdir).db
 source		= ${top_srcdir}/misc/terminfo.src
 
@@ -133,7 +133,7 @@ uninstall.libs :
 
 tags :
 
-TAGS :
+#TAGS :
 
 mostlyclean :
 	-rm -f terminfo.tmp
