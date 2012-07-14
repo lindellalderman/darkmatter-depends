@@ -46,7 +46,7 @@ extern "C" {
  *
  * Whether crypto support is configured into exslt
  */
-#if 1
+#if 0
 #define EXSLT_CRYPTO_ENABLED
 #endif
 

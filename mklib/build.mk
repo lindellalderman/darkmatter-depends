@@ -76,7 +76,7 @@ endif
 DIST_ARCH := i386
 DIST_EXT := tar
 ifdef REDHAT
-BUILD_DEPENDS = cmake autoconf imake patch gcc gcc-c++ git psutils texinfo uuid-devel libaio-devel libaio glibc-devel compat-glibc
+BUILD_DEPENDS = cmake autoconf imake patch gcc gcc-c++ git psutils texinfo uuid-devel libuuid libuuid-devel pam-devel libaio-devel libaio glibc-devel compat-glibc
 
 BUILD_DEPEND_INSTALL = yum install -y
 ifdef x86_64

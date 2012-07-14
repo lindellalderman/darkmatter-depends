@@ -38,7 +38,7 @@ configure:1088: PATH=".;."; conftest.sh
 configure:1091: $? = 127
 configure:1104: checking for egrep
 configure:1114: result: grep -E
-configure:1128: result: Configuring NCURSES 5.7 ABI 5 (Sat Jul 14 00:26:42 PDT 2012)
+configure:1128: result: Configuring NCURSES 5.7 ABI 5 (Sat Jul 14 01:03:35 PDT 2012)
 configure:1233: checking build system type
 configure:1251: result: x86_64-unknown-linux-gnu
 configure:1258: checking host system type
@@ -819,8 +819,8 @@ configure:12562: $? = 0
 configure:12573: result: yes
 configure:12588: checking if external errno exists
 configure:12610: cc -o conftest -fpic -fPIC -fpic -fPIC  --param max-inline-insns-single=1200 -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -D_GNU_SOURCE -DNDEBUG -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
-/usr/bin/ld: errno@@GLIBC_PRIVATE: TLS definition in /lib64/libc.so.6 section .tbss mismatches non-TLS reference in /tmp/ccBlPA0J.o
-/tmp/ccBlPA0J.o: could not read symbols: Bad value
+/usr/bin/ld: errno@@GLIBC_PRIVATE: TLS definition in /lib64/libc.so.6 section .tbss mismatches non-TLS reference in /tmp/ccoNjrZw.o
+/tmp/ccoNjrZw.o: could not read symbols: Bad value
 collect2: ld returned 1 exit status
 configure:12613: $? = 1
 configure: failed program was:
@@ -875,7 +875,7 @@ configure:12808: $? = 0
 configure:12818: result: yes
 configure:12762: checking for issetugid
 configure:12799: cc -o conftest -fpic -fPIC -fpic -fPIC  --param max-inline-insns-single=1200 -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -D_GNU_SOURCE -DNDEBUG -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
-/tmp/ccXfxAY9.o: In function `main':
+/tmp/cchBmQ8V.o: In function `main':
 conftest.c:(.text+0xe): undefined reference to `issetugid'
 collect2: ld returned 1 exit status
 configure:12802: $? = 1
@@ -1510,7 +1510,7 @@ cf_cv_struct_dirent64=no
 cf_cv_subst_AR_OPTS=rv
 cf_cv_sys_time_select=yes
 cf_cv_system_name=linux-gnu
-cf_cv_timestamp='Sat Jul 14 00:26:42 PDT 2012'
+cf_cv_timestamp='Sat Jul 14 01:03:35 PDT 2012'
 cf_cv_type_of_bool='unsigned char'
 cf_cv_type_sigaction=no
 cf_cv_typeof_chtype=int

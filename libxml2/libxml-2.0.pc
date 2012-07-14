@@ -1,4 +1,4 @@
-prefix=/usr/lib64/darkmatter
+prefix=/usr/local/lib64/darkmatter
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
@@ -9,5 +9,5 @@ Version: 2.7.8
 Description: libXML library version2.
 Requires:
 Libs: -L${libdir} -lxml2
-Libs.private:  -L/usr/lib64/darkmatter/lib -lz  -lm  -lc -lm
+Libs.private:  -L/usr/local/lib64/darkmatter/lib -lz  -lm  -lc -lm
 Cflags: -I${includedir}/libxml2 

@@ -1,6 +1,6 @@
 #! /bin/sh
 
-prefix=/usr/lib64/darkmatter
+prefix=/usr/local/lib64/darkmatter
 exec_prefix=${prefix}
 exec_prefix_set=no
 includedir=${prefix}/include
@@ -65,7 +65,7 @@ while test $# -gt 0; do
 	;;
 
     --plugins)
-	echo /usr/lib64/darkmatter/lib/libxslt-plugins
+	echo /usr/local/lib64/darkmatter/lib/libxslt-plugins
 	exit 0
 	;;
 
@@ -89,11 +89,11 @@ while test $# -gt 0; do
     shift
 done
 
-the_libs="-L${libdir} -lxslt -L/home/lindell/git/darkmatter-depends/libxml2 -L/usr/lib64/darkmatter/lib -lxml2 -L/usr/lib64/darkmatter/lib -lz -lm -lc -lm "
+the_libs="-L${libdir} -lxslt -L/root/darkmatter-depends/libxml2 -L/usr/local/lib64/darkmatter/lib -lxml2 -L/usr/local/lib64/darkmatter/lib -lz -lm -lc -lm "
 if test "$includedir" != "/usr/include"; then
-    the_flags="$the_flags -I$includedir `/home/lindell/git/darkmatter-depends/libxml2/xml2-config --cflags`"
+    the_flags="$the_flags -I$includedir `/root/darkmatter-depends/libxml2/xml2-config --cflags`"
 else
-    the_flags="$the_flags `/home/lindell/git/darkmatter-depends/libxml2/xml2-config --cflags`"
+    the_flags="$the_flags `/root/darkmatter-depends/libxml2/xml2-config --cflags`"
 fi
 
 if $cflags; then

@@ -29,7 +29,7 @@
 #define HAVE_FTIME 1
 
 /* Define if gcrypt library is available. */
-#define HAVE_GCRYPT 1
+/* #undef HAVE_GCRYPT */
 
 /* Define to 1 if you have the `gettimeofday' function. */
 #define HAVE_GETTIMEOFDAY 1
@@ -157,6 +157,9 @@
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME ""
+
+/* Define to the home page for this package. */
+#define PACKAGE_URL ""
 
 /* Define to the version of this package. */
 #define PACKAGE_VERSION ""
