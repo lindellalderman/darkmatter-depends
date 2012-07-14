@@ -56,7 +56,7 @@ configure:2376: result: x86_64-unknown-linux-gnu
 configure:2405: autobuild project... GNU Autoconf
 configure:2411: autobuild revision... 2.68-dirty
 configure:2416: autobuild hostname... centos64
-configure:2427: autobuild timestamp... 20120714T064126Z
+configure:2427: autobuild timestamp... 20120714T065225Z
 configure:2455: checking whether /bin/sh -n is known to work
 configure:2474: result: yes
 configure:2478: checking for characters that cannot appear in file names

@@ -113,7 +113,7 @@ CFLAGS_SHARED	= $(CCFLAGS) -fPIC
 CFLAGS_DEFAULT	= $(CFLAGS_NORMAL)
 
 LINK		= $(LIBTOOL)
-LDFLAGS		= -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm  -lc -lm
+LDFLAGS		= -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm  -lc -lm
 
 SHLIB_DIRS	= -L../lib
 SHLIB_LIST	= $(SHLIB_DIRS) 
@@ -155,7 +155,7 @@ AUTO_SRC = \
 
 TEST_DEPS	= ../lib/libncurses.a
 TEST_ARGS	= -static -L../lib -lform -lmenu -lpanel -lncurses  -dynamic 
-TEST_LDFLAGS	=  $(TEST_ARGS) -lc -lm  -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm
+TEST_LDFLAGS	=  $(TEST_ARGS) -lc -lm  -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm
 
 TEST_PROGS = \
 	captoinfo$x \

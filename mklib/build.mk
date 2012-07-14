@@ -129,6 +129,9 @@ MAKEFILE        = Makefile
 CPPFLAGS        += -I$(BUILD_ROOT)$(INCLUDE_DIR) -I$(BUILD_ROOT)$(INCLUDE_DIR)/ncurses -I$(BUILD_ROOT)$(INCLUDE_DIR)/libxml2
 CXXFLAGS        += $(CFLAGS)
 CPATH           += $(BUILD_ROOT)$(INCLUDE_DIR):$(BUILD_ROOT)$(INCLUDE_DIR)/ncurses:$(BUILD_ROOT)$(INCLUDE_DIR)/libxml2
+ifdef REDHAT
+LDFLAGS         += -L/lib64 -L/usr/lib64
+endif
 LDFLAGS         += -L$(BUILD_ROOT)$(LIB_DIR) 
 LIBS            += -lc -lm
 LD_LIBRARY_PATH := $(BUILD_ROOT)$(LIB_DIR)
