@@ -120,11 +120,7 @@
 /* #undef LTDL_DLOPEN_DEPLIBS */
 
 /* Define to the system default library search path. */
-<<<<<<< HEAD
-#define LT_DLSEARCH_PATH "/lib:/usr/lib:/usr/local/lib64:/usr/local/lib"
-=======
 #define LT_DLSEARCH_PATH "/lib:/usr/lib"
->>>>>>> e29704fcf182d810309bc5a7c0b3312c4b748af2
 
 /* The archive extension */
 #define LT_LIBEXT "a"
