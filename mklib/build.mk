@@ -105,7 +105,7 @@ RELEASE  :=
 endif
 
 ifdef SUSE
-BUILD_DEPENDS = cmake autoconf xorg-x11-util-devel patch gcc gcc-c++ git psutils texinfo uuid-devel libuuid-devel pam-devel libaio-devel libaio glibc-devel
+BUILD_DEPENDS = cmake autoconf xorg-x11-util-devel patch gcc gcc-c++ git psutils texinfo uuid-devel libuuid-devel pam-devel libaio-devel libaio glibc-devel 
 BUILD_DEPEND_INSTALL = yast -i
 ifdef x86_64
 DIST_ARCH := x86_64
@@ -149,6 +149,9 @@ CPPFLAGS        += -I$(BUILD_ROOT)$(INCLUDE_DIR) -I$(BUILD_ROOT)$(INCLUDE_DIR)/n
 CXXFLAGS        += $(CFLAGS)
 CPATH           += $(BUILD_ROOT)$(INCLUDE_DIR):$(BUILD_ROOT)$(INCLUDE_DIR)/ncurses:$(BUILD_ROOT)$(INCLUDE_DIR)/libxml2
 ifdef REDHAT
+LDFLAGS         += -L/lib64 -L/usr/lib64
+endif
+ifdef SUSE
 LDFLAGS         += -L/lib64 -L/usr/lib64
 endif
 LDFLAGS         += -L$(BUILD_ROOT)$(LIB_DIR) 

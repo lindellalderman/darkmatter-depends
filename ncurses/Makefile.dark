@@ -12,6 +12,9 @@ CONFIG_OPTS += --enable-sigwinch
 ifdef REDHAT
 CONFIG_OPTS += --with-libtool
 endif
+ifdef SUSE
+CONFIG_OPTS += --with-libtool
+endif
 
 REMOVE_PATHS += $(BIN_DIR)/clear $(BIN_DIR)/terminfo $(BIN_DIR)/ncurs* $(BIN_DIR)/captoinfo $(BIN_DIR)/infocmp $(BIN_DIR)/tic $(BIN_DIR)/toe $(BIN_DIR)/infotocap $(BIN_DIR)/reset $(BUILDROOT)$(BIN_DIR)/tset $(BIN_DIR)/tput $(LIB_DIR)/libncurs* $(INCLUDE_DIR)/ncurses* $(LIB_DIR)/libpanel* $(LIB_DIR)/libmenu* $(LIB_DIR)/libform* $(SHARE_DIR)/tabset $(SHARE_DIR)/terminfo $(LIB_DIR)/terminfo 
 
