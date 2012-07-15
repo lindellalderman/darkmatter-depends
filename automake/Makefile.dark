@@ -8,7 +8,7 @@ CONFIG_OPTS := --prefix=$(BUILD_ROOT)$(PREFIX_DIR)
 BUILD_ROOT_ONLY := 1
 
 define pkg_postconfigure
-	@make -f Makefile.orig aclocal
+	@$(BUILD_FLAGS) $(MAKE) -f Makefile.orig aclocal
 endef
 
 include ../mklib/pkggnu.mk
