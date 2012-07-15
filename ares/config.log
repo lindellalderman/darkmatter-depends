@@ -111,42 +111,98 @@ compilation terminated.
 configure:4019: $? = 1
 configure:4038: checking whether the C compiler works
 configure:4060: cc -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:4064: $? = 0
 configure:4112: result: yes
 configure:4115: checking for C compiler default output file name
 configure:4117: result: a.out
 configure:4123: checking for suffix of executables
 configure:4130: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:4134: $? = 0
 configure:4156: result: 
 configure:4177: checking whether we are cross compiling
 configure:4185: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:4189: $? = 0
 configure:4196: ./conftest
 configure:4200: $? = 0
 configure:4215: result: no
 configure:4220: checking for suffix of object files
 configure:4241: cc -c -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:4245: $? = 0
 configure:4266: result: o
 configure:4270: checking whether we are using the GNU C compiler
 configure:4288: cc -c -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:4288: $? = 0
 configure:4297: result: yes
 configure:4306: checking whether cc accepts -g
 configure:4325: cc -c -g -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:4325: $? = 0
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "c-ares"
+| #define PACKAGE_TARNAME "c-ares"
+| #define PACKAGE_VERSION "1.7.4"
+| #define PACKAGE_STRING "c-ares 1.7.4"
+| #define PACKAGE_BUGREPORT "c-ares mailing list: http://cool.haxx.se/mailman/listinfo/c-ares"
+| #define PACKAGE_URL ""
+| #define PACKAGE "c-ares"
+| #define VERSION "1.7.4"
+| #define OS "x86_64-unknown-linux-gnu"
+| /* end confdefs.h.  */
+| 
+| int main (void)
+| {
+| 
+|  ;
+|  return 0;
+| }
+configure:4339: cc -c  -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+configure:4339: $? = 0
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "c-ares"
+| #define PACKAGE_TARNAME "c-ares"
+| #define PACKAGE_VERSION "1.7.4"
+| #define PACKAGE_STRING "c-ares 1.7.4"
+| #define PACKAGE_BUGREPORT "c-ares mailing list: http://cool.haxx.se/mailman/listinfo/c-ares"
+| #define PACKAGE_URL ""
+| #define PACKAGE "c-ares"
+| #define VERSION "1.7.4"
+| #define OS "x86_64-unknown-linux-gnu"
+| /* end confdefs.h.  */
+| 
+| int main (void)
+| {
+| 
+|  ;
+|  return 0;
+| }
+configure:4354: cc -c -g -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+configure:4354: $? = 0
 configure:4364: result: yes
 configure:4381: checking for cc option to accept ISO C89
 configure:4444: cc  -c -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:4444: $? = 0
 configure:4457: result: none needed
 configure:4479: checking dependency style of cc
 configure:4569: result: gcc3
 configure:4593: checking whether cc understands -c and -o together
 configure:4620: cc -c conftest.c -o conftest2.o >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:4624: $? = 0
 configure:4630: cc -c conftest.c -o conftest2.o >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:4634: $? = 0
 configure:4689: result: yes
 configure:4720: checking how to run the C preprocessor
@@ -271,19 +327,31 @@ configure: failed program was:
 configure:5129: result: no
 configure:5137: checking if _REENTRANT is actually needed
 configure:5168: cc -c -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:5168: $? = 0
 configure:5199: cc -c -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:5199: $? = 0
 configure:5270: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:5270: $? = 0
 configure:5349: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:5349: $? = 0
 configure:5428: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:5428: $? = 0
 configure:5507: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:5507: $? = 0
 configure:5586: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
-/tmp/cci8lSkX.o: In function `main':
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/tmp/ccCBB8ej.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `inet_ntoa_r'
 collect2: ld returned 1 exit status
 configure:5586: $? = 1
@@ -324,12 +392,20 @@ configure: failed program was:
 | }
 | 
 configure:5669: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:5669: $? = 0
 configure:5748: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:5748: $? = 0
 configure:5827: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:5827: $? = 0
 configure:5906: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:5906: $? = 0
 configure:5962: result: no
 configure:5967: checking if _REENTRANT is onwards defined
@@ -338,6 +414,7 @@ configure:5997: checking for special C compiler options needed for large files
 configure:6041: result: no
 configure:6047: checking for _FILE_OFFSET_BITS value needed for large files
 configure:6071: cc -c -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:6071: $? = 0
 configure:6102: result: no
 configure:6496: checking if arch-OS host is AMD64-Linux/FreeBSD (to build static libraries with PIC)
@@ -353,10 +430,12 @@ configure:6795: result: /usr/x86_64-suse-linux/bin/ld
 configure:6802: checking if the linker (/usr/x86_64-suse-linux/bin/ld) is GNU ld
 configure:6817: result: yes
 configure:6829: checking for BSD- or MS-compatible name lister (nm)
-configure:6878: result: /usr/bin/nm -B
-configure:6996: checking the name lister (/usr/bin/nm -B) interface
+configure:6878: result: /usr/bin/nm
+configure:6996: checking the name lister (/usr/bin/nm) interface
 configure:7003: cc -c -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
-configure:7006: /usr/bin/nm -B "conftest.o"
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+configure:7006: /usr/bin/nm "conftest.o"
+/usr/bin/nm: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:7009: output
 0000000000000000 B some_variable
 configure:7016: result: BSD nm
@@ -382,62 +461,80 @@ configure:7743: result: strip
 configure:7815: checking for ranlib
 configure:7831: found /usr/bin/ranlib
 configure:7842: result: ranlib
-configure:7932: checking command to parse /usr/bin/nm -B output from cc object
+configure:7932: checking command to parse /usr/bin/nm output from cc object
 configure:8050: cc -c -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:8053: $? = 0
-configure:8057: /usr/bin/nm -B conftest.o \| sed -n -e 's/^.*[	 ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[	 ][	 ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' \> conftest.nm
+configure:8057: /usr/bin/nm conftest.o \| sed -n -e 's/^.*[	 ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[	 ][	 ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' \> conftest.nm
+/usr/bin/nm: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:8060: $? = 0
 configure:8114: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c conftstm.o >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:8117: $? = 0
 configure:8155: result: ok
 configure:8250: cc -c -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:8253: $? = 0
 configure:8956: checking for ANSI C header files
 configure:8975: cc -c -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:8975: $? = 0
 configure:9048: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:9048: $? = 0
 configure:9048: ./conftest
 configure:9048: $? = 0
 configure:9059: result: yes
 configure:9072: checking for sys/types.h
 configure:9072: cc -c -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:9072: $? = 0
 configure:9072: result: yes
 configure:9072: checking for sys/stat.h
 configure:9072: cc -c -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:9072: $? = 0
 configure:9072: result: yes
 configure:9072: checking for stdlib.h
 configure:9072: cc -c -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:9072: $? = 0
 configure:9072: result: yes
 configure:9072: checking for string.h
 configure:9072: cc -c -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:9072: $? = 0
 configure:9072: result: yes
 configure:9072: checking for memory.h
 configure:9072: cc -c -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:9072: $? = 0
 configure:9072: result: yes
 configure:9072: checking for strings.h
 configure:9072: cc -c -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:9072: $? = 0
 configure:9072: result: yes
 configure:9072: checking for inttypes.h
 configure:9072: cc -c -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:9072: $? = 0
 configure:9072: result: yes
 configure:9072: checking for stdint.h
 configure:9072: cc -c -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:9072: $? = 0
 configure:9072: result: yes
 configure:9072: checking for unistd.h
 configure:9072: cc -c -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:9072: $? = 0
 configure:9072: result: yes
 configure:9086: checking for dlfcn.h
 configure:9086: cc -c -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:9086: $? = 0
 configure:9086: result: yes
 configure:9268: checking for objdir
@@ -445,18 +542,21 @@ configure:9283: result: .libs
 configure:9579: checking if cc supports -fno-rtti -fno-exceptions
 configure:9597: cc -c -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -fno-rtti -fno-exceptions conftest.c >&5
 cc1: warning: command line option '-fno-rtti' is valid for C++/ObjC++ but not for C [enabled by default]
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:9601: $? = 0
 configure:9614: result: no
 configure:9634: checking for cc option to produce PIC
 configure:9906: result: -fPIC -DPIC
 configure:9918: checking if cc PIC flag -fPIC -DPIC works
 configure:9936: cc -c -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -fPIC -DPIC -DPIC conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:9940: $? = 0
 configure:9953: result: yes
 configure:9977: checking if cc static flag -static works
 configure:10005: result: no
 configure:10020: checking if cc supports -c -o file.o
 configure:10041: cc -c -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -o out/conftest2.o conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:10045: $? = 0
 configure:10067: result: yes
 configure:10075: checking if cc supports -c -o file.o
@@ -465,12 +565,15 @@ configure:10155: checking whether the cc linker (/usr/x86_64-suse-linux/bin/ld -
 configure:11144: result: yes
 configure:11181: checking whether -lc should be explicitly linked in
 configure:11186: cc -c -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:11189: $? = 0
 configure:11204: cc -shared conftest.o  -v -Wl,-soname -Wl,conftest -o conftest 2\>\&1 \| /bin/grep  -lc  \>/dev/null 2\>\&1
 configure:11207: $? = 0
 configure:11219: result: no
 configure:11383: checking dynamic linker characteristics
 configure:11815: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm -Wl,-rpath -Wl,/foo conftest.c -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:11815: $? = 0
 configure:12045: result: GNU/Linux ld.so
 configure:12147: checking how to hardcode library paths into programs
@@ -543,10 +646,15 @@ configure:13741: $? = 0
 configure:13823: result: no
 configure:14174: checking if compiler accepts debug disabling options
 configure:14201: cc -c -fpic -fPIC -fpic -fPIC -g0 -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:14201: $? = 0
 configure:14231: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:14231: $? = 0
 configure:14273: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:14273: $? = 0
 configure:14273: ./conftest
 configure:14273: $? = 0
@@ -556,10 +664,15 @@ configure:14326: checking if compiler optimizer assumed setting might be used
 configure:14364: result: yes
 configure:14410: checking if compiler accepts optimizer enabling options
 configure:14441: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:14441: $? = 0
 configure:14471: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:14471: $? = 0
 configure:14513: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:14513: $? = 0
 configure:14513: ./conftest
 configure:14513: $? = 0
@@ -567,10 +680,15 @@ configure:14532: result: yes
 configure:14534: compiler options added: -O2
 configure:14772: checking if compiler accepts strict warning options
 configure:14796: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:14796: $? = 0
 configure:14826: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:14826: $? = 0
 configure:14868: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:14868: $? = 0
 configure:14868: ./conftest
 configure:14868: $? = 0
@@ -666,6 +784,7 @@ configure:15078: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -fvis
 conftest.c: In function 'main':
 conftest.c:39:9: warning: passing argument 1 of 'dummy' from incompatible pointer type [enabled by default]
 conftest.c:27:15: note: expected 'char *' but argument is of type 'char (*)[16]'
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:15078: $? = 0
 configure:15095: result: yes
 configure:15106: checking if shared libraries need -no-undefined
@@ -771,11 +890,15 @@ configure: failed program was:
 configure:15559: result: no
 configure:15563: checking for gethostbyname
 configure:15563: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:15563: $? = 0
 configure:15563: result: yes
 configure:15883: checking for strcasecmp
 configure:15883: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
 conftest.c:35:6: warning: conflicting types for built-in function 'strcasecmp' [enabled by default]
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:15883: $? = 0
 configure:15883: result: yes
 configure:15991: checking for windows.h
@@ -786,16 +909,20 @@ configure:16107: checking for winsock2.h
 configure:16150: result: no
 configure:16164: checking for connect in libraries
 configure:16191: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c  -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:16191: $? = 0
 configure:16209: result: yes
 configure:16220: checking whether time.h and sys/time.h may both be included
 configure:16239: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:16239: $? = 0
 configure:16246: result: yes
 configure:16258: checking for sys/types.h
 configure:16258: result: yes
 configure:16258: checking sys/time.h usability
 configure:16258: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:16258: $? = 0
 configure:16258: result: yes
 configure:16258: checking sys/time.h presence
@@ -806,6 +933,7 @@ configure:16258: checking for sys/time.h
 configure:16258: result: yes
 configure:16258: checking time.h usability
 configure:16258: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:16258: $? = 0
 configure:16258: result: yes
 configure:16258: checking time.h presence
@@ -816,11 +944,14 @@ configure:16258: checking for time.h
 configure:16258: result: yes
 configure:16268: checking for monotonic clock_gettime
 configure:16299: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:16299: $? = 0
 configure:16301: result: yes
 configure:16318: checking for clock_gettime in libraries
 configure:16360: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
-/tmp/ccCYNcwr.o: In function `main':
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/tmp/ccuLJ8x5.o: In function `main':
 conftest.c:(.text.startup+0xd): undefined reference to `clock_gettime'
 collect2: ld returned 1 exit status
 configure:16360: $? = 1
@@ -879,10 +1010,14 @@ configure: failed program was:
 | }
 | 
 configure:16360: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:16360: $? = 0
 configure:16391: result: -lrt
 configure:16399: checking if monotonic clock_gettime works
 configure:16442: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:16442: $? = 0
 configure:16442: ./conftest
 configure:16442: $? = 0
@@ -893,13 +1028,16 @@ configure:16502: checking for ANSI C header files
 configure:16605: result: yes
 configure:16615: checking for malloc.h
 configure:16640: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:16640: $? = 0
 configure:16652: result: yes
 configure:16680: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:16680: $? = 0
 configure:16703: checking for memory.h
 configure:16740: result: yes
 configure:16768: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:16768: $? = 0
 configure:16814: checking for sys/types.h
 configure:16814: result: yes
@@ -907,46 +1045,57 @@ configure:16814: checking for sys/time.h
 configure:16814: result: yes
 configure:16814: checking for sys/select.h
 configure:16814: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:16814: $? = 0
 configure:16814: result: yes
 configure:16814: checking for sys/socket.h
 configure:16814: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:16814: $? = 0
 configure:16814: result: yes
 configure:16814: checking for sys/ioctl.h
 configure:16814: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:16814: $? = 0
 configure:16814: result: yes
 configure:16814: checking for sys/param.h
 configure:16814: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:16814: $? = 0
 configure:16814: result: yes
 configure:16814: checking for sys/uio.h
 configure:16814: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:16814: $? = 0
 configure:16814: result: yes
 configure:16814: checking for assert.h
 configure:16814: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:16814: $? = 0
 configure:16814: result: yes
 configure:16814: checking for netdb.h
 configure:16814: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:16814: $? = 0
 configure:16814: result: yes
 configure:16814: checking for netinet/in.h
 configure:16814: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:16814: $? = 0
 configure:16814: result: yes
 configure:16814: checking for netinet/tcp.h
 configure:16814: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:16814: $? = 0
 configure:16814: result: yes
 configure:16814: checking for net/if.h
 configure:16814: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:16814: $? = 0
 configure:16814: result: yes
 configure:16814: checking for errno.h
 configure:16814: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:16814: $? = 0
 configure:16814: result: yes
 configure:16814: checking for socket.h
@@ -1025,32 +1174,39 @@ configure:16814: checking for strings.h
 configure:16814: result: yes
 configure:16814: checking for stdbool.h
 configure:16814: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:16814: $? = 0
 configure:16814: result: yes
 configure:16814: checking for time.h
 configure:16814: result: yes
 configure:16814: checking for limits.h
 configure:16814: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:16814: $? = 0
 configure:16814: result: yes
 configure:16814: checking for arpa/nameser.h
 configure:16814: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:16814: $? = 0
 configure:16814: result: yes
 configure:16814: checking for arpa/nameser_compat.h
 configure:16814: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:16814: $? = 0
 configure:16814: result: yes
 configure:16814: checking for arpa/inet.h
 configure:16814: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:16814: $? = 0
 configure:16814: result: yes
 configure:16844: checking for an ANSI C-conforming const
 configure:16908: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:16908: $? = 0
 configure:16915: result: yes
 configure:16923: checking for size_t
 configure:16923: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:16923: $? = 0
 configure:16923: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
 conftest.c: In function 'main':
@@ -1161,34 +1317,44 @@ configure:16972: checking for sys/socket.h
 configure:16972: result: yes
 configure:16982: checking for struct timeval
 configure:17035: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:17035: $? = 0
 configure:17047: result: yes
 configure:17064: checking size of size_t
 configure:17069: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:17069: $? = 0
 configure:17069: ./conftest
 configure:17069: $? = 0
 configure:17083: result: 8
 configure:17097: checking size of int
 configure:17102: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:17102: $? = 0
 configure:17102: ./conftest
 configure:17102: $? = 0
 configure:17116: result: 4
 configure:17130: checking size of long
 configure:17135: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:17135: $? = 0
 configure:17135: ./conftest
 configure:17135: $? = 0
 configure:17149: result: 8
 configure:17174: checking size of time_t
 configure:17179: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:17179: $? = 0
 configure:17179: ./conftest
 configure:17179: $? = 0
 configure:17193: result: 8
 configure:17204: checking for long long
 configure:17204: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:17204: $? = 0
 configure:17204: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
 conftest.c: In function 'main':
@@ -1300,10 +1466,12 @@ configure: failed program was:
 configure:17204: result: yes
 configure:17215: checking if numberLL works
 configure:17232: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:17232: $? = 0
 configure:17234: result: yes
 configure:17251: checking for ssize_t
 configure:17251: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:17251: $? = 0
 configure:17251: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
 conftest.c: In function 'main':
@@ -1417,6 +1585,7 @@ configure: failed program was:
 configure:17251: result: yes
 configure:17262: checking for bool
 configure:17262: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:17262: $? = 0
 configure:17262: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
 conftest.c: In function 'main':
@@ -1516,6 +1685,7 @@ configure:17483: checking for sys/socket.h
 configure:17483: result: yes
 configure:17507: checking for ares_socklen_t data type
 configure:17535: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:17535: $? = 0
 configure:17572: result: socklen_t
 configure:17579: checking size of ares_socklen_t
@@ -1692,10 +1862,12 @@ configure: failed program was:
 | }
 | 
 configure:17625: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:17625: $? = 0
 configure:17635: result: 4
 configure:17682: checking for in_addr_t
 configure:17682: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:17682: $? = 0
 configure:17682: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
 conftest.c: In function 'main':
@@ -1813,6 +1985,7 @@ configure: failed program was:
 configure:17682: result: yes
 configure:17798: checking for struct sockaddr_storage
 configure:17798: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:17798: $? = 0
 configure:17798: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
 conftest.c: In function 'main':
@@ -1926,6 +2099,7 @@ configure: failed program was:
 configure:17798: result: yes
 configure:17835: checking signal.h usability
 configure:17835: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:17835: $? = 0
 configure:17835: result: yes
 configure:17835: checking signal.h presence
@@ -1936,6 +2110,7 @@ configure:17835: checking for signal.h
 configure:17835: result: yes
 configure:17845: checking for sig_atomic_t
 configure:17845: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:17845: $? = 0
 configure:17845: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
 conftest.c: In function 'main':
@@ -2031,6 +2206,8 @@ configure: failed program was:
 configure:17845: result: yes
 configure:17862: checking if sig_atomic_t is already defined as volatile
 configure:17882: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:17882: $? = 0
 configure:17884: result: no
 configure:17907: checking return type of signal handlers
@@ -2129,6 +2306,8 @@ configure:17944: checking for sys/socket.h
 configure:17944: result: yes
 configure:17955: checking for recv
 configure:17993: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:17993: $? = 0
 configure:17995: result: yes
 configure:18010: checking types of args and return type for recv
@@ -9037,6 +9216,7 @@ configure: failed program was:
 | }
 | 
 configure:18067: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:18067: $? = 0
 configure:18081: result: int,void *,size_t,int,ssize_t
 configure:18132: checking for sys/types.h
@@ -9045,6 +9225,8 @@ configure:18132: checking for sys/socket.h
 configure:18132: result: yes
 configure:18143: checking for recvfrom
 configure:18181: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:18181: $? = 0
 configure:18183: result: yes
 configure:18198: checking types of args and return type for recvfrom
@@ -85433,6 +85615,7 @@ configure: failed program was:
 | }
 | 
 configure:18262: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:18262: $? = 0
 configure:18278: result: int,void *,size_t,int,struct sockaddr *,socklen_t *,ssize_t
 configure:18400: checking for sys/types.h
@@ -85441,6 +85624,8 @@ configure:18400: checking for sys/socket.h
 configure:18400: result: yes
 configure:18411: checking for send
 configure:18449: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:18449: $? = 0
 configure:18451: result: yes
 configure:18466: checking types of args and return type for send
@@ -102517,6 +102702,7 @@ configure: failed program was:
 | }
 | 
 configure:18522: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:18522: $? = 0
 configure:18536: result: int,const void *,size_t,int,ssize_t
 configure:18624: checking for sys/types.h
@@ -102525,6 +102711,7 @@ configure:18624: checking for sys/socket.h
 configure:18624: result: yes
 configure:18634: checking for MSG_NOSIGNAL
 configure:18676: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:18676: $? = 0
 configure:18688: result: yes
 configure:18714: checking for sys/types.h
@@ -102533,7 +102720,9 @@ configure:18714: checking for socket.h
 configure:18714: result: no
 configure:18733: checking if closesocket can be linked
 configure:18753: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
-/tmp/ccPaStR9.o: In function `main':
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/tmp/cc8ODw1K.o: In function `main':
 conftest.c:(.text.startup+0x9): undefined reference to `closesocket'
 collect2: ld returned 1 exit status
 configure:18753: $? = 1
@@ -102687,7 +102876,9 @@ configure:18848: checking if closesocket might be used
 configure:18863: result: no
 configure:18875: checking if CloseSocket can be linked
 configure:18894: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
-/tmp/ccSkhJ3b.o: In function `main':
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/tmp/ccEMMTYO.o: In function `main':
 conftest.c:(.text.startup+0x9): undefined reference to `CloseSocket'
 collect2: ld returned 1 exit status
 configure:18894: $? = 1
@@ -102826,12 +103017,15 @@ configure:18987: checking if CloseSocket might be used
 configure:19002: result: no
 configure:19014: checking if connect can be linked
 configure:19035: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:19035: $? = 0
 configure:19037: result: yes
 configure:19052: checking if connect is prototyped
 configure:19065: result: yes
 configure:19081: checking if connect is compilable
 configure:19102: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:19102: $? = 0
 configure:19104: result: yes
 configure:19119: checking if connect usage allowed
@@ -102844,16 +103038,20 @@ configure:19168: checking for unistd.h
 configure:19168: result: yes
 configure:19168: checking for fcntl.h
 configure:19168: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:19168: $? = 0
 configure:19168: result: yes
 configure:19187: checking if fcntl can be linked
 configure:19216: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:19216: $? = 0
 configure:19218: result: yes
 configure:19233: checking if fcntl is prototyped
 configure:19244: result: yes
 configure:19260: checking if fcntl is compilable
 configure:19279: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:19279: $? = 0
 configure:19281: result: yes
 configure:19296: checking if fcntl usage allowed
@@ -102862,6 +103060,7 @@ configure:19309: checking if fcntl might be used
 configure:19315: result: yes
 configure:19335: checking if fcntl O_NONBLOCK is compilable
 configure:19355: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:19355: $? = 0
 configure:19357: result: yes
 configure:19372: checking if fcntl O_NONBLOCK usage allowed
@@ -102874,12 +103073,15 @@ configure:19422: checking for netdb.h
 configure:19422: result: yes
 configure:19441: checking if freeaddrinfo can be linked
 configure:19461: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:19461: $? = 0
 configure:19463: result: yes
 configure:19478: checking if freeaddrinfo is prototyped
 configure:19491: result: yes
 configure:19507: checking if freeaddrinfo is compilable
 configure:19527: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:19527: $? = 0
 configure:19529: result: yes
 configure:19544: checking if freeaddrinfo usage allowed
@@ -102898,16 +103100,21 @@ configure:19618: checking for strings.h
 configure:19618: result: yes
 configure:19639: checking if getaddrinfo can be linked
 configure:19660: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:19660: $? = 0
 configure:19662: result: yes
 configure:19677: checking if getaddrinfo is prototyped
 configure:19690: result: yes
 configure:19706: checking if getaddrinfo is compilable
 configure:19727: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:19727: $? = 0
 configure:19729: result: yes
 configure:19745: checking if getaddrinfo seems to work
 configure:19785: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:19785: $? = 0
 configure:19785: ./conftest
 configure:19785: $? = 0
@@ -102918,16 +103125,20 @@ configure:19819: checking if getaddrinfo might be used
 configure:19826: result: yes
 configure:19842: checking if getaddrinfo is threadsafe
 configure:19904: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:19904: $? = 0
 configure:19929: result: yes
 configure:19950: checking if gethostbyaddr can be linked
 configure:19970: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:19970: $? = 0
 configure:19972: result: yes
 configure:19987: checking if gethostbyaddr is prototyped
 configure:19999: result: yes
 configure:20015: checking if gethostbyaddr is compilable
 configure:20035: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:20035: $? = 0
 configure:20037: result: yes
 configure:20052: checking if gethostbyaddr usage allowed
@@ -102936,12 +103147,15 @@ configure:20065: checking if gethostbyaddr might be used
 configure:20071: result: yes
 configure:20092: checking if gethostbyname can be linked
 configure:20112: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:20112: $? = 0
 configure:20114: result: yes
 configure:20129: checking if gethostbyname is prototyped
 configure:20141: result: yes
 configure:20157: checking if gethostbyname is compilable
 configure:20177: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:20177: $? = 0
 configure:20179: result: yes
 configure:20194: checking if gethostbyname usage allowed
@@ -102954,12 +103168,15 @@ configure:20240: checking for unistd.h
 configure:20240: result: yes
 configure:20259: checking if gethostname can be linked
 configure:20279: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:20279: $? = 0
 configure:20281: result: yes
 configure:20296: checking if gethostname is prototyped
 configure:20308: result: yes
 configure:20324: checking if gethostname is compilable
 configure:20344: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:20344: $? = 0
 configure:20346: result: yes
 configure:20361: checking if gethostname usage allowed
@@ -102968,6 +103185,8 @@ configure:20374: checking if gethostname might be used
 configure:20380: result: yes
 configure:20402: checking if getservbyport_r can be linked
 configure:20431: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:20431: $? = 0
 configure:20433: result: yes
 configure:20448: checking if getservbyport_r is prototyped
@@ -103290,6 +103509,7 @@ configure: failed program was:
 configure:20540: result: no
 configure:20548: checking if getservbyport_r takes 6 args.
 configure:20567: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:20567: $? = 0
 configure:20569: result: yes
 configure:20583: checking if getservbyport_r is compilable
@@ -103308,12 +103528,15 @@ configure:20661: checking for arpa/inet.h
 configure:20661: result: yes
 configure:20681: checking if inet_ntop can be linked
 configure:20710: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:20710: $? = 0
 configure:20712: result: yes
 configure:20727: checking if inet_ntop is prototyped
 configure:20738: result: yes
 configure:20754: checking if inet_ntop is compilable
 configure:20773: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:20773: $? = 0
 configure:20775: result: yes
 configure:20791: checking if inet_ntop seems to work
@@ -103321,6 +103544,8 @@ configure:20865: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-head
 conftest.c: In function 'main':
 conftest.c:190:17: warning: assignment discards 'const' qualifier from pointer target type [enabled by default]
 conftest.c:214:17: warning: assignment discards 'const' qualifier from pointer target type [enabled by default]
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:20865: $? = 0
 configure:20865: ./conftest
 configure:20865: $? = 0
@@ -103331,16 +103556,21 @@ configure:20899: checking if inet_ntop might be used
 configure:20906: result: yes
 configure:20928: checking if inet_pton can be linked
 configure:20957: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:20957: $? = 0
 configure:20959: result: yes
 configure:20974: checking if inet_pton is prototyped
 configure:20985: result: yes
 configure:21001: checking if inet_pton is compilable
 configure:21020: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:21020: $? = 0
 configure:21022: result: yes
 configure:21038: checking if inet_pton seems to work
 configure:21105: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:21105: $? = 0
 configure:21105: ./conftest
 configure:21105: $? = 0
@@ -103359,16 +103589,20 @@ configure:21182: checking for sys/ioctl.h
 configure:21182: result: yes
 configure:21182: checking for stropts.h
 configure:21182: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:21182: $? = 0
 configure:21182: result: yes
 configure:21201: checking if ioctl can be linked
 configure:21230: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:21230: $? = 0
 configure:21232: result: yes
 configure:21247: checking if ioctl is prototyped
 configure:21258: result: yes
 configure:21274: checking if ioctl is compilable
 configure:21293: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:21293: $? = 0
 configure:21295: result: yes
 configure:21310: checking if ioctl usage allowed
@@ -103377,6 +103611,7 @@ configure:21323: checking if ioctl might be used
 configure:21329: result: yes
 configure:21343: checking if ioctl FIONBIO is compilable
 configure:21363: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:21363: $? = 0
 configure:21365: result: yes
 configure:21380: checking if ioctl FIONBIO usage allowed
@@ -103385,6 +103620,7 @@ configure:21393: checking if ioctl FIONBIO might be used
 configure:21397: result: yes
 configure:21417: checking if ioctl SIOCGIFADDR is compilable
 configure:21438: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:21438: $? = 0
 configure:21440: result: yes
 configure:21455: checking if ioctl SIOCGIFADDR usage allowed
@@ -103393,7 +103629,9 @@ configure:21468: checking if ioctl SIOCGIFADDR might be used
 configure:21472: result: yes
 configure:21499: checking if ioctlsocket can be linked
 configure:21518: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
-/tmp/cc8Y1nae.o: In function `main':
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/tmp/ccPZlO11.o: In function `main':
 conftest.c:(.text.startup+0xd): undefined reference to `ioctlsocket'
 collect2: ld returned 1 exit status
 configure:21518: $? = 1
@@ -103577,7 +103815,9 @@ configure:21611: checking if ioctlsocket might be used
 configure:21700: result: no
 configure:21712: checking if IoctlSocket can be linked
 configure:21741: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
-/tmp/cckcaEBg.o: In function `main':
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/tmp/ccENb2i6.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `IoctlSocket'
 collect2: ld returned 1 exit status
 configure:21741: $? = 1
@@ -103757,12 +103997,15 @@ configure:21834: checking if IoctlSocket might be used
 configure:21923: result: no
 configure:21935: checking if setsockopt can be linked
 configure:21955: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:21955: $? = 0
 configure:21957: result: yes
 configure:21972: checking if setsockopt is prototyped
 configure:21984: result: yes
 configure:22000: checking if setsockopt is compilable
 configure:22020: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:22020: $? = 0
 configure:22022: result: yes
 configure:22037: checking if setsockopt usage allowed
@@ -103964,12 +104207,15 @@ configure:22120: checking if setsockopt SO_NONBLOCK might be used
 configure:22133: result: no
 configure:22151: checking if socket can be linked
 configure:22172: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:22172: $? = 0
 configure:22174: result: yes
 configure:22189: checking if socket is prototyped
 configure:22202: result: yes
 configure:22218: checking if socket is compilable
 configure:22239: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:22239: $? = 0
 configure:22241: result: yes
 configure:22256: checking if socket usage allowed
@@ -103979,12 +104225,15 @@ configure:22275: result: yes
 configure:22296: checking if strcasecmp can be linked
 configure:22325: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
 conftest.c:161:6: warning: conflicting types for built-in function 'strcasecmp' [enabled by default]
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:22325: $? = 0
 configure:22327: result: yes
 configure:22342: checking if strcasecmp is prototyped
 configure:22353: result: yes
 configure:22369: checking if strcasecmp is compilable
 configure:22388: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:22388: $? = 0
 configure:22390: result: yes
 configure:22405: checking if strcasecmp usage allowed
@@ -103993,7 +104242,9 @@ configure:22418: checking if strcasecmp might be used
 configure:22424: result: yes
 configure:22445: checking if strcmpi can be linked
 configure:22474: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
-/tmp/cc1QPZoL.o: In function `main':
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/tmp/ccnjjN3A.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `strcmpi'
 collect2: ld returned 1 exit status
 configure:22474: $? = 1
@@ -104177,12 +104428,15 @@ configure:22582: result: no
 configure:22594: checking if strdup can be linked
 configure:22623: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
 conftest.c:162:6: warning: conflicting types for built-in function 'strdup' [enabled by default]
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:22623: $? = 0
 configure:22625: result: yes
 configure:22640: checking if strdup is prototyped
 configure:22651: result: yes
 configure:22667: checking if strdup is compilable
 configure:22686: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:22686: $? = 0
 configure:22688: result: yes
 configure:22703: checking if strdup usage allowed
@@ -104191,7 +104445,9 @@ configure:22716: checking if strdup might be used
 configure:22722: result: yes
 configure:22743: checking if stricmp can be linked
 configure:22772: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
-/tmp/ccYF75eY.o: In function `main':
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/tmp/cc1ZJvKN.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `stricmp'
 collect2: ld returned 1 exit status
 configure:22772: $? = 1
@@ -104376,12 +104632,15 @@ configure:22880: result: no
 configure:22892: checking if strncasecmp can be linked
 configure:22921: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
 conftest.c:163:6: warning: conflicting types for built-in function 'strncasecmp' [enabled by default]
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:22921: $? = 0
 configure:22923: result: yes
 configure:22938: checking if strncasecmp is prototyped
 configure:22949: result: yes
 configure:22965: checking if strncasecmp is compilable
 configure:22984: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:22984: $? = 0
 configure:22986: result: yes
 configure:23001: checking if strncasecmp usage allowed
@@ -104390,7 +104649,9 @@ configure:23014: checking if strncasecmp might be used
 configure:23020: result: yes
 configure:23041: checking if strncmpi can be linked
 configure:23070: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
-/tmp/ccmMl7UX.o: In function `main':
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/tmp/ccG6juKZ.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `strncmpi'
 collect2: ld returned 1 exit status
 configure:23070: $? = 1
@@ -104575,7 +104836,9 @@ configure:23163: checking if strncmpi might be used
 configure:23178: result: no
 configure:23190: checking if strnicmp can be linked
 configure:23219: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
-/tmp/ccZlXtC4.o: In function `main':
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/tmp/ccv23383.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `strnicmp'
 collect2: ld returned 1 exit status
 configure:23219: $? = 1
@@ -104764,12 +105027,15 @@ configure:23345: checking for sys/uio.h
 configure:23345: result: yes
 configure:23364: checking if writev can be linked
 configure:23393: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:23393: $? = 0
 configure:23395: result: yes
 configure:23410: checking if writev is prototyped
 configure:23421: result: yes
 configure:23437: checking if writev is compilable
 configure:23456: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:23456: $? = 0
 configure:23458: result: yes
 configure:23473: checking if writev usage allowed
@@ -104782,23 +105048,29 @@ configure:23567: checking for AF_INET6
 configure:23609: result: yes
 configure:23626: checking for struct in6_addr
 configure:23661: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:23661: $? = 0
 configure:23668: result: yes
 configure:23684: checking for struct sockaddr_in6
 configure:23719: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:23719: $? = 0
 configure:23726: result: yes
 configure:23741: checking for struct sockaddr_in6.sin6_scope_id
 configure:23741: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:23741: $? = 0
 configure:23741: result: yes
 configure:23774: checking for struct addrinfo.ai_flags
 configure:23774: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:23774: $? = 0
 configure:23774: result: yes
 configure:23820: checking for bitncmp
 configure:23820: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
-/tmp/ccu6EPds.o: In function `main':
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/tmp/ccRLwjPk.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `bitncmp'
 collect2: ld returned 1 exit status
 configure:23820: $? = 1
@@ -104988,7 +105260,9 @@ configure: failed program was:
 configure:23820: result: no
 configure:23830: checking deeper for bitncmp
 configure:23847: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
-/tmp/ccUvyzey.o: In function `main':
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/tmp/ccn2zHGq.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `bitncmp'
 collect2: ld returned 1 exit status
 configure:23847: $? = 1
@@ -105168,15 +105442,21 @@ configure: failed program was:
 configure:23860: result: but still no
 configure:23820: checking for gettimeofday
 configure:23820: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:23820: $? = 0
 configure:23820: result: yes
 configure:23820: checking for if_indextoname
 configure:23820: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:23820: $? = 0
 configure:23820: result: yes
 configure:23874: checking for inet_net_pton
 configure:23874: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
-/tmp/ccdafcIJ.o: In function `main':
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/tmp/ccEAfnkF.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `inet_net_pton'
 collect2: ld returned 1 exit status
 configure:23874: $? = 1
@@ -105368,12 +105648,16 @@ configure: failed program was:
 configure:23874: result: no
 configure:23937: checking size of struct in6_addr
 configure:23942: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:23942: $? = 0
 configure:23942: ./conftest
 configure:23942: $? = 0
 configure:23982: result: 16
 configure:23997: checking size of struct in_addr
 configure:24002: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:24002: $? = 0
 configure:24002: ./conftest
 configure:24002: $? = 0
@@ -105386,6 +105670,8 @@ configure:24058: checking for netdb.h
 configure:24058: result: yes
 configure:24069: checking for getnameinfo
 configure:24098: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:24098: $? = 0
 configure:24100: result: yes
 configure:24208: checking types of arguments for getnameinfo
@@ -112922,6 +113208,7 @@ configure: failed program was:
 | }
 | 
 configure:24272: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:24272: $? = 0
 configure:24285: result: const struct sockaddr *,socklen_t,socklen_t,int
 configure:24367: checking whether byte ordering is bigendian
@@ -113110,6 +113397,7 @@ configure: failed program was:
 | 	     typedef int dummy;
 | 
 configure:24426: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 configure:24426: $? = 0
 configure:24443: cc -c -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 conftest.c >&5
 conftest.c: In function 'main':
@@ -113519,7 +113807,7 @@ lt_cv_ld_reload_flag=-r
 lt_cv_nm_interface='BSD nm'
 lt_cv_objdir=.libs
 lt_cv_path_LD=/usr/x86_64-suse-linux/bin/ld
-lt_cv_path_NM='/usr/bin/nm -B'
+lt_cv_path_NM=/usr/bin/nm
 lt_cv_prog_compiler_c_o=yes
 lt_cv_prog_compiler_pic_works=yes
 lt_cv_prog_compiler_rtti_exceptions=no
@@ -113584,7 +113872,7 @@ MAINT='#'
 MAINTAINER_MODE_FALSE=''
 MAINTAINER_MODE_TRUE='#'
 MAKEINFO='${SHELL} /root/darkmatter-depends/ares/missing --run makeinfo'
-NM='/usr/bin/nm -B'
+NM='/usr/bin/nm'
 NMEDIT=''
 NO_UNDEFINED_FALSE=''
 NO_UNDEFINED_TRUE='#'

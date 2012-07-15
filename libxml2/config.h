@@ -294,7 +294,7 @@
 #define VERSION "2.7.8"
 
 /* Determine what socket length (socklen_t) data type is */
-#define XML_SOCKLEN_T socklen_t
+#define XML_SOCKLEN_T int
 
 /* Using the Win32 Socket implementation */
 /* #undef _WINSOCKAPI_ */

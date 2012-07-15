@@ -57,7 +57,7 @@ configure:3253: autobuild project... GNU Libtool
 configure:3259: autobuild revision... 2.4 ()
 configure:3264: autobuild hostname... linux-j0lx
 configure:3268: autobuild mode... default
-configure:3276: autobuild timestamp... 20120715T065737Z
+configure:3276: autobuild timestamp... 20120715T072445Z
 configure:3375: checking for gcc
 configure:3402: result: cc
 configure:3631: checking for C compiler version
@@ -333,7 +333,7 @@ configure:11511: checking how to hardcode library paths into programs
 configure:11536: result: immediate
 configure:11630: checking for shl_load
 configure:11630: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
-/tmp/ccr9ZXqh.o: In function `main':
+/tmp/ccLHABgg.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `shl_load'
 collect2: ld returned 1 exit status
 configure:11630: $? = 1
@@ -445,7 +445,7 @@ configure: failed program was:
 configure:11668: result: no
 configure:11673: checking for dlopen
 configure:11673: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
-/tmp/ccSFl7Kl.o: In function `main':
+/tmp/cc3P3Jsp.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `dlopen'
 collect2: ld returned 1 exit status
 configure:11673: $? = 1
@@ -539,7 +539,7 @@ configure:12222: checking for the default library search path
 configure:12229: result: /lib /usr/lib /usr/local/lib64 /usr/local/lib 
 configure:12259: checking for library containing dlopen
 configure:12290: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
-/tmp/ccFqpL2s.o: In function `main':
+/tmp/cc1RM1qF.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `dlopen'
 collect2: ld returned 1 exit status
 configure:12290: $? = 1
@@ -1086,7 +1086,7 @@ configure:13024: $? = 0
 configure:13024: result: yes
 configure:13043: checking for strlcat
 configure:13043: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -ldl -lc -lm >&5
-/tmp/cc9lfgfz.o: In function `main':
+/tmp/ccDfGTMP.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `strlcat'
 collect2: ld returned 1 exit status
 configure:13043: $? = 1
@@ -1176,7 +1176,7 @@ configure: failed program was:
 configure:13043: result: no
 configure:13043: checking for strlcpy
 configure:13043: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -ldl -lc -lm >&5
-/tmp/ccXpBRfG.o: In function `main':
+/tmp/ccYzfF2T.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `strlcpy'
 collect2: ld returned 1 exit status
 configure:13043: $? = 1

@@ -152,7 +152,7 @@ LIBOBJS =
 LIBS = -luuid -lrt -lpthread -lc -lm
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIBZMQ_EXTRA_CFLAGS = 
-LIBZMQ_EXTRA_CXXFLAGS = -fvisibility=hidden 
+LIBZMQ_EXTRA_CXXFLAGS = 
 LIBZMQ_EXTRA_LDFLAGS = 
 LIPO = 
 LN_S = ln -s
@@ -160,7 +160,7 @@ LTLIBOBJS =
 LTVER = 1:0:0
 MAKEINFO = ${SHELL} /root/darkmatter-depends/zeromq/config/missing --run makeinfo
 MKDIR_P = /bin/mkdir -p
-NM = /usr/bin/nm -B
+NM = /usr/bin/nm
 NMEDIT = 
 OBJDUMP = objdump
 OBJEXT = o

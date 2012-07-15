@@ -200,7 +200,7 @@ LIBOBJS =
 LIBS = -luuid -lrt -lpthread -lc -lm
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIBZMQ_EXTRA_CFLAGS = 
-LIBZMQ_EXTRA_CXXFLAGS = -fvisibility=hidden 
+LIBZMQ_EXTRA_CXXFLAGS = 
 LIBZMQ_EXTRA_LDFLAGS = 
 LIPO = 
 LN_S = ln -s
@@ -208,7 +208,7 @@ LTLIBOBJS =
 LTVER = 1:0:0
 MAKEINFO = ${SHELL} /root/darkmatter-depends/zeromq/config/missing --run makeinfo
 MKDIR_P = /bin/mkdir -p
-NM = /usr/bin/nm -B
+NM = /usr/bin/nm
 NMEDIT = 
 OBJDUMP = objdump
 OBJEXT = o
@@ -432,7 +432,7 @@ libzmq_la_SOURCES = \
 
 libzmq_la_LDFLAGS = -version-info 1:0:0 
 #libzmq_la_LDFLAGS = -no-undefined -avoid-version -version-info 1:0:0 
-libzmq_la_CXXFLAGS = -fvisibility=hidden 
+libzmq_la_CXXFLAGS = 
 #libzmq_la_CPPFLAGS = -I$(top_srcdir)//include/
 #libzmq_la_LIBADD = $(top_srcdir)//libpgm_noinst.la
 all: platform.hpp

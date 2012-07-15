@@ -76,7 +76,7 @@ LD="/usr/x86_64-suse-linux/bin/ld"
 LN_S="ln -s"
 
 # A BSD-compatible nm program.
-NM="/usr/bin/nm -B"
+NM="/usr/bin/nm"
 
 # A symbol stripping program
 STRIP=strip
@@ -117,13 +117,13 @@ pic_flag=" -fPIC"
 pic_mode=default
 
 # Does compiler simultaneously support -c and -o options?
-compiler_c_o="yes"
+compiler_c_o="no"
 
 # Can we write directly to a .lo ?
-compiler_o_lo="yes"
+compiler_o_lo="no"
 
 # Must we lock files when doing compilation ?
-need_locks="no"
+need_locks="yes"
 
 # Do we need the lib prefix for modules?
 need_lib_prefix=no

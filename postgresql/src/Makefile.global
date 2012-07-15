@@ -184,8 +184,8 @@ TCL_INCLUDE_SPEC	=
 TCL_SHARED_BUILD	= 
 TCL_SHLIB_LD_LIBS	= 
 
-PTHREAD_CFLAGS		=   -pthread  -D_REENTRANT -D_THREAD_SAFE -D_POSIX_PTHREAD_SEMANTICS
-PTHREAD_LIBS		=  -lpthread     
+PTHREAD_CFLAGS		=  -D_REENTRANT -D_THREAD_SAFE -D_POSIX_PTHREAD_SEMANTICS
+PTHREAD_LIBS		= 
 
 have_docbook	= no
 DOCBOOKSTYLE	= 
@@ -235,7 +235,7 @@ LIBS = -lpam -lssl -lcrypto -lz -lreadline -lncurses -lcrypt -ldl -lm -lc -lm
 LDAP_LIBS_FE = 
 LDAP_LIBS_BE = 
 OSSP_UUID_LIBS = 
-LD = /usr/bin/ld
+LD = /usr/x86_64-suse-linux/bin/ld
 with_gnu_ld = yes
 ld_R_works = 
 LDFLAGS = -L/lib64 -L/usr/lib64 -L/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm  -Wl,--as-needed

@@ -89,7 +89,7 @@ EGREP="/bin/grep -E"
 FGREP="/bin/grep -F"
 
 # A BSD- or MS-compatible name lister.
-NM="/usr/bin/nm -B"
+NM="/usr/bin/nm"
 
 # Whether we need soft or hard links.
 LN_S="ln -s"
@@ -240,7 +240,7 @@ finish_eval=""
 hardcode_into_libs=yes
 
 # Compile-time system search path for libraries.
-sys_lib_search_path_spec="/usr/lib64/gcc/x86_64-suse-linux/4.6 /usr/lib64 /lib64 /usr/x86_64-suse-linux/lib"
+sys_lib_search_path_spec="/usr/lib64/gcc/x86_64-suse-linux/4.6 /usr/lib64 /lib64 /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib /usr/x86_64-suse-linux/lib"
 
 # Run-time system search path for libraries.
 sys_lib_dlsearch_path_spec="/lib /usr/lib /usr/local/lib64 /usr/local/lib "
