@@ -87,7 +87,7 @@ AS = as
 AUTOCONF = ${SHELL} /root/darkmatter-depends/libxml2/missing --run autoconf
 AUTOHEADER = ${SHELL} /root/darkmatter-depends/libxml2/missing --run autoheader
 AUTOMAKE = ${SHELL} /root/darkmatter-depends/libxml2/missing --run automake-1.11
-AWK = mawk
+AWK = gawk
 BASE_THREAD_LIBS = -lpthread
 C14N_OBJ = c14n.c
 CATALOG_OBJ = catalog.o
@@ -125,7 +125,7 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-LD = /usr/bin/ld -m elf_x86_64
+LD = /usr/x86_64-suse-linux/bin/ld -m elf_x86_64
 LDFLAGS = -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm
 LIBOBJS = 
 LIBS = -lc -lm
@@ -146,7 +146,7 @@ MODULE_EXTENSION = .so
 MODULE_PLATFORM_LIBS = -ldl
 MV = /bin/mv
 M_LIBS = -lm
-NM = /usr/bin/nm
+NM = /usr/bin/nm -B
 NMEDIT = 
 OBJDUMP = objdump
 OBJEXT = o
@@ -161,12 +161,12 @@ PACKAGE_URL =
 PACKAGE_VERSION = 
 PATH_SEPARATOR = :
 PERL = /usr/bin/perl
-PYTHON = /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/bin/python
-PYTHON_INCLUDES = /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/python2.7
+PYTHON = /usr/bin/python
+PYTHON_INCLUDES = 
 PYTHON_LIBS = 
-PYTHON_SITE_PACKAGES = ${exec_prefix}/lib/python2.7/site-packages
-PYTHON_SUBDIR = python
-PYTHON_TESTS =  RelaxNGPythonTests SchemasPythonTests
+PYTHON_SITE_PACKAGES = /usr/lib/python2.7/site-packages
+PYTHON_SUBDIR = 
+PYTHON_TESTS = 
 PYTHON_VERSION = 2.7
 RANLIB = ranlib
 RDL_LIBS = 
@@ -237,19 +237,19 @@ WITH_WRITER = 1
 WITH_XINCLUDE = 1
 WITH_XPATH = 1
 WITH_XPTR = 1
-WITH_ZLIB = 1
+WITH_ZLIB = 0
 XINCLUDE_OBJ = xinclude.o
 XMLLINT = /usr/bin/xmllint
 XML_CFLAGS = 
 XML_INCLUDEDIR = -I${includedir}/libxml2
 XML_LIBDIR = -L${libdir}
-XML_LIBS = -lxml2 -L/usr/local/lib64/darkmatter/lib -lz   -lm -lc -lm
+XML_LIBS = -lxml2    -lm -lc -lm
 XML_LIBTOOLLIBS = libxml2.la
 XPATH_OBJ = xpath.o
 XPTR_OBJ = xpointer.o
 XSLTPROC = /usr/bin/xsltproc
-Z_CFLAGS = -I/usr/local/lib64/darkmatter/include
-Z_LIBS = -L/usr/local/lib64/darkmatter/lib -lz
+Z_CFLAGS = 
+Z_LIBS = 
 abs_builddir = /root/darkmatter-depends/libxml2/python/tests
 abs_srcdir = /root/darkmatter-depends/libxml2/python/tests
 abs_top_builddir = /root/darkmatter-depends/libxml2
@@ -568,17 +568,17 @@ uninstall-am: uninstall-dist_exampleDATA
 	ps ps-am uninstall uninstall-am uninstall-dist_exampleDATA
 
 
-tests: $(PYTESTS)
-	@echo "## running Python regression tests"
-	-@(PYTHONPATH="..:../.libs:$(srcdir)/..:$$PYTHONPATH" ; \
-	   export PYTHONPATH; \
-	   LD_LIBRARY_PATH="$(top_builddir)/.libs:$$LD_LIBRARY_PATH" ; \
-	   export LD_LIBRARY_PATH; \
-	   for test in $(PYTESTS) ; \
-	   do log=`$(PYTHON) $(srcdir)/$$test` ; \
-	   if [ "`echo $$log | grep OK`" = "" ] ; then \
-	   echo "-- $$test" ; echo "$$log" ; fi ; done)
-#tests:
+#tests: $(PYTESTS)
+#	@echo "## running Python regression tests"
+#	-@(PYTHONPATH="..:../.libs:$(srcdir)/..:$$PYTHONPATH" ; \
+#	   export PYTHONPATH; \
+#	   LD_LIBRARY_PATH="$(top_builddir)/.libs:$$LD_LIBRARY_PATH" ; \
+#	   export LD_LIBRARY_PATH; \
+#	   for test in $(PYTESTS) ; \
+#	   do log=`$(PYTHON) $(srcdir)/$$test` ; \
+#	   if [ "`echo $$log | grep OK`" = "" ] ; then \
+#	   echo "-- $$test" ; echo "$$log" ; fi ; done)
+tests:
 
 clean:
 	rm -f *.pyc core

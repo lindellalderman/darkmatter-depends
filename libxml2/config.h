@@ -2,7 +2,7 @@
 /* config.h.in.  Generated from configure.in by autoheader.  */
 #define PACKAGE "libxml2"
 #define VERSION "2.7.8"
-#define HAVE_LIBZ 1
+/* #undef HAVE_LIBZ */
 /* #undef HAVE_LIBM */
 #define HAVE_ISINF /**/
 #define HAVE_ISNAN /**/
@@ -108,7 +108,7 @@
 /* #undef HAVE_LIBREADLINE */
 
 /* Have compression library */
-#define HAVE_LIBZ 1
+/* #undef HAVE_LIBZ */
 
 /* Define to 1 if you have the <limits.h> header file. */
 #define HAVE_LIMITS_H 1
@@ -245,7 +245,7 @@
 #define HAVE_VSPRINTF 1
 
 /* Define to 1 if you have the <zlib.h> header file. */
-#define HAVE_ZLIB_H 1
+/* #undef HAVE_ZLIB_H */
 
 /* Define to 1 if you have the `_stat' function. */
 /* #undef HAVE__STAT */
@@ -294,7 +294,7 @@
 #define VERSION "2.7.8"
 
 /* Determine what socket length (socklen_t) data type is */
-#define XML_SOCKLEN_T int
+#define XML_SOCKLEN_T socklen_t
 
 /* Using the Win32 Socket implementation */
 /* #undef _WINSOCKAPI_ */

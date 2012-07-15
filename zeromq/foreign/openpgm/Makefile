@@ -105,7 +105,7 @@ ASCIIDOC =
 AUTOCONF = ${SHELL} /root/darkmatter-depends/zeromq/config/missing --run autoconf
 AUTOHEADER = ${SHELL} /root/darkmatter-depends/zeromq/config/missing --run autoheader
 AUTOMAKE = ${SHELL} /root/darkmatter-depends/zeromq/config/missing --run automake-1.11
-AWK = mawk
+AWK = gawk
 CC = cc -std=gnu99
 CCDEPMODE = depmode=gcc3
 CFLAGS = -fpic -fPIC -fpic -fPIC
@@ -133,13 +133,13 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-LD = /usr/bin/ld -m elf_x86_64
+LD = /usr/x86_64-suse-linux/bin/ld -m elf_x86_64
 LDFLAGS = -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm
 LIBOBJS = 
 LIBS = -luuid -lrt -lpthread -lc -lm
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIBZMQ_EXTRA_CFLAGS = 
-LIBZMQ_EXTRA_CXXFLAGS = 
+LIBZMQ_EXTRA_CXXFLAGS = -fvisibility=hidden 
 LIBZMQ_EXTRA_LDFLAGS = 
 LIPO = 
 LN_S = ln -s
@@ -147,7 +147,7 @@ LTLIBOBJS =
 LTVER = 1:0:0
 MAKEINFO = ${SHELL} /root/darkmatter-depends/zeromq/config/missing --run makeinfo
 MKDIR_P = /bin/mkdir -p
-NM = /usr/bin/nm
+NM = /usr/bin/nm -B
 NMEDIT = 
 OBJDUMP = objdump
 OBJEXT = o
