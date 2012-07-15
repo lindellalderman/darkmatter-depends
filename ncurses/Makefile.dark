@@ -9,10 +9,7 @@ ifdef SUNOS
 LDFLAGS += -Wl,-mimpure-text 
 endif
 CONFIG_OPTS += --enable-sigwinch 
-ifdef REDHAT
-CONFIG_OPTS += --with-libtool
-endif
-ifdef SUSE
+ifndef UBUNTU
 CONFIG_OPTS += --with-libtool
 endif
 

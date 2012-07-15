@@ -38,7 +38,7 @@ configure:1088: PATH=".;."; conftest.sh
 configure:1091: $? = 127
 configure:1104: checking for egrep
 configure:1114: result: grep -E
-configure:1128: result: Configuring NCURSES 5.7 ABI 5 (Sat Jul 14 20:06:48 PDT 2012)
+configure:1128: result: Configuring NCURSES 5.7 ABI 5 (Sat Jul 14 20:11:14 PDT 2012)
 configure:1233: checking build system type
 configure:1251: result: x86_64-unknown-linux-gnu
 configure:1258: checking host system type
@@ -903,8 +903,8 @@ configure:12588: checking if external errno exists
 configure:12610: cc -o conftest -fpic -fPIC -fpic -fPIC  --param max-inline-insns-single=1200 -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -D_GNU_SOURCE -DNDEBUG -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
 /usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 /usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
-/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: errno@@GLIBC_PRIVATE: TLS definition in /lib64/libc.so.6 section .tbss mismatches non-TLS reference in /tmp/ccJ8mzF9.o
-/tmp/ccJ8mzF9.o: could not read symbols: Bad value
+/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: errno@@GLIBC_PRIVATE: TLS definition in /lib64/libc.so.6 section .tbss mismatches non-TLS reference in /tmp/ccqYYnk1.o
+/tmp/ccqYYnk1.o: could not read symbols: Bad value
 collect2: ld returned 1 exit status
 configure:12613: $? = 1
 configure: failed program was:
@@ -976,7 +976,7 @@ configure:12762: checking for issetugid
 configure:12799: cc -o conftest -fpic -fPIC -fpic -fPIC  --param max-inline-insns-single=1200 -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -D_GNU_SOURCE -DNDEBUG -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
 /usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/as: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
 /usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/bin/ld: /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib/libz.so.1: no version information available (required by /usr/lib64/libbfd-2.21.1.so)
-/tmp/cc8yo7Zq.o: In function `main':
+/tmp/ccf0KXAt.o: In function `main':
 conftest.c:(.text+0xe): undefined reference to `issetugid'
 collect2: ld returned 1 exit status
 configure:12802: $? = 1
@@ -1664,7 +1664,7 @@ cf_cv_struct_dirent64=no
 cf_cv_subst_AR_OPTS=rv
 cf_cv_sys_time_select=yes
 cf_cv_system_name=linux-gnu
-cf_cv_timestamp='Sat Jul 14 20:06:48 PDT 2012'
+cf_cv_timestamp='Sat Jul 14 20:11:14 PDT 2012'
 cf_cv_type_of_bool='unsigned char'
 cf_cv_type_sigaction=no
 cf_cv_typeof_chtype=int

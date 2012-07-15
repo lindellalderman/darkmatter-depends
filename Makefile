@@ -10,7 +10,6 @@ export SRC_DIR
 include mklib/build.mk
 
 export BUILD_DATE
-export LD_LIBRARY_PATH
 export LD_RUN_PATH
 export LIBRARY_PATH
 export PATH

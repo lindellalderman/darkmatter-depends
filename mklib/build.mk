@@ -156,13 +156,12 @@ LDFLAGS         += -L/lib64 -L/usr/lib64
 endif
 LDFLAGS         += -L$(BUILD_ROOT)$(LIB_DIR) 
 LIBS            += -lc -lm
-LD_LIBRARY_PATH := $(BUILD_ROOT)$(LIB_DIR)
 LD_RUN_PATH     := $(BUILD_ROOT)$(LIB_DIR)
 LIBRARY_PATH    := $(BUILD_ROOT)$(LIB_DIR)
 PERL5LIB        := $(BUILD_ROOT)$(SHARE_DIR)/autoconf
 
 COMMON_FLAGS   = CC="$(CC)" CPATH="$(CPATH)" CXX="$(CXX)" CFLAGS="$(CFLAGS)" CPPFLAGS="$(CPPFLAGS)" CXXFLAGS="$(CFLAGS)" PATH="$(PATH)" PERL5LIB="$(PERL5LIB)" PKG_CONFIG_PATH="$(BUILD_ROOT)$(PKG_CONFIG_PATH)"
-LINK_FLAGS     = LIBRARY_PATH="$(LIBRARY_PATH)" LD_RUN_PATH="$(LD_RUN_PATH)" LD_LIBRARY_PATH="$(LD_LIBRARY_PATH)" LDFLAGS="$(LDFLAGS) $(LIBS)" LIBS="$(LIBS)" $(LINK_EXTRA_FLAGS) 
+LINK_FLAGS     = LIBRARY_PATH="$(LIBRARY_PATH)" LD_RUN_PATH="$(LD_RUN_PATH)" LDFLAGS="$(LDFLAGS) $(LIBS)" LIBS="$(LIBS)" $(LINK_EXTRA_FLAGS) 
 BUILD_FLAGS    = $(COMMON_FLAGS) $(COMPILE_EXTRA_FLAGS) $(LINK_FLAGS)
 DM_CONFIG      = -D_PYTHON='"$(subst $(BUILD_ROOT),,$(PYTHON))"' -D_PATH='"$(subst $(BUILD_ROOT),,$(PATH))"' -D_CFLAGS='"$(subst $(BUILD_ROOT),,$(CFLAGS))"' -D_CXXFLAGS='"$(subst $(BUILD_ROOT),,$(CXXFLAGS))"' -D_CPPFLAGS='"$(subst $(BUILD_ROOT),,$(CPPFLAGS))"' -D_LDFLAGS='"$(subst $(BUILD_ROOT),,$(LDFLAGS))"' -D_LIBS='"$(subst $(BUILD_ROOT),,$(LIBS))"' -D_BINDIR='"$(subst $(BUILD_ROOT),,$(BIN_DIR))"' -D_LIBDIR='"$(subst $(BUILD_ROOT),,$(LIB_DIR))"' -D_INCDIR='"$(subst $(BUILD_ROOT),,$(INCLUDE_DIR))"'
 
@@ -180,7 +179,7 @@ REMOVE_PATHS     = $(SBIN_DIR)/$(pkg_name)* $(BIN_DIR)/$(pkg_name)* $(VAR_DIR)/l
 
 # Build tools
 PYTHON = $(BUILD_ROOT)$(BIN_DIR)/python
-PY_VERSION = $(shell $(PYTHON) -c "import sys; print '.'.join([str(x) for x in sys.version_info[:2]])")
+PY_VERSION = 2.7
 AUTORECONF = $(if $(shell which $(BUILD_ROOT)$(BIN_DIR)/autoreconf 2> /dev/null || true),$(BUILD_ROOT)$(BIN_DIR)/autoreconf,$(shell which autoreconf))
 
 # Configure options
@@ -234,7 +233,6 @@ export CXX
 export CFLAGS
 export LDFLAGS
 export LD_RUN_PATH
-export LD_LIBRARY_PATH
 export CPATH
 export LIBRARY_PATH
 export PATH

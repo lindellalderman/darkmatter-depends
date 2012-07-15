@@ -12,7 +12,7 @@ export PERL5LIB
 ifndef pkg_help
 define pkg_help
 	$(QUIET) echo
-	$(QUIET) echo Dark Matter Stack: $(pkg_name)-$(pkg_version)
+	$(QUIET) echo Dark Matter Dependencies: $(pkg_name)-$(pkg_version)
 	$(QUIET) if [ -n "$(pkg_description)" ]; then echo "\n$(pkg_description)" ; fi
 	$(QUIET) echo
 	$(QUIET) echo QUICK INSTALL 

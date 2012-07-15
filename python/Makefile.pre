@@ -29,7 +29,7 @@ srcdir=		.
 
 
 CC=		cc -pthread
-CXX=		g++ -pthread -pthread
+CXX=		g++ -pthread
 MAINCC=		$(CC)
 LINKCC=		$(PURIFY) $(MAINCC)
 AR=		ar
@@ -137,7 +137,7 @@ MACOSX_DEPLOYMENT_TARGET=
 OTHER_LIBTOOL_OPT=
 
 # Environment to run shared python without installed libraries
-RUNSHARED=       LD_LIBRARY_PATH=/root/darkmatter-depends/python:/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib
+RUNSHARED=       LD_LIBRARY_PATH=/root/darkmatter-depends/python:
 
 # Modes for directories, executables and data files created by the
 # install process.  Default to user-only-writable for all file types.
