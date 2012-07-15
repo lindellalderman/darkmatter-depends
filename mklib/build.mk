@@ -56,6 +56,11 @@ ifeq (CentOS,$(shell cat /etc/redhat-release 2> /dev/null | cut -d' ' -f1 ))
 REDHAT=1
 endif
 
+ifeq (opensuse,$(shell grep opensuse /etc/os-release | cut -d= -f2))
+OPENSUSE=1
+SUSE=1
+endif
+
 OS_RELEASE := $(shell uname -r)
 
 OS := $(shell uname -s)
@@ -86,6 +91,7 @@ DIST_EXT := rpm
 RELEASE  := 1
 FILENAME        = $(NAME)-$(VERSION)-$(RELEASE).$(DIST_ARCH).$(DIST_EXT)
 else
+
 ifdef DEBIAN
 BUILD_DEPENDS = cmake autoconf xutils-dev patch gcc g++ git psutils texinfo uuid-dev uuid-runtime libaio-dev libaio1 ragel
 BUILD_DEPEND_INSTALL = apt-get install -y
@@ -97,6 +103,19 @@ RELEASE :=
 FILENAME = $(NAME)_$(VERSION)_$(DIST_ARCH).$(DIST_EXT)
 RELEASE  :=
 endif
+
+ifdef SUSE
+BUILD_DEPENDS = cmake autoconf xorg-x11-util-devel patch gcc gcc-c++ git psutils texinfo uuid-devel libuuid-devel pam-devel libaio-devel libaio glibc-devel
+BUILD_DEPEND_INSTALL = yast -i
+ifdef x86_64
+DIST_ARCH := x86_64
+endif
+DIST_EXT := rpm
+RELEASE :=
+FILENAME = $(NAME)_$(VERSION)_$(DIST_ARCH).$(DIST_EXT)
+RELEASE  :=
+endif
+
 endif
 
 ifdef SUNOS
