@@ -56,7 +56,7 @@ ifeq (CentOS,$(shell cat /etc/redhat-release 2> /dev/null | cut -d' ' -f1 ))
 REDHAT=1
 endif
 
-ifeq (opensuse,$(shell grep opensuse /etc/os-release | cut -d= -f2))
+ifeq (opensuse,$(shell grep opensuse /etc/os-release 2> /dev/null | cut -d= -f2))
 OPENSUSE=1
 SUSE=1
 endif

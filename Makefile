@@ -232,4 +232,6 @@ env:
 	$(QUIET) echo --------------------------------------------------------
 	$(QUIET) echo
 	$(QUIET) chmod -v 0644 $(BUILD_ROOT)/etc/profile.d/darkmatter.sh
-	$(QUIET) git checkout */configure || true
+
+rollback:
+	$(QUIET) git checkout */configure 2> /dev/null || true
