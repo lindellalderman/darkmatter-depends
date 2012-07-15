@@ -7,5 +7,9 @@ pkg_release := 1
 CONFIG_OPTS := --prefix=$(BUILD_ROOT)$(PREFIX_DIR)
 BUILD_ROOT_ONLY := 1
 
+define pkg_prebuild
+	touch aclocal.m4 Makefile.in
+endef
+
 include ../mklib/pkggnu.mk
 include ../mklib/packages.mk

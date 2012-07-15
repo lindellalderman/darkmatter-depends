@@ -18,7 +18,6 @@ endif
 
 ifndef pkg_configure
 define pkg_configure 
-	if [ -e ./configure ]; then if [ -e $(MAKEFILE) ]; then rm -f $(MAKEFILE) 2>&1 || true ; fi; fi
 	if [ -e ./configure ]; then $(BUILD_FLAGS) ./configure $(CONFIG_OPTS) 2>&1 || exit 1 ; fi
 endef
 endif
