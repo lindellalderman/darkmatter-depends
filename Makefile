@@ -34,7 +34,7 @@ INSTALL_ORDER := automake autoconf libtool zlib ncurses gdbm md5 bzip2 libeio ar
 .CLEAN_TARGETS=$(addsuffix -clean,$(INSTALL_ORDER))
 .PHONY=$(.BUILD_TARGETS) $(.CLEAN_TARGETS) help prep clean build-bin final install all build-info pause deb-info deb env
 
-all: build-bin final env
+all: build-bin final env rollback
 
 build-info:
 	$(QUIET) echo
