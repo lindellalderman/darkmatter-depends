@@ -517,7 +517,9 @@ prepare_terminal_settings (meta_flag, oldtio, tiop)
      TIOTYPE oldtio, *tiop;
 {
   _rl_echoing_p = (oldtio.c_lflag & ECHO);
+#if defined (ECHOCTL)
   _rl_echoctl = (oldtio.c_lflag & ECHOCTL);
+#endif
 
   tiop->c_lflag &= ~(ICANON | ECHO);
 
@@ -602,7 +604,7 @@ rl_prep_terminal (meta_flag)
   /* Try to keep this function from being INTerrupted. */
   _rl_block_sigint ();
 
-  tty = fileno (rl_instream);
+  tty = rl_instream ? fileno (rl_instream) : fileno (stdin);
 
   if (get_tty_settings (tty, &tio) < 0)
     {
@@ -676,7 +678,7 @@ rl_deprep_terminal ()
   /* Try to keep this function from being interrupted. */
   _rl_block_sigint ();
 
-  tty = fileno (rl_instream);
+  tty = rl_instream ? fileno (rl_instream) : fileno (stdout);
 
   if (_rl_enable_keypad)
     _rl_control_keypad (0);

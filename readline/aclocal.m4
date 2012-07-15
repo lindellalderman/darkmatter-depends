@@ -80,6 +80,9 @@ AC_CACHE_VAL(bash_cv_type_$1,
 #if HAVE_INTTYPES_H
 #include <inttypes.h>
 #endif
+#if HAVE_STDINT_H
+#include <stdint.h>
+#endif
 $2
 ], bash_cv_type_$1=yes, bash_cv_type_$1=no)])
 AC_MSG_RESULT($bash_cv_type_$1)
@@ -1690,14 +1693,21 @@ AC_CHECK_HEADERS(wchar.h)
 AC_CHECK_HEADERS(langinfo.h)
 
 AC_CHECK_FUNC(mbrlen, AC_DEFINE(HAVE_MBRLEN))
+AC_CHECK_FUNC(mbscasecmp, AC_DEFINE(HAVE_MBSCMP))
 AC_CHECK_FUNC(mbscmp, AC_DEFINE(HAVE_MBSCMP))
+AC_CHECK_FUNC(mbsnrtowcs, AC_DEFINE(HAVE_MBSNRTOWCS))
 AC_CHECK_FUNC(mbsrtowcs, AC_DEFINE(HAVE_MBSRTOWCS))
+
+
+AC_REPLACE_FUNCS(mbschr)
 
 AC_CHECK_FUNC(wcrtomb, AC_DEFINE(HAVE_WCRTOMB))
 AC_CHECK_FUNC(wcscoll, AC_DEFINE(HAVE_WCSCOLL))
 AC_CHECK_FUNC(wcsdup, AC_DEFINE(HAVE_WCSDUP))
 AC_CHECK_FUNC(wcwidth, AC_DEFINE(HAVE_WCWIDTH))
 AC_CHECK_FUNC(wctype, AC_DEFINE(HAVE_WCTYPE))
+
+AC_REPLACE_FUNCS(wcswidth)
 
 dnl checks for both mbrtowc and mbstate_t
 AC_FUNC_MBRTOWC
@@ -1751,6 +1761,13 @@ AC_CACHE_CHECK([for wint_t in wctype.h], bash_cv_type_wint_t,
 ], bash_cv_type_wint_t=yes, bash_cv_type_wint_t=no)])
 if test $bash_cv_type_wint_t = yes; then
         AC_DEFINE(HAVE_WINT_T, 1, [systems should define this type here])
+fi
+
+if test "$am_cv_func_iconv" = yes; then
+	OLDLIBS="$LIBS"
+	LIBS="$LIBS $LIBICONV"
+	AC_CHECK_FUNCS(locale_charset)
+	LIBS="$OLDLIBS"
 fi
 
 ])
@@ -4017,4 +4034,136 @@ AC_DEFUN([BASH_FUNC_FPURGE],
   AC_CHECK_FUNCS_ONCE([fpurge])
   AC_CHECK_FUNCS_ONCE([__fpurge])
   AC_CHECK_DECLS([fpurge], , , [#include <stdio.h>])
+])
+
+AC_DEFUN([BASH_FUNC_SNPRINTF],
+[
+  AC_CHECK_FUNCS_ONCE([snprintf])
+  if test X$ac_cv_func_snprintf = Xyes; then
+    AC_CACHE_CHECK([for standard-conformant snprintf], [bash_cv_func_snprintf],
+      [AC_TRY_RUN([
+#include <stdio.h>
+
+main()
+{
+  int n;
+  n = snprintf (0, 0, "%s", "0123456");
+  exit(n != 7);
+}
+], bash_cv_func_snprintf=yes, bash_cv_func_snprintf=no,
+   [AC_MSG_WARN([cannot check standard snprintf if cross-compiling])
+    bash_cv_func_snprintf=yes]
+)])
+    if test $bash_cv_func_snprintf = no; then
+      ac_cv_func_snprintf=no
+    fi
+  fi
+  if test $ac_cv_func_snprintf = no; then
+    AC_DEFINE(HAVE_SNPRINTF, 0,
+      [Define if you have a standard-conformant snprintf function.])
+  fi
+])
+
+AC_DEFUN([BASH_FUNC_VSNPRINTF],
+[
+  AC_CHECK_FUNCS_ONCE([vsnprintf])
+  if test X$ac_cv_func_vsnprintf = Xyes; then
+    AC_CACHE_CHECK([for standard-conformant vsnprintf], [bash_cv_func_vsnprintf],
+      [AC_TRY_RUN([
+#if HAVE_STDARG_H
+#include <stdarg.h>
+#else
+#include <varargs.h>
+#endif
+#include <stdio.h>
+#include <stdlib.h>
+
+static int
+#if HAVE_STDARG_H
+foo(const char *fmt, ...)
+#else
+foo(format, va_alist)
+     const char *format;
+     va_dcl
+#endif
+{
+  va_list args;
+  int n;
+
+#if HAVE_STDARG_H
+  va_start(args, fmt);
+#else
+  va_start(args);
+#endif
+  n = vsnprintf(0, 0, fmt, args);
+  va_end (args);
+  return n;
+}
+
+main()
+{
+  int n;
+  n = foo("%s", "0123456");
+  exit(n != 7);
+}
+], bash_cv_func_vsnprintf=yes, bash_cv_func_vsnprintf=no,
+   [AC_MSG_WARN([cannot check standard vsnprintf if cross-compiling])
+    bash_cv_func_vsnprintf=yes]
+)])
+    if test $bash_cv_func_vsnprintf = no; then
+      ac_cv_func_vsnprintf=no
+    fi
+  fi
+  if test $ac_cv_func_vsnprintf = no; then
+    AC_DEFINE(HAVE_VSNPRINTF, 0,
+      [Define if you have a standard-conformant vsnprintf function.])
+  fi
+])
+
+AC_DEFUN(BASH_STRUCT_WEXITSTATUS_OFFSET,
+[AC_MSG_CHECKING(for offset of exit status in return status from wait)
+AC_CACHE_VAL(bash_cv_wexitstatus_offset,
+[AC_RUN_IFELSE([
+#include <stdlib.h>
+#include <unistd.h>
+
+#include <sys/wait.h>
+
+main(c, v)
+     int c;
+     char **v;
+{
+  pid_t pid, p;
+  int s, i, n;
+
+  s = 0;
+  pid = fork();
+  if (pid == 0)
+    exit (42);
+
+  /* wait for the process */
+  p = wait(&s);
+  if (p != pid)
+    exit (255);
+
+  /* crack s */
+  for (i = 0; i < (sizeof(s) - 8); i++)
+    {
+      n = (s >> i) & 0xff;
+      if (n == 42)
+	exit (i);
+    }
+
+  exit (254);
+}
+], bash_cv_wexitstatus_offset=0, bash_cv_wexitstatus_offset=$?,
+   [AC_MSG_WARN(cannot check WEXITSTATUS offset if cross compiling -- defaulting to 0)
+    bash_cv_wexitstatus_offset=0]
+)])
+if test "$bash_cv_wexitstatus_offset" -gt 32 ; then
+  AC_MSG_WARN(bad exit status from test program -- defaulting to 0)
+  bash_cv_wexitstatus_offset=0
+fi
+AC_MSG_RESULT($bash_cv_wexitstatus_offset)
+AC_DEFINE_UNQUOTED([WEXITSTATUS_OFFSET], [$bash_cv_wexitstatus_offset], [Offset of exit status in wait status word])
 ])

@@ -1,7 +1,7 @@
 /* rlprivate.h -- functions and variables global to the readline library,
 		  but not intended for use by applications. */
 
-/* Copyright (C) 1999-2009 Free Software Foundation, Inc.
+/* Copyright (C) 1999-2010 Free Software Foundation, Inc.
 
    This file is part of the GNU Readline Library (Readline), a library
    for reading lines of text with interactive input and history editing.      
@@ -56,6 +56,7 @@
 #define SF_REVERSE		0x01
 #define SF_FOUND		0x02
 #define SF_FAILED		0x04
+#define SF_CHGKMAP		0x08
 
 typedef struct  __rl_search_context
 {
@@ -78,6 +79,9 @@ typedef struct  __rl_search_context
   char *prev_line_found;
 
   UNDO_LIST *save_undo_list;
+
+  Keymap keymap;	/* used when dispatching commands in search string */
+  Keymap okeymap;	/* original keymap */
 
   int history_pos;
   int direction;
@@ -120,7 +124,28 @@ typedef struct __rl_keyseq_context
   int childval;
 } _rl_keyseq_cxt;
 
-  /* fill in more as needed */
+/* vi-mode commands that use result of motion command to define boundaries */
+#define VIM_DELETE	0x01
+#define VIM_CHANGE	0x02
+#define VIM_YANK	0x04
+
+/* various states for vi-mode commands that use motion commands.  reflects
+   RL_READLINE_STATE */
+#define VMSTATE_READ	0x01
+#define VMSTATE_NUMARG	0x02
+
+typedef struct __rl_vimotion_context
+{
+  int op;
+  int state;
+  int flags;		/* reserved */
+  _rl_arg_cxt ncxt;
+  int numeric_arg;
+  int start, end;	/* rl_point, rl_end */
+  int key, motion;	/* initial key, motion command */
+} _rl_vimotion_cxt;
+
+/* fill in more as needed */
 /* `Generic' callback data and functions */
 typedef struct __rl_callback_generic_arg 
 {
@@ -300,6 +325,8 @@ extern void _rl_signal_handler PARAMS((int));
 
 extern void _rl_block_sigint PARAMS((void));
 extern void _rl_release_sigint PARAMS((void));
+extern void _rl_block_sigwinch PARAMS((void));
+extern void _rl_release_sigwinch PARAMS((void));
 
 /* terminal.c */
 extern void _rl_get_screen_size PARAMS((int, int));
@@ -318,6 +345,7 @@ extern void _rl_set_cursor PARAMS((int, int));
 /* text.c */
 extern void _rl_fix_point PARAMS((int));
 extern int _rl_replace_text PARAMS((const char *, int, int));
+extern int _rl_forward_char_internal PARAMS((int));
 extern int _rl_insert_char PARAMS((int, int));
 extern int _rl_overwrite_char PARAMS((int, int));
 extern int _rl_overwrite_rubout PARAMS((int, int));
@@ -347,6 +375,7 @@ extern void _rl_trace ();
 extern int _rl_tropen PARAMS((void));
 
 extern int _rl_abort_internal PARAMS((void));
+extern int _rl_null_function PARAMS((int, int));
 extern char *_rl_strindex PARAMS((const char *, const char *));
 extern int _rl_qsort_string_compare PARAMS((char **, char **));
 extern int (_rl_uppercase_p) PARAMS((int));
@@ -363,6 +392,7 @@ extern void _rl_vi_reset_last PARAMS((void));
 extern void _rl_vi_set_last PARAMS((int, int, int));
 extern int _rl_vi_textmod_command PARAMS((int));
 extern void _rl_vi_done_inserting PARAMS((void));
+extern int _rl_vi_domove_callback PARAMS((_rl_vimotion_cxt *));
 
 /*************************************************************************
  * Undocumented private variables					 *
@@ -382,10 +412,14 @@ extern int _rl_complete_show_unmodified;
 extern int _rl_complete_mark_directories;
 extern int _rl_complete_mark_symlink_dirs;
 extern int _rl_completion_prefix_display_length;
+extern int _rl_completion_columns;
 extern int _rl_print_completions_horizontally;
 extern int _rl_completion_case_fold;
+extern int _rl_completion_case_map;
 extern int _rl_match_hidden_files;
 extern int _rl_page_completions;
+extern int _rl_skip_completed_text;
+extern int _rl_menu_complete_prefix_first;
 
 /* display.c */
 extern int _rl_vis_botlin;
@@ -417,6 +451,7 @@ extern int _rl_convert_meta_chars_to_ascii;
 extern int _rl_output_meta_chars;
 extern int _rl_bind_stty_chars;
 extern int _rl_revert_all_at_newline;
+extern int _rl_echo_control_chars;
 extern char *_rl_comment_begin;
 extern unsigned char _rl_parsing_conditionalized_out;
 extern Keymap _rl_keymap;
@@ -466,5 +501,6 @@ extern int _rl_undo_group_level;
 
 /* vi_mode.c */
 extern int _rl_vi_last_command;
+extern _rl_vimotion_cxt *_rl_vimvcxt;
 
 #endif /* _RL_PRIVATE_H_ */

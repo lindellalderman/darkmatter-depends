@@ -7,5 +7,9 @@ pkg_release := 1
 CONFIG_OPTS += --with-ssl=$(BUILD_ROOT)$(PREFIX_DIR) --with-libssh2=$(BUILD_ROOT)$(PREFIX_DIR) --enable-ares=$(BUILD_ROOT)$(PREFIX_DIR) --disable-ldap --disable-ldaps --enable-telnet --enable-tftp --enable-ftp --enable-http --enable-crypto-auth --enable-cookies --enable-static --enable-shared
 REMOVE_PATHS += $(INCLUDE_DIR)/*curl*
 
+define pkg_preconfigure
+	if [ -e ./buildconf ]; then $(BUILD_FLAGS) ./buildconf ; fi
+endef
+
 include ../mklib/pkggnu.mk
 include ../mklib/packages.mk

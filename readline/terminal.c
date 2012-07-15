@@ -96,12 +96,12 @@ static char *term_string_buffer = (char *)NULL;
 
 static int tcap_initialized;
 
-#if !defined (__linux__)
+#if !defined (__linux__) && !defined (NCURSES_VERSION)
 #  if defined (__EMX__) || defined (NEED_EXTERN_PC)
 extern 
 #  endif /* __EMX__ || NEED_EXTERN_PC */
 char PC, *BC, *UP;
-#endif /* __linux__ */
+#endif /* !__linux__ && !NCURSES_VERSION */
 
 /* Some strings to control terminal actions.  These are output by tputs (). */
 char *_rl_term_clreol;
@@ -350,12 +350,12 @@ rl_reset_screen_size ()
 void
 rl_resize_terminal ()
 {
+  _rl_get_screen_size (fileno (rl_instream), 1);
   if (_rl_echoing_p)
     {
-      _rl_get_screen_size (fileno (rl_instream), 1);
       if (CUSTOM_REDISPLAY_FUNC ())
 	rl_forced_update_display ();
-      else
+      else if (RL_ISSTATE(RL_STATE_REDISPLAYING) == 0)
 	_rl_redisplay_after_sigwinch ();
     }
 }
@@ -528,8 +528,8 @@ _rl_init_terminal_io (terminal_name)
 
   /* Check to see if this terminal has a meta key and clear the capability
      variables if there is none. */
-  term_has_meta = (tgetflag ("km") || tgetflag ("MT"));
-  if (!term_has_meta)
+  term_has_meta = tgetflag ("km") != 0;
+  if (term_has_meta == 0)
     _rl_term_mm = _rl_term_mo = (char *)NULL;
 
   /* Attempt to find and bind the arrow keys.  Do not override already

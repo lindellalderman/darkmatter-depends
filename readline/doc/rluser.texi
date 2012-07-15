@@ -9,7 +9,7 @@ use these features.  There is a document entitled "readline.texinfo"
 which contains both end-user and programmer documentation for the
 GNU Readline Library.
 
-Copyright (C) 1988--2009 Free Software Foundation, Inc.
+Copyright (C) 1988--2011 Free Software Foundation, Inc.
 
 Authored by Brian Fox and Chet Ramey.
 
@@ -51,7 +51,7 @@ Command line editing is enabled by default when using an interactive shell,
 unless the @option{--noediting} option is supplied at shell invocation.
 Line editing is also used when using the @option{-e} option to the
 @code{read} builtin command (@pxref{Bash Builtins}).
-By default, the line editing commands are similar to those of emacs.
+By default, the line editing commands are similar to those of Emacs.
 A vi-style line editing interface is also available.
 Line editing can be enabled at any time using the @option{-o emacs} or
 @option{-o vi} options to the @code{set} builtin command
@@ -431,10 +431,26 @@ The string to insert at the beginning of the line when the
 @code{insert-comment} command is executed.  The default value
 is @code{"#"}.
 
+@item completion-display-width
+@vindex completion-display-width
+The number of screen columns used to display possible matches
+when performing completion.
+The value is ignored if it is less than 0 or greater than the terminal
+screen width.
+A value of 0 will cause matches to be displayed one per line.
+The default value is -1.
+
 @item completion-ignore-case
+@vindex completion-ignore-case
 If set to @samp{on}, Readline performs filename matching and completion
 in a case-insensitive fashion.
 The default value is @samp{off}.
+
+@item completion-map-case
+@vindex completion-map-case
+If set to @samp{on}, and @var{completion-ignore-case} is enabled, Readline
+treats hyphens (@samp{-}) and underscores (@samp{_}) as equivalent when
+performing case-insensitive filename matching and completion.
 
 @item completion-prefix-display-length
 @vindex completion-prefix-display-length
@@ -474,11 +490,22 @@ key bindings is used.  By default, Readline starts up in Emacs editing
 mode, where the keystrokes are most similar to Emacs.  This variable can be
 set to either @samp{emacs} or @samp{vi}.
 
+@item echo-control-characters
+When set to @samp{on}, on operating systems that indicate they support it,
+readline echoes a character corresponding to a signal generated from the
+keyboard.  The default is @samp{on}.
+
 @item enable-keypad
 @vindex enable-keypad
 When set to @samp{on}, Readline will try to enable the application
 keypad when it is called.  Some systems need this to enable the
 arrow keys.  The default is @samp{off}.
+
+@item enable-meta-key
+When set to @samp{on}, Readline will try to enable any meta modifier
+key the terminal claims to support when it is called.  On many terminals,
+the meta key is used to send eight-bit characters.
+The default is @samp{on}.
 
 @item expand-tilde
 @vindex expand-tilde
@@ -559,9 +586,16 @@ The default is @samp{off}.
 @vindex match-hidden-files
 This variable, when set to @samp{on}, causes Readline to match files whose
 names begin with a @samp{.} (hidden files) when performing filename
-completion, unless the leading @samp{.} is
+completion.
+If set to @samp{off}, the leading @samp{.} must be
 supplied by the user in the filename to be completed.
 This variable is @samp{on} by default.
+
+@item menu-complete-display-prefix
+@vindex menu-complete-display-prefix
+If set to @samp{on}, menu completion displays the common prefix of the
+list of possible completions (which may be empty) before cycling through
+the list.  The default is @samp{off}.
 
 @item output-meta
 @vindex output-meta
@@ -604,6 +638,20 @@ words which have more than one possible completion without any
 possible partial completion (the possible completions don't share
 a common prefix) cause the matches to be listed immediately instead
 of ringing the bell.
+The default value is @samp{off}.
+
+@item skip-completed-text
+@vindex skip-completed-text
+If set to @samp{on}, this alters the default completion behavior when
+inserting a single match into the line.  It's only active when
+performing completion in the middle of a word.  If enabled, readline
+does not insert characters from the completion that match characters
+after point in the word being completed, so portions of the word
+following the cursor are not duplicated.
+For instance, if this is enabled, attempting completion when the cursor
+is after the @samp{e} in @samp{Makefile} will result in @samp{Makefile}
+rather than @samp{Makefilefile}, assuming there is a single possible
+completion.
 The default value is @samp{off}.
 
 @item visible-stats
@@ -1072,10 +1120,14 @@ as if the @samp{!@var{n}} history expansion had been specified.
 
 @item yank-last-arg (M-. or M-_)
 Insert last argument to the previous command (the last word of the
-previous history entry).  With an
-argument, behave exactly like @code{yank-nth-arg}.
+previous history entry).
+With a numeric argument, behave exactly like @code{yank-nth-arg}.
 Successive calls to @code{yank-last-arg} move back through the history
-list, inserting the last argument of each line in turn.
+list, inserting the last word (or the word specified by the argument to
+the first call) of each line in turn.
+Any numeric argument supplied to these successive calls determines
+the direction to move through the history.  A negative argument switches
+the direction through the history (back or forward).
 The history expansion facilities are used to extract the last argument,
 as if the @samp{!$} history expansion had been specified.
 
@@ -1187,7 +1239,7 @@ Kill from point to the end of the current word, or if between
 words, to the end of the next word.
 Word boundaries are the same as @code{shell-forward-word}.
 
-@item backward-kill-word ()
+@item shell-backward-kill-word ()
 Kill the word behind point.
 Word boundaries are the same as @code{shell-backward-word}.
 @end ifset
@@ -1273,6 +1325,9 @@ The default is filename completion.
 
 @item possible-completions (M-?)
 List the possible completions of the text before point.
+When displaying completions, Readline sets the number of columns used
+for display to the value of @code{completion-display-width}, the value of
+the environment variable @env{COLUMNS}, or the screen width, in that order.
 
 @item insert-completions (M-*)
 Insert all completions of the text before point that would have
@@ -1291,6 +1346,11 @@ of matches; a negative argument may be used to move backward
 through the list.
 This command is intended to be bound to @key{TAB}, but is unbound
 by default.
+
+@item menu-complete-backward ()
+Identical to @code{menu-complete}, but moves backward through the list
+of possible completions, as if @code{menu-complete} had been given a
+negative argument.
 
 @item delete-char-or-list ()
 Deletes the character under the cursor if not at the beginning or
@@ -1431,6 +1491,15 @@ A character is read and point is moved to the previous occurrence
 of that character.  A negative count searches for subsequent
 occurrences.
 
+@item skip-csi-sequence ()
+Read enough characters to consume a multi-key sequence such as those
+defined for keys like Home and End.  Such sequences begin with a
+Control Sequence Indicator (CSI), usually ESC-[.  If this sequence is
+bound to "\e[", keys producing such sequences will have no effect
+unless explicitly bound to a readline command, instead of inserting
+stray characters into the editing buffer.  This is unbound by default,
+but usually bound to ESC-[.
+
 @item insert-comment (M-#)
 Without a numeric argument, the value of the @code{comment-begin}
 variable is inserted at the beginning of the current line.
@@ -1540,7 +1609,7 @@ editing mode.
 While the Readline library does not have a full set of @code{vi}
 editing functions, it does contain enough to allow simple editing
 of the line.  The Readline @code{vi} mode behaves as specified in
-the @sc{posix} 1003.2 standard.
+the @sc{posix} standard.
 
 @ifset BashFeatures
 In order to switch interactively between @code{emacs} and @code{vi}
@@ -1574,10 +1643,15 @@ the programmable completion facilities are invoked.
 First, the command name is identified.
 If a compspec has been defined for that command, the
 compspec is used to generate the list of possible completions for the word.
+If the command word is the empty string (completion attempted at the
+beginning of an empty line), any compspec defined with
+the @option{-E} option to @code{complete} is used.
 If the command word is a full pathname, a compspec for the full
 pathname is searched for first.
 If no compspec is found for the full pathname, an attempt is made to
 find a compspec for the portion following the final slash.
+If those searches do not result in a compspec, any compspec defined with
+the @option{-D} option to @code{complete} is used as the default.
 
 Once a compspec has been found, it is used to generate the list of
 matching words.
@@ -1681,6 +1755,30 @@ to completed names which are symbolic links to directories, subject to
 the value of the @var{mark-directories} Readline variable, regardless
 of the setting of the @var{mark-symlinked-directories} Readline variable.
 
+There is some support for dynamically modifying completions.  This is
+most useful when used in combination with a default completion specified
+with @option{-D}.  It's possible for shell functions executed as completion
+handlers to indicate that completion should be retried by returning an
+exit status of 124.  If a shell function returns 124, and changes
+the compspec associated with the command on which completion is being
+attempted (supplied as the first argument when the function is executed),
+programmable completion restarts from the beginning, with an
+attempt to find a new compspec for that command.  This allows a set of
+completions to be built dynamically as completion is attempted, rather than
+being loaded all at once.
+
+For instance, assuming that there is a library of compspecs, each kept in a
+file corresponding to the name of the command, the following default
+completion function would load completions dynamically:
+
+@example
+_completion_loader()
+@{
+	. "/etc/bash_completion.d/$1.sh" >/dev/null 2>&1 && return 124
+@}
+complete -D -F _completion_loader
+@end example
+
 @node Programmable Completion Builtins
 @section Programmable Completion Builtins
 @cindex completion builtins
@@ -1716,10 +1814,10 @@ matches were generated.
 @item complete
 @btindex complete
 @example
-@code{complete [-abcdefgjksuv] [-o @var{comp-option}] [-E] [-A @var{action}] [-G @var{globpat}] [-W @var{wordlist}]
+@code{complete [-abcdefgjksuv] [-o @var{comp-option}] [-DE] [-A @var{action}] [-G @var{globpat}] [-W @var{wordlist}]
 [-F @var{function}] [-C @var{command}] [-X @var{filterpat}]
 [-P @var{prefix}] [-S @var{suffix}] @var{name} [@var{name} @dots{}]}
-@code{complete -pr [-E] [@var{name} @dots{}]}
+@code{complete -pr [-DE] [@var{name} @dots{}]}
 @end example
 
 Specify how arguments to each @var{name} should be completed.
@@ -1729,12 +1827,16 @@ reused as input.
 The @option{-r} option removes a completion specification for
 each @var{name}, or, if no @var{name}s are supplied, all
 completion specifications.
+The @option{-D} option indicates that the remaining options and actions should
+apply to the ``default'' command completion; that is, completion attempted
+on a command for which no completion has previously been defined.
 The @option{-E} option indicates that the remaining options and actions should
 apply to ``empty'' command completion; that is, completion attempted on a 
 blank line.
 
 The process of applying these completion specifications when word completion
-is attempted is described above (@pxref{Programmable Completion}).
+is attempted is described above (@pxref{Programmable Completion}).  The
+@option{-D} option takes precedence over @option{-E}.
 
 Other options, if specified, have the following meanings.
 The arguments to the @option{-G}, @option{-W}, and @option{-X} options
@@ -1861,17 +1963,6 @@ User names.  May also be specified as @option{-u}.
 Names of all shell variables.  May also be specified as @option{-v}.
 @end table
 
-@item -G @var{globpat}
-The filename expansion pattern @var{globpat} is expanded to generate
-the possible completions.
-
-@item -W @var{wordlist}
-The @var{wordlist} is split using the characters in the
-@env{IFS} special variable as delimiters, and each resultant word
-is expanded.
-The possible completions are the members of the resultant list which
-match the word being completed.
-
 @item -C @var{command}
 @var{command} is executed in a subshell environment, and its output is
 used as the possible completions.
@@ -1882,13 +1973,9 @@ environment.
 When it finishes, the possible completions are retrieved from the value
 of the @env{COMPREPLY} array variable.
 
-@item -X @var{filterpat}
-@var{filterpat} is a pattern as used for filename expansion.
-It is applied to the list of possible completions generated by the
-preceding options and arguments, and each completion matching
-@var{filterpat} is removed from the list.
-A leading @samp{!} in @var{filterpat} negates the pattern; in this
-case, any completion not matching @var{filterpat} is removed.
+@item -G @var{globpat}
+The filename expansion pattern @var{globpat} is expanded to generate
+the possible completions.
 
 @item -P @var{prefix}
 @var{prefix} is added at the beginning of each possible completion
@@ -1897,6 +1984,21 @@ after all other options have been applied.
 @item -S @var{suffix}
 @var{suffix} is appended to each possible completion
 after all other options have been applied.
+
+@item -W @var{wordlist}
+The @var{wordlist} is split using the characters in the
+@env{IFS} special variable as delimiters, and each resultant word
+is expanded.
+The possible completions are the members of the resultant list which
+match the word being completed.
+
+@item -X @var{filterpat}
+@var{filterpat} is a pattern as used for filename expansion.
+It is applied to the list of possible completions generated by the
+preceding options and arguments, and each completion matching
+@var{filterpat} is removed from the list.
+A leading @samp{!} in @var{filterpat} negates the pattern; in this
+case, any completion not matching @var{filterpat} is removed.
 @end table
 
 The return value is true unless an invalid option is supplied, an option
@@ -1908,15 +2010,23 @@ an error occurs adding a completion specification.
 @item compopt
 @btindex compopt
 @example
-@code{compopt} [-o @var{option}] [+o @var{option}] [@var{name}]
+@code{compopt} [-o @var{option}] [-DE] [+o @var{option}] [@var{name}]
 @end example
 Modify completion options for each @var{name} according to the
-@var{option}s, or for the currently-execution completion if no @var{name}s
+@var{option}s, or for the currently-executing completion if no @var{name}s
 are supplied.
 If no @var{option}s are given, display the completion options for each
 @var{name} or the current completion.
 The possible values of @var{option} are those valid for the @code{complete}
 builtin described above.
+The @option{-D} option indicates that the remaining options should
+apply to the ``default'' command completion; that is, completion attempted
+on a command for which no completion has previously been defined.
+The @option{-E} option indicates that the remaining options should
+apply to ``empty'' command completion; that is, completion attempted on a 
+blank line.
+
+The @option{-D} option takes precedence over @option{-E}.
 
 The return value is true unless an invalid option is supplied, an attempt
 is made to modify the options for a @var{name} for which no completion

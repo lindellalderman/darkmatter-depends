@@ -1,39 +1,19 @@
-This is a terse description of the new features added to readline-6.0 since
-the release of readline-5.2.
+This is a terse description of the new features added to readline-6.2 since
+the release of readline-6.1.
 
-1.  New Features in Readline
+a.  The history library does not try to write the history filename in the
+    current directory if $HOME is unset.  This closes a potential security
+    problem if the application does not specify a history filename.
 
-a.  A new variable, rl_sort_completion_matches; allows applications to inhibit
-    match list sorting (but beware: some things don't work right if
-    applications do this).
+b.  New bindable variable `completion-display-width' to set the number of
+    columns used when displaying completions.
 
-b.  A new variable, rl_completion_invoking_key; allows applications to discover
-    the key that invoked rl_complete or rl_menu_complete.
+c.  New bindable variable `completion-case-map' to cause case-insensitive
+    completion to treat `-' and `_' as identical.
 
-c.  The functions rl_block_sigint and rl_release_sigint are now public and
-    available to calling applications who want to protect critical sections
-    (like redisplay).
+d.  There are new bindable vi-mode command names to avoid readline's case-
+    insensitive matching not allowing them to be bound separately.
 
-d.  The functions rl_save_state and rl_restore_state are now public and
-    available to calling applications; documented rest of readline's state
-    flag values.
-
-e.  A new user-settable variable, `history-size', allows setting the maximum
-    number of entries in the history list.
-
-f.  There is a new implementation of menu completion, with several improvements
-    over the old; the most notable improvement is a better `completions
-    browsing' mode.
-
-g.  The menu completion code now uses the rl_menu_completion_entry_function
-    variable, allowing applications to provide their own menu completion
-    generators.
-
-h.  There is support for replacing a prefix  of a pathname with a `...' when
-    displaying possible completions.  This is controllable by setting the
-    `completion-prefix-display-length' variable.  Matches with a common prefix
-    longer than this value have the common prefix replaced with `...'.
-
-i.  There is a new `revert-all-at-newline' variable.  If enabled, readline will
-    undo all outstanding changes to all history lines when `accept-line' is
-    executed.
+e.  New bindable variable `menu-complete-display-prefix' causes the menu
+    completion code to display the common prefix of the possible completions
+    before cycling through the list, instead of after.
