@@ -158,10 +158,17 @@ PERL = /usr/bin/perl
 PYTHON = /usr/bin/python
 PYTHON_INCLUDES = 
 PYTHON_LIBS = 
+<<<<<<< HEAD
 PYTHON_SITE_PACKAGES = /usr/lib/python2.7/site-packages
 PYTHON_SUBDIR = 
 PYTHON_TESTS = 
 PYTHON_VERSION = 2.7
+=======
+PYTHON_SITE_PACKAGES = /usr/lib/python2.6/site-packages
+PYTHON_SUBDIR = 
+PYTHON_TESTS = 
+PYTHON_VERSION = 2.6
+>>>>>>> e29704fcf182d810309bc5a7c0b3312c4b748af2
 RANLIB = ranlib
 RDL_LIBS = 
 READER_TEST = Readertests

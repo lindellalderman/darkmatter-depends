@@ -118,7 +118,7 @@ AMTAR = $${TAR-tar}
 AUTOCONF = ${SHELL} /root/darkmatter-depends/autoconf/build-aux/missing --run autoconf
 AUTOHEADER = ${SHELL} /root/darkmatter-depends/autoconf/build-aux/missing --run autoheader
 AUTOMAKE = ${SHELL} /root/darkmatter-depends/autoconf/build-aux/missing --run automake-1.11
-AWK = mawk
+AWK = gawk
 CYGPATH_W = echo
 DEFS = -DPACKAGE_NAME=\"GNU\ Autoconf\" -DPACKAGE_TARNAME=\"autoconf\" -DPACKAGE_VERSION=\"2.68-dirty\" -DPACKAGE_STRING=\"GNU\ Autoconf\ 2.68-dirty\" -DPACKAGE_BUGREPORT=\"bug-autoconf@gnu.org\" -DPACKAGE_URL=\"http://www.gnu.org/software/autoconf/\" -DPACKAGE=\"autoconf\" -DVERSION=\"2.68-dirty\"
 ECHO_C = 
@@ -164,7 +164,7 @@ abs_srcdir = /root/darkmatter-depends/autoconf/lib/autoscan
 abs_top_builddir = /root/darkmatter-depends/autoconf
 abs_top_srcdir = /root/darkmatter-depends/autoconf
 ac_cv_dir_trailing_space = yes
-ac_cv_sh_n_works = no
+ac_cv_sh_n_works = yes
 ac_cv_unsupported_fs_chars = 
 am__leading_dot = .
 am__tar = $${TAR-tar} chof - "$$tardir"
