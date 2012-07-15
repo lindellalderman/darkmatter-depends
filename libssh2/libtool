@@ -103,7 +103,7 @@ LD="/usr/x86_64-suse-linux/bin/ld -m elf_x86_64"
 LN_S="ln -s"
 
 # A BSD-compatible nm program.
-NM="/usr/bin/nm"
+NM="/usr/bin/nm -B"
 
 # A symbol stripping program
 STRIP="strip"
@@ -7349,7 +7349,7 @@ LD="/usr/x86_64-suse-linux/bin/ld -m elf_x86_64"
 LN_S="ln -s"
 
 # A BSD-compatible nm program.
-NM="/usr/bin/nm"
+NM="/usr/bin/nm -B"
 
 # A symbol stripping program
 STRIP="strip"

@@ -56,7 +56,7 @@ configure:2292: result: x86_64-unknown-linux-gnu
 configure:2319: autobuild project... GNU Autoconf
 configure:2325: autobuild revision... 2.68-dirty
 configure:2330: autobuild hostname... linux-j0lx
-configure:2341: autobuild timestamp... 20120715T031100Z
+configure:2341: autobuild timestamp... 20120715T061752Z
 configure:2369: checking whether /bin/sh -n is known to work
 configure:2388: result: yes
 configure:2392: checking for characters that cannot appear in file names

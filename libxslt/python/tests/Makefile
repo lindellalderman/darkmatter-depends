@@ -131,11 +131,11 @@ PACKAGE_TARNAME =
 PACKAGE_VERSION = 
 PATH_SEPARATOR = :
 PERL = perl
-PYTHON = /usr/bin/python
+PYTHON = /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/bin/python
 PYTHONSODV = 
-PYTHON_INCLUDES = 
-PYTHON_SITE_PACKAGES = /usr/lib/python2.7/site-packages
-PYTHON_SUBDIR = 
+PYTHON_INCLUDES = /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/python2.7
+PYTHON_SITE_PACKAGES = $(libdir)/python$(PYTHON_VERSION)/site-packages
+PYTHON_SUBDIR = python
 PYTHON_VERSION = 2.7
 RANLIB = ranlib
 RELDATE = Sat Jul 14 2012
@@ -157,7 +157,7 @@ WITH_MEM_DEBUG = 0
 WITH_MODULES = 1
 WITH_TRIO = 0
 WITH_XSLT_DEBUG = 1
-XMLLINT = /usr/bin/xmllint
+XMLLINT = /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/bin/xmllint
 XML_CONFIG = /root/darkmatter-depends/libxml2/xml2-config
 XSLTPROC = /usr/bin/xsltproc
 XSLTPROCDV = 
@@ -418,12 +418,12 @@ uninstall-am:
 	uninstall uninstall-am
 
 
-#tests: $(TESTSPY)
-#	-@(PYTHONPATH="`pwd`/..:`pwd`/../.libs:$(srcdir)/.."; \
-#	  if test "x$(LIBXML_SRC)" != "x" ; then PYTHONPATH="$$PYTHONPATH:$(LIBXML_SRC)/python:$(LIBXML_SRC)/python/.libs"; fi; \
-#	  export PYTHONPATH; \
-#	   for test in $(TESTSPY) ; do echo "-- $$test" ; (cd $(srcdir) && $(PYTHON) $$test ); done)
-tests:
+tests: $(TESTSPY)
+	-@(PYTHONPATH="`pwd`/..:`pwd`/../.libs:$(srcdir)/.."; \
+	  if test "x$(LIBXML_SRC)" != "x" ; then PYTHONPATH="$$PYTHONPATH:$(LIBXML_SRC)/python:$(LIBXML_SRC)/python/.libs"; fi; \
+	  export PYTHONPATH; \
+	   for test in $(TESTSPY) ; do echo "-- $$test" ; (cd $(srcdir) && $(PYTHON) $$test ); done)
+#tests:
 
 clean:
 	rm -f *.pyc core

@@ -67,15 +67,15 @@ am__base_list = \
   sed '$$!N;$$!N;$$!N;$$!N;s/\n/ /g'
 am__installdirs = "$(DESTDIR)$(pythondir)"
 LTLIBRARIES = $(python_LTLIBRARIES)
-#libxsltmod_la_DEPENDENCIES = $(mylibs)
+libxsltmod_la_DEPENDENCIES = $(mylibs)
 am__libxsltmod_la_SOURCES_DIST = libxslt.c types.c libxslt-py.c
-#am_libxsltmod_la_OBJECTS = libxslt.lo types.lo \
-#	libxslt-py.lo
+am_libxsltmod_la_OBJECTS = libxslt.lo types.lo \
+	libxslt-py.lo
 libxsltmod_la_OBJECTS = $(am_libxsltmod_la_OBJECTS)
 libxsltmod_la_LINK = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
 	$(libxsltmod_la_LDFLAGS) $(LDFLAGS) -o $@
-#am_libxsltmod_la_rpath = -rpath $(pythondir)
+am_libxsltmod_la_rpath = -rpath $(pythondir)
 DEFAULT_INCLUDES = -I. -I$(top_builddir)
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__depfiles_maybe = depfiles
@@ -217,11 +217,11 @@ PACKAGE_TARNAME =
 PACKAGE_VERSION = 
 PATH_SEPARATOR = :
 PERL = perl
-PYTHON = /usr/bin/python
+PYTHON = /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/bin/python
 PYTHONSODV = 
-PYTHON_INCLUDES = 
-PYTHON_SITE_PACKAGES = /usr/lib/python2.7/site-packages
-PYTHON_SUBDIR = 
+PYTHON_INCLUDES = /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/python2.7
+PYTHON_SITE_PACKAGES = $(libdir)/python$(PYTHON_VERSION)/site-packages
+PYTHON_SUBDIR = python
 PYTHON_VERSION = 2.7
 RANLIB = ranlib
 RELDATE = Sat Jul 14 2012
@@ -243,7 +243,7 @@ WITH_MEM_DEBUG = 0
 WITH_MODULES = 1
 WITH_TRIO = 0
 WITH_XSLT_DEBUG = 1
-XMLLINT = /usr/bin/xmllint
+XMLLINT = /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/bin/xmllint
 XML_CONFIG = /root/darkmatter-depends/libxml2/xml2-config
 XSLTPROC = /usr/bin/xsltproc
 XSLTPROCDV = 
@@ -330,20 +330,20 @@ EXTRA_DIST = \
 	$(DOCS)
 
 libxsltmod_la_LDFLAGS = $(WIN32_EXTRA_LDFLAGS) -module -avoid-version
-#mylibs = \
-#	$(top_builddir)/libxslt/libxslt.la \
-#	$(top_builddir)/libexslt/libexslt.la
+mylibs = \
+	$(top_builddir)/libxslt/libxslt.la \
+	$(top_builddir)/libexslt/libexslt.la
 
-#python_LTLIBRARIES = libxsltmod.la
-#libxsltmod_la_SOURCES = libxslt.c types.c libxslt-py.c
-#libxsltmod_la_LIBADD = $(mylibs) 
-#GENERATE = generator.py
-#API_DESC = $(top_srcdir)/doc/libxslt-api.xml $(srcdir)/libxslt-python-api.xml
-#GENERATED = $(srcdir)/libxsltclass.py \
-#           $(srcdir)/libxslt-export.c \
-#	   $(srcdir)/libxslt-py.c \
-#	   $(srcdir)/libxslt-py.h \
-#	   $(srcdir)/libxsltclass.txt
+python_LTLIBRARIES = libxsltmod.la
+libxsltmod_la_SOURCES = libxslt.c types.c libxslt-py.c
+libxsltmod_la_LIBADD = $(mylibs) 
+GENERATE = generator.py
+API_DESC = $(top_srcdir)/doc/libxslt-api.xml $(srcdir)/libxslt-python-api.xml
+GENERATED = $(srcdir)/libxsltclass.py \
+           $(srcdir)/libxslt-export.c \
+	   $(srcdir)/libxslt-py.c \
+	   $(srcdir)/libxslt-py.h \
+	   $(srcdir)/libxsltclass.txt
 
 CLEANFILES = $(GENERATED) *.o libxslt.so *.pyc libxslt.py gen_prog
 all: all-recursive
@@ -646,7 +646,7 @@ distdir: $(DISTFILES)
 	done
 check-am: all-am
 check: check-recursive
-all-local:
+#all-local:
 all-am: Makefile $(LTLIBRARIES) all-local
 installdirs: installdirs-recursive
 installdirs-am:
@@ -679,7 +679,7 @@ distclean-generic:
 maintainer-clean-generic:
 	@echo "This command is intended for maintainers to use"
 	@echo "it deletes files that may require special tools to rebuild."
-install-data-local:
+#install-data-local:
 clean: clean-recursive
 
 clean-am: clean-generic clean-libtool clean-pythonLTLIBRARIES \
@@ -772,27 +772,27 @@ uninstall-am: uninstall-pythonLTLIBRARIES
 	uninstall-pythonLTLIBRARIES
 
 
-#all-local: libxslt.py
+all-local: libxslt.py
 
-#libxslt.py: $(srcdir)/libxsl.py $(srcdir)/libxsltclass.py
-#	cat $(srcdir)/libxsl.py $(srcdir)/libxsltclass.py > libxslt.py
+libxslt.py: $(srcdir)/libxsl.py $(srcdir)/libxsltclass.py
+	cat $(srcdir)/libxsl.py $(srcdir)/libxsltclass.py > libxslt.py
 
-#install-data-local:
-#	$(mkinstalldirs) $(DESTDIR)$(pythondir)
-#	/usr/bin/install -c -m 0644 libxslt.py $(DESTDIR)$(pythondir)
-#	$(mkinstalldirs) $(DESTDIR)$(DOCS_DIR)
-#	@(for doc in $(DOCS) ; \
-#	   do /usr/bin/install -c -m 0644 $(srcdir)/$$doc $(DESTDIR)$(DOCS_DIR) ; done)
+install-data-local:
+	$(mkinstalldirs) $(DESTDIR)$(pythondir)
+	/usr/bin/install -c -m 0644 libxslt.py $(DESTDIR)$(pythondir)
+	$(mkinstalldirs) $(DESTDIR)$(DOCS_DIR)
+	@(for doc in $(DOCS) ; \
+	   do /usr/bin/install -c -m 0644 $(srcdir)/$$doc $(DESTDIR)$(DOCS_DIR) ; done)
 
-#$(GENERATED): gen_prog
+$(GENERATED): gen_prog
 
-#gen_prog:  $(srcdir)/$(GENERATE) $(API_DESC)
-#	cd $(srcdir) && $(PYTHON) $(GENERATE)
-#	touch gen_prog
+gen_prog:  $(srcdir)/$(GENERATE) $(API_DESC)
+	cd $(srcdir) && $(PYTHON) $(GENERATE)
+	touch gen_prog
 
-#$(libxsltmod_la_OBJECTS): $(GENERATED)
+$(libxsltmod_la_OBJECTS): $(GENERATED)
 
-all: 
+#all: 
 tests test: all
 	cd tests && $(MAKE) tests
 

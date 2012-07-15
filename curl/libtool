@@ -2,7 +2,7 @@
 
 # libtool - Provide generalized library-building support services.
 # Generated automatically by config.status (curl) -
-# Libtool was configured on host centos64:
+# Libtool was configured on host linux-j0lx:
 # NOTE: Changes made to this file will be lost: look at ltmain.sh.
 #
 #   Copyright (C) 1996, 1997, 1998, 1999, 2000, 2001, 2003, 2004, 2005,
@@ -62,7 +62,7 @@ build_old_libs=yes
 pic_mode=yes
 
 # Whether or not to optimize for fast installation.
-fast_install=yes
+fast_install=needless
 
 # Shell to use when invoking shell scripts.
 SHELL="/bin/sh"
@@ -102,7 +102,7 @@ NM="/usr/bin/nm -B"
 LN_S="ln -s"
 
 # What is the maximum length of a command?
-max_cmd_len=1966080
+max_cmd_len=1572864
 
 # Object file suffix (normally "o").
 objext=o
@@ -240,7 +240,7 @@ runpath_var=LD_RUN_PATH
 shlibpath_var=LD_LIBRARY_PATH
 
 # Is shlibpath searched before the hard-coded library search path?
-shlibpath_overrides_runpath=no
+shlibpath_overrides_runpath=yes
 
 # Format of library name prefix.
 libname_spec="lib\$name"
@@ -272,10 +272,10 @@ finish_eval=""
 hardcode_into_libs=yes
 
 # Compile-time system search path for libraries.
-sys_lib_search_path_spec="/usr/lib/gcc/x86_64-redhat-linux/4.4.6 /usr/lib64 /lib64 /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib "
+sys_lib_search_path_spec="/usr/lib64/gcc/x86_64-suse-linux/4.6 /usr/lib64 /lib64 /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib /usr/x86_64-suse-linux/lib "
 
 # Run-time system search path for libraries.
-sys_lib_dlsearch_path_spec="/lib /usr/lib "
+sys_lib_dlsearch_path_spec="/lib /usr/lib /usr/local/lib64 /usr/local/lib "
 
 # Whether dlopen is supported.
 dlopen_support=unknown
@@ -292,7 +292,7 @@ striplib="strip --strip-unneeded"
 
 
 # The linker used to build libraries.
-LD="/usr/bin/ld -m elf_x86_64"
+LD="/usr/x86_64-suse-linux/bin/ld -m elf_x86_64"
 
 # How to create reloadable object files.
 reload_flag=" -r"
