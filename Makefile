@@ -210,7 +210,7 @@ deb:
 	$(QUIET) echo rm -f .*-stamp
 	$(QUIET) echo rm -rf $(BUILD_ROOT)
 	$(QUIET) echo
-
+	
 env:
 	$(QUIET) mkdir -pv "`dirname $(BUILD_ROOT)$(ENV_FILE)`"
 	$(QUIET) mkdir -pv "$(BUILD_ROOT)/etc/profile.d"
@@ -232,3 +232,4 @@ env:
 	$(QUIET) echo --------------------------------------------------------
 	$(QUIET) echo
 	$(QUIET) chmod -v 0644 $(BUILD_ROOT)/etc/profile.d/darkmatter.sh
+	$(QUIET) git checkout */configure || true
