@@ -165,7 +165,7 @@ ASCIIDOC =
 AUTOCONF = ${SHELL} /root/darkmatter-depends/zeromq/config/missing --run autoconf
 AUTOHEADER = ${SHELL} /root/darkmatter-depends/zeromq/config/missing --run autoheader
 AUTOMAKE = ${SHELL} /root/darkmatter-depends/zeromq/config/missing --run automake-1.11
-AWK = mawk
+AWK = gawk
 CC = cc -std=gnu99
 CCDEPMODE = depmode=gcc3
 CFLAGS = -fpic -fPIC -fpic -fPIC
@@ -199,7 +199,7 @@ LIBOBJS =
 LIBS = -luuid -lrt -lpthread -lc -lm
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIBZMQ_EXTRA_CFLAGS = 
-LIBZMQ_EXTRA_CXXFLAGS = 
+LIBZMQ_EXTRA_CXXFLAGS = -fvisibility=hidden 
 LIBZMQ_EXTRA_LDFLAGS = 
 LIPO = 
 LN_S = ln -s
@@ -207,7 +207,7 @@ LTLIBOBJS =
 LTVER = 1:0:0
 MAKEINFO = ${SHELL} /root/darkmatter-depends/zeromq/config/missing --run makeinfo
 MKDIR_P = /bin/mkdir -p
-NM = /usr/bin/nm
+NM = /usr/bin/nm -B
 NMEDIT = 
 OBJDUMP = objdump
 OBJEXT = o

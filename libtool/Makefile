@@ -383,7 +383,7 @@ AUTOHEADER = ${SHELL} /root/darkmatter-depends/libtool/libltdl/config/missing --
 AUTOM4TE = autom4te
 AUTOMAKE = ${SHELL} /root/darkmatter-depends/libtool/libltdl/config/missing --run automake-1.11
 AUTOTEST = $(AUTOM4TE) --language=autotest
-AWK = mawk
+AWK = gawk
 CC = cc
 CCDEPMODE = depmode=gcc3
 CFLAGS = -fpic -fPIC -fpic -fPIC

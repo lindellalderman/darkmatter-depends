@@ -358,7 +358,7 @@ AS = as
 AUTOCONF = ${SHELL} /root/darkmatter-depends/libxml2/missing --run autoconf
 AUTOHEADER = ${SHELL} /root/darkmatter-depends/libxml2/missing --run autoheader
 AUTOMAKE = ${SHELL} /root/darkmatter-depends/libxml2/missing --run automake-1.11
-AWK = mawk
+AWK = gawk
 BASE_THREAD_LIBS = -lpthread
 C14N_OBJ = c14n.c
 CATALOG_OBJ = catalog.o
@@ -417,7 +417,7 @@ MODULE_EXTENSION = .so
 MODULE_PLATFORM_LIBS = -ldl
 MV = /bin/mv
 M_LIBS = -lm
-NM = /usr/bin/nm
+NM = /usr/bin/nm -B
 NMEDIT = 
 OBJDUMP = objdump
 OBJEXT = o
@@ -432,13 +432,13 @@ PACKAGE_URL =
 PACKAGE_VERSION = 
 PATH_SEPARATOR = :
 PERL = /usr/bin/perl
-PYTHON = /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/bin/python
-PYTHON_INCLUDES = /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/python2.7
+PYTHON = /usr/bin/python
+PYTHON_INCLUDES = 
 PYTHON_LIBS = 
-PYTHON_SITE_PACKAGES = ${exec_prefix}/lib/python2.7/site-packages
-PYTHON_SUBDIR = python
-PYTHON_TESTS =  RelaxNGPythonTests SchemasPythonTests
-PYTHON_VERSION = 2.7
+PYTHON_SITE_PACKAGES = /usr/lib/python2.6/site-packages
+PYTHON_SUBDIR = 
+PYTHON_TESTS = 
+PYTHON_VERSION = 2.6
 RANLIB = ranlib
 RDL_LIBS = 
 READER_TEST = Readertests
@@ -508,19 +508,19 @@ WITH_WRITER = 1
 WITH_XINCLUDE = 1
 WITH_XPATH = 1
 WITH_XPTR = 1
-WITH_ZLIB = 1
+WITH_ZLIB = 0
 XINCLUDE_OBJ = xinclude.o
 XMLLINT = /usr/bin/xmllint
 XML_CFLAGS = 
 XML_INCLUDEDIR = -I${includedir}/libxml2
 XML_LIBDIR = -L${libdir}
-XML_LIBS = -lxml2 -L/usr/local/lib64/darkmatter/lib -lz   -lm -lc -lm
+XML_LIBS = -lxml2    -lm -lc -lm
 XML_LIBTOOLLIBS = libxml2.la
 XPATH_OBJ = xpath.o
 XPTR_OBJ = xpointer.o
 XSLTPROC = /usr/bin/xsltproc
-Z_CFLAGS = -I/usr/local/lib64/darkmatter/include
-Z_LIBS = -L/usr/local/lib64/darkmatter/lib -lz
+Z_CFLAGS = 
+Z_LIBS = 
 abs_builddir = /root/darkmatter-depends/libxml2
 abs_srcdir = /root/darkmatter-depends/libxml2
 abs_top_builddir = /root/darkmatter-depends/libxml2
@@ -574,12 +574,12 @@ top_build_prefix =
 top_builddir = .
 top_srcdir = .
 ACLOCAL_AMFLAGS = -I m4
-SUBDIRS = include . doc example xstc python
+SUBDIRS = include . doc example xstc 
 DIST_SUBDIRS = include . doc example python xstc
-INCLUDES = -I$(top_builddir)/include -I./include  -D_REENTRANT -I/usr/local/lib64/darkmatter/include 
+INCLUDES = -I$(top_builddir)/include -I./include  -D_REENTRANT  
 bin_SCRIPTS = xml2-config
 lib_LTLIBRARIES = libxml2.la
-libxml2_la_LIBADD =  -L/usr/local/lib64/darkmatter/lib -lz $(ICONV_LIBS) -lm 
+libxml2_la_LIBADD =   $(ICONV_LIBS) -lm 
 LIBXML2_VERSION_SCRIPT = 
 #LIBXML2_VERSION_SCRIPT = $(VERSION_SCRIPT_FLAGS)$(srcdir)/libxml2.syms
 libxml2_la_LDFLAGS =   \
@@ -608,7 +608,7 @@ libxml2_la_SOURCES = SAX.c entities.c encoding.c error.c parserInternals.c  \
 #		xmlmodule.c schematron.c
 
 DEPS = $(top_builddir)/libxml2.la
-LDADDS =  $(top_builddir)/libxml2.la  -L/usr/local/lib64/darkmatter/lib -lz $(ICONV_LIBS) -lm 
+LDADDS =  $(top_builddir)/libxml2.la   $(ICONV_LIBS) -lm 
 man_MANS = xml2-config.1 libxml.3
 m4datadir = $(datadir)/aclocal
 m4data_DATA = libxml.m4
@@ -1729,7 +1729,7 @@ testapi.c: $(srcdir)/gentest.py
 
 runtests:
 	$(CHECKER) ./runtest$(EXEEXT) && $(CHECKER) ./testrecurse$(EXEEXT) &&$(CHECKER) ./testapi$(EXEEXT) && $(CHECKER) ./testchar$(EXEEXT)&& $(CHECKER) ./testdict$(EXEEXT) && $(CHECKER) ./runxmlconf$(EXEEXT)
-	@(if [ "python" != "" ] ; then cd python ; \
+	@(if [ "" != "" ] ; then cd python ; \
 	    $(MAKE) MAKEFLAGS+=--silent tests ; fi)
 
 check: all runtests
@@ -1741,8 +1741,8 @@ check-valgrind: all
 
 testall : tests SVGtests SAXtests
 
-tests: XMLtests XMLenttests NStests IDtests Errtests APItests Readertests SAXtests XMLPushtests HTMLtests HTMLPushtests  Validtests URItests Patterntests XPathtests XPtrtests XIncludetests C14Ntests Scripttests Catatests Regexptests Automatatests Schemastests Relaxtests Schematrontests Threadtests Timingtests VTimingtests  RelaxNGPythonTests SchemasPythonTests ModuleTests
-	@(if [ "python" != "" ] ; then cd python ; \
+tests: XMLtests XMLenttests NStests IDtests Errtests APItests Readertests SAXtests XMLPushtests HTMLtests HTMLPushtests  Validtests URItests Patterntests XPathtests XPtrtests XIncludetests C14Ntests Scripttests Catatests Regexptests Automatatests Schemastests Relaxtests Schematrontests Threadtests Timingtests VTimingtests  ModuleTests
+	@(if [ "" != "" ] ; then cd python ; \
 	    $(MAKE) MAKEFLAGS+=--silent tests ; fi)
 	@(cd doc/examples ; $(MAKE) MAKEFLAGS+=--silent tests)
 

@@ -80,16 +80,16 @@ am__uninstall_files_from_dir = { \
 am__installdirs = "$(DESTDIR)$(pythondir)" "$(DESTDIR)$(docsdir)" \
 	"$(DESTDIR)$(pythondir)" "$(DESTDIR)$(pythondir)"
 LTLIBRARIES = $(python_LTLIBRARIES)
-libxml2mod_la_DEPENDENCIES = $(mylibs)
+#libxml2mod_la_DEPENDENCIES = $(mylibs)
 am__libxml2mod_la_SOURCES_DIST = $(srcdir)/libxml.c $(srcdir)/types.c
-am_libxml2mod_la_OBJECTS = libxml.lo types.lo
-nodist_libxml2mod_la_OBJECTS = libxml2-py.lo
+#am_libxml2mod_la_OBJECTS = libxml.lo types.lo
+#nodist_libxml2mod_la_OBJECTS = libxml2-py.lo
 libxml2mod_la_OBJECTS = $(am_libxml2mod_la_OBJECTS) \
 	$(nodist_libxml2mod_la_OBJECTS)
 libxml2mod_la_LINK = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
 	$(libxml2mod_la_LDFLAGS) $(LDFLAGS) -o $@
-am_libxml2mod_la_rpath = -rpath $(pythondir)
+#am_libxml2mod_la_rpath = -rpath $(pythondir)
 DEFAULT_INCLUDES = -I. -I$(top_builddir)
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__depfiles_maybe = depfiles
@@ -155,7 +155,7 @@ AS = as
 AUTOCONF = ${SHELL} /root/darkmatter-depends/libxml2/missing --run autoconf
 AUTOHEADER = ${SHELL} /root/darkmatter-depends/libxml2/missing --run autoheader
 AUTOMAKE = ${SHELL} /root/darkmatter-depends/libxml2/missing --run automake-1.11
-AWK = mawk
+AWK = gawk
 BASE_THREAD_LIBS = -lpthread
 C14N_OBJ = c14n.c
 CATALOG_OBJ = catalog.o
@@ -214,7 +214,7 @@ MODULE_EXTENSION = .so
 MODULE_PLATFORM_LIBS = -ldl
 MV = /bin/mv
 M_LIBS = -lm
-NM = /usr/bin/nm
+NM = /usr/bin/nm -B
 NMEDIT = 
 OBJDUMP = objdump
 OBJEXT = o
@@ -229,13 +229,13 @@ PACKAGE_URL =
 PACKAGE_VERSION = 
 PATH_SEPARATOR = :
 PERL = /usr/bin/perl
-PYTHON = /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/bin/python
-PYTHON_INCLUDES = /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/python2.7
+PYTHON = /usr/bin/python
+PYTHON_INCLUDES = 
 PYTHON_LIBS = 
-PYTHON_SITE_PACKAGES = ${exec_prefix}/lib/python2.7/site-packages
-PYTHON_SUBDIR = python
-PYTHON_TESTS =  RelaxNGPythonTests SchemasPythonTests
-PYTHON_VERSION = 2.7
+PYTHON_SITE_PACKAGES = /usr/lib/python2.6/site-packages
+PYTHON_SUBDIR = 
+PYTHON_TESTS = 
+PYTHON_VERSION = 2.6
 RANLIB = ranlib
 RDL_LIBS = 
 READER_TEST = Readertests
@@ -305,19 +305,19 @@ WITH_WRITER = 1
 WITH_XINCLUDE = 1
 WITH_XPATH = 1
 WITH_XPTR = 1
-WITH_ZLIB = 1
+WITH_ZLIB = 0
 XINCLUDE_OBJ = xinclude.o
 XMLLINT = /usr/bin/xmllint
 XML_CFLAGS = 
 XML_INCLUDEDIR = -I${includedir}/libxml2
 XML_LIBDIR = -L${libdir}
-XML_LIBS = -lxml2 -L/usr/local/lib64/darkmatter/lib -lz   -lm -lc -lm
+XML_LIBS = -lxml2    -lm -lc -lm
 XML_LIBTOOLLIBS = libxml2.la
 XPATH_OBJ = xpath.o
 XPTR_OBJ = xpointer.o
 XSLTPROC = /usr/bin/xsltproc
-Z_CFLAGS = -I/usr/local/lib64/darkmatter/include
-Z_LIBS = -L/usr/local/lib64/darkmatter/lib -lz
+Z_CFLAGS = 
+Z_LIBS = 
 abs_builddir = /root/darkmatter-depends/libxml2/python
 abs_srcdir = /root/darkmatter-depends/libxml2/python
 abs_top_builddir = /root/darkmatter-depends/libxml2
@@ -392,28 +392,28 @@ EXTRA_DIST = \
 	libxml2-python-api.xml
 
 libxml2mod_la_LDFLAGS =   -module -avoid-version 
-mylibs = \
-	$(top_builddir)/libxml2.la
+#mylibs = \
+#	$(top_builddir)/libxml2.la
 
-python_LTLIBRARIES = libxml2mod.la
-libxml2mod_la_SOURCES = $(srcdir)/libxml.c $(srcdir)/types.c
-nodist_libxml2mod_la_SOURCES = libxml2-py.c
-libxml2mod_la_LIBADD = $(mylibs)   
-python_DATA = \
-	libxml2.py
+#python_LTLIBRARIES = libxml2mod.la
+#libxml2mod_la_SOURCES = $(srcdir)/libxml.c $(srcdir)/types.c
+#nodist_libxml2mod_la_SOURCES = libxml2-py.c
+#libxml2mod_la_LIBADD = $(mylibs)   
+#python_DATA = \
+#	libxml2.py
 
-dist_python_DATA = \
-	drv_libxml2.py
+#dist_python_DATA = \
+#	drv_libxml2.py
 
-GENERATE = generator.py
-API_DESC = $(top_srcdir)/doc/libxml2-api.xml $(srcdir)/libxml2-python-api.xml
-GENERATED = libxml2class.py \
-           libxml2-export.c \
-           libxml2class.txt \
-	   libxml2-py.c \
-	   libxml2-py.h
+#GENERATE = generator.py
+#API_DESC = $(top_srcdir)/doc/libxml2-api.xml $(srcdir)/libxml2-python-api.xml
+#GENERATED = libxml2class.py \
+#           libxml2-export.c \
+#           libxml2class.txt \
+#	   libxml2-py.c \
+#	   libxml2-py.h
 
-CLEANFILES = $(GENERATED) gen_prog libxml2.py
+#CLEANFILES = $(GENERATED) gen_prog libxml2.py
 all: all-recursive
 
 .SUFFIXES:
@@ -916,16 +916,16 @@ uninstall-am: uninstall-dist_docsDATA uninstall-dist_pythonDATA \
 	uninstall-pythonDATA uninstall-pythonLTLIBRARIES
 
 
-$(srcdir)/libxml.c: libxml2-py.h # to generate before to compile
+#$(srcdir)/libxml.c: libxml2-py.h # to generate before to compile
 
-libxml2.py: $(srcdir)/libxml.py libxml2class.py
-	cat $(srcdir)/libxml.py libxml2class.py > $@
+#libxml2.py: $(srcdir)/libxml.py libxml2class.py
+#	cat $(srcdir)/libxml.py libxml2class.py > $@
 
-$(GENERATED): gen_prog
+#$(GENERATED): gen_prog
 
-gen_prog: $(srcdir)/$(GENERATE) $(API_DESC)
-	$(PYTHON) $(srcdir)/$(GENERATE) $(srcdir)
-	touch gen_prog
+#gen_prog: $(srcdir)/$(GENERATE) $(API_DESC)
+#	$(PYTHON) $(srcdir)/$(GENERATE) $(srcdir)
+#	touch gen_prog
 
 tests test: all
 	cd tests && $(MAKE) MAKEFLAGS+=--silent tests
