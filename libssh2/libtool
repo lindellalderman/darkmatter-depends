@@ -44,7 +44,7 @@ available_tags=" CXX"
 
 # ### BEGIN LIBTOOL CONFIG
 
-# Libtool was configured on host centos64:
+# Libtool was configured on host linux-j0lx:
 
 # Shell to use when invoking shell scripts.
 SHELL="/bin/sh"
@@ -97,7 +97,7 @@ with_gcc=yes
 EGREP="/bin/grep -E"
 
 # The linker used to build libraries.
-LD="/usr/bin/ld -m elf_x86_64"
+LD="/usr/x86_64-suse-linux/bin/ld -m elf_x86_64"
 
 # Whether we need hard or soft links.
 LN_S="ln -s"
@@ -147,7 +147,7 @@ pic_flag=" -fPIC -DPIC"
 pic_mode=default
 
 # What is the maximum length of a command?
-max_cmd_len=1966080
+max_cmd_len=1572864
 
 # Does compiler simultaneously support -c and -o options?
 compiler_c_o="yes"
@@ -325,10 +325,10 @@ variables_saved_for_relink="PATH LD_LIBRARY_PATH LD_RUN_PATH GCC_EXEC_PREFIX COM
 link_all_deplibs=no
 
 # Compile-time system search path for libraries
-sys_lib_search_path_spec="/usr/lib/gcc/x86_64-redhat-linux/4.4.6 /usr/lib64 /lib64 /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib"
+sys_lib_search_path_spec="/usr/lib64/gcc/x86_64-suse-linux/4.6 /usr/lib64 /lib64 /usr/x86_64-suse-linux/lib"
 
 # Run-time system search path for libraries
-sys_lib_dlsearch_path_spec="/lib /usr/lib "
+sys_lib_dlsearch_path_spec="/lib /usr/lib /usr/local/lib64 /usr/local/lib "
 
 # Fix the shell variable $srcfile for the compiler.
 fix_srcfile_path=""
@@ -7290,7 +7290,7 @@ disable_libs=static
 # End:
 # ### BEGIN LIBTOOL TAG CONFIG: CXX
 
-# Libtool was configured on host centos64:
+# Libtool was configured on host linux-j0lx:
 
 # Shell to use when invoking shell scripts.
 SHELL="/bin/sh"
@@ -7343,7 +7343,7 @@ with_gcc=yes
 EGREP="/bin/grep -E"
 
 # The linker used to build libraries.
-LD="/usr/bin/ld -m elf_x86_64"
+LD="/usr/x86_64-suse-linux/bin/ld -m elf_x86_64"
 
 # Whether we need hard or soft links.
 LN_S="ln -s"
@@ -7393,7 +7393,7 @@ pic_flag=" -fPIC -DPIC"
 pic_mode=default
 
 # What is the maximum length of a command?
-max_cmd_len=1966080
+max_cmd_len=1572864
 
 # Does compiler simultaneously support -c and -o options?
 compiler_c_o="yes"
@@ -7472,11 +7472,11 @@ striplib="strip --strip-unneeded"
 
 # Dependencies to place before the objects being linked to create a
 # shared library.
-predep_objects="/usr/lib/gcc/x86_64-redhat-linux/4.4.6/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.4.6/crtbeginS.o"
+predep_objects="/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/4.6/crtbeginS.o"
 
 # Dependencies to place after the objects being linked to create a
 # shared library.
-postdep_objects="/usr/lib/gcc/x86_64-redhat-linux/4.4.6/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/4.4.6/../../../../lib64/crtn.o"
+postdep_objects="/usr/lib64/gcc/x86_64-suse-linux/4.6/crtendS.o /usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../lib64/crtn.o"
 
 # Dependencies to place before the objects being linked to create a
 # shared library.
@@ -7488,7 +7488,7 @@ postdeps="-lstdc++ -lm -lgcc_s -lc -lgcc_s"
 
 # The library search path used internally by the compiler when linking
 # a shared library.
-compiler_lib_search_path="-L/usr/lib/gcc/x86_64-redhat-linux/4.4.6 -L/usr/lib/gcc/x86_64-redhat-linux/4.4.6 -L/usr/lib/gcc/x86_64-redhat-linux/4.4.6/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib -L/usr/lib/gcc/x86_64-redhat-linux/4.4.6/../../.."
+compiler_lib_search_path="-L/usr/lib64/gcc/x86_64-suse-linux/4.6 -L/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-suse-linux/4.6/../../../../x86_64-suse-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/4.6/../../.."
 
 # Method to check whether dependent libraries are shared objects.
 deplibs_check_method="pass_all"
@@ -7568,10 +7568,10 @@ variables_saved_for_relink="PATH LD_LIBRARY_PATH LD_RUN_PATH GCC_EXEC_PREFIX COM
 link_all_deplibs=no
 
 # Compile-time system search path for libraries
-sys_lib_search_path_spec="/usr/lib/gcc/x86_64-redhat-linux/4.4.6 /usr/lib64 /lib64 /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib"
+sys_lib_search_path_spec="/usr/lib64/gcc/x86_64-suse-linux/4.6 /usr/lib64 /lib64 /usr/x86_64-suse-linux/lib"
 
 # Run-time system search path for libraries
-sys_lib_dlsearch_path_spec="/lib /usr/lib "
+sys_lib_dlsearch_path_spec="/lib /usr/lib /usr/local/lib64 /usr/local/lib "
 
 # Fix the shell variable $srcfile for the compiler.
 fix_srcfile_path=""

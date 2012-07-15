@@ -30,12 +30,12 @@ srcdir=		.
 
 
 CC=		cc -pthread
-CXX=		g++ -pthread
+CXX=		g++ -pthread -pthread
 MAINCC=		$(CC)
 LINKCC=		$(PURIFY) $(MAINCC)
 AR=		ar
 RANLIB=		ranlib
-SVNVERSION=	echo Unversioned directory
+SVNVERSION=	svnversion $(srcdir)
 
 GNULD=          yes
 
@@ -80,7 +80,7 @@ SLPFLAGS=	-fno-omit-frame-pointer -O2
 
 
 # Machine-dependent subdirectories
-MACHDEP=	linux2
+MACHDEP=	linux3
 
 # Install prefix for architecture-independent files
 prefix=		/usr/local/lib64/darkmatter

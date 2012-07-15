@@ -82,7 +82,7 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-LD = /usr/bin/ld -m elf_x86_64
+LD = /usr/x86_64-suse-linux/bin/ld -m elf_x86_64
 LDFLAGS = -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/root/darkmatter-depends/libxml2/.libs -lc -lm
 LIBEXSLT_MAJOR_VERSION = 0
 LIBEXSLT_MICRO_VERSION = 15
@@ -131,11 +131,11 @@ PACKAGE_TARNAME =
 PACKAGE_VERSION = 
 PATH_SEPARATOR = :
 PERL = perl
-PYTHON = /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/bin/python
+PYTHON = /usr/bin/python
 PYTHONSODV = 
-PYTHON_INCLUDES = /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/python2.7
-PYTHON_SITE_PACKAGES = $(libdir)/python$(PYTHON_VERSION)/site-packages
-PYTHON_SUBDIR = python
+PYTHON_INCLUDES = 
+PYTHON_SITE_PACKAGES = /usr/lib/python2.7/site-packages
+PYTHON_SUBDIR = 
 PYTHON_VERSION = 2.7
 RANLIB = ranlib
 RELDATE = Sat Jul 14 2012
@@ -157,7 +157,7 @@ WITH_MEM_DEBUG = 0
 WITH_MODULES = 1
 WITH_TRIO = 0
 WITH_XSLT_DEBUG = 1
-XMLLINT = /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/bin/xmllint
+XMLLINT = /usr/bin/xmllint
 XML_CONFIG = /root/darkmatter-depends/libxml2/xml2-config
 XSLTPROC = /usr/bin/xsltproc
 XSLTPROCDV = 
@@ -418,12 +418,12 @@ uninstall-am:
 	uninstall uninstall-am
 
 
-tests: $(TESTSPY)
-	-@(PYTHONPATH="`pwd`/..:`pwd`/../.libs:$(srcdir)/.."; \
-	  if test "x$(LIBXML_SRC)" != "x" ; then PYTHONPATH="$$PYTHONPATH:$(LIBXML_SRC)/python:$(LIBXML_SRC)/python/.libs"; fi; \
-	  export PYTHONPATH; \
-	   for test in $(TESTSPY) ; do echo "-- $$test" ; (cd $(srcdir) && $(PYTHON) $$test ); done)
-#tests:
+#tests: $(TESTSPY)
+#	-@(PYTHONPATH="`pwd`/..:`pwd`/../.libs:$(srcdir)/.."; \
+#	  if test "x$(LIBXML_SRC)" != "x" ; then PYTHONPATH="$$PYTHONPATH:$(LIBXML_SRC)/python:$(LIBXML_SRC)/python/.libs"; fi; \
+#	  export PYTHONPATH; \
+#	   for test in $(TESTSPY) ; do echo "-- $$test" ; (cd $(srcdir) && $(PYTHON) $$test ); done)
+tests:
 
 clean:
 	rm -f *.pyc core

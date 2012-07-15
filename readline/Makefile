@@ -78,7 +78,7 @@ CPPFLAGS = -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include 
 DEFS = -DHAVE_CONFIG_H 
 LOCAL_DEFS = 
 
-TERMCAP_LIB = -lncurses
+TERMCAP_LIB = -ltermcap
 
 # For libraries which include headers from other libraries.
 INCLUDES = -I. -I$(srcdir)

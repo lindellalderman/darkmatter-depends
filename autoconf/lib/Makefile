@@ -136,7 +136,7 @@ AUTOHEADER = ${SHELL} /root/darkmatter-depends/autoconf/build-aux/missing --run 
 AUTOMAKE = ${SHELL} /root/darkmatter-depends/autoconf/build-aux/missing --run automake-1.11
 AWK = gawk
 CYGPATH_W = echo
-DEFS = -DPACKAGE_NAME=\"GNU\ Autoconf\" -DPACKAGE_TARNAME=\"autoconf\" -DPACKAGE_VERSION=\"2.68-dirty\" -DPACKAGE_STRING=\"GNU\ Autoconf\ 2.68-dirty\" -DPACKAGE_BUGREPORT=\"bug-autoconf@gnu.org\" -DPACKAGE=\"autoconf\" -DVERSION=\"2.68-dirty\"
+DEFS = -DPACKAGE_NAME=\"GNU\ Autoconf\" -DPACKAGE_TARNAME=\"autoconf\" -DPACKAGE_VERSION=\"2.68-dirty\" -DPACKAGE_STRING=\"GNU\ Autoconf\ 2.68-dirty\" -DPACKAGE_BUGREPORT=\"bug-autoconf@gnu.org\" -DPACKAGE_URL=\"http://www.gnu.org/software/autoconf/\" -DPACKAGE=\"autoconf\" -DVERSION=\"2.68-dirty\"
 ECHO_C = 
 ECHO_N = -n
 ECHO_T = 
@@ -164,7 +164,7 @@ PACKAGE_BUGREPORT = bug-autoconf@gnu.org
 PACKAGE_NAME = GNU Autoconf
 PACKAGE_STRING = GNU Autoconf 2.68-dirty
 PACKAGE_TARNAME = autoconf
-PACKAGE_URL = @PACKAGE_URL@
+PACKAGE_URL = http://www.gnu.org/software/autoconf/
 PACKAGE_VERSION = 2.68-dirty
 PATH_SEPARATOR = :
 PERL = /usr/bin/perl
