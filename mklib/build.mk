@@ -93,7 +93,7 @@ FILENAME        = $(NAME)-$(VERSION)-$(RELEASE).$(DIST_ARCH).$(DIST_EXT)
 else
 
 ifdef DEBIAN
-BUILD_DEPENDS = cmake autoconf xutils-dev patch gcc g++ git psutils texinfo uuid-dev uuid-runtime libaio-dev libaio1 ragel
+BUILD_DEPENDS = cmake autoconf xutils-dev patch gcc g++ git psutils texinfo uuid-dev uuid-runtime libaio-dev libaio1 ragel libpam-dev
 BUILD_DEPEND_INSTALL = apt-get install -y
 ifdef x86_64
 DIST_ARCH := amd64

@@ -89,14 +89,15 @@ CF_EOF2
 		continue
 	fi
 	aliases=`sed -f $top_srcdir/man/manlinks.sed $inalias |sed -f /root/darkmatter-depends/ncurses/man_alias.sed | sort -u`
-	# perform program transformations for section 1 man pages
-	if test $section = 1 ; then
-		cf_target=$cf_subdir${section}/`echo $cf_source|sed "${transform}"`
-	else
-		cf_target=$cf_subdir${section}/$cf_source
+	cf_target=`grep "^$cf_source" /root/darkmatter-depends/ncurses/man/man_db.renames | mawk '{print $2}'`
+	if test -z "$cf_target" ; then
+		echo '? missing rename for '$cf_source
+		cf_target="$cf_source"
 	fi
+	cf_target="$cf_subdir${section}/${cf_target}"
+
 	sed	-f /root/darkmatter-depends/ncurses/man_alias.sed \
-		< $i >$TMP
+		< $i | sed -f /root/darkmatter-depends/ncurses/edit_man.sed >$TMP
 if test $cf_tables = yes ; then
 	tbl $TMP >$TMP.out
 	mv $TMP.out $TMP

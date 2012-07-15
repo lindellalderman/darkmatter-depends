@@ -51,7 +51,7 @@ includedir	= ${prefix}/include/ncurses
 INSTALL		= /usr/bin/install -c
 INSTALL_DATA	= ${INSTALL} -m 644
 
-AWK		= gawk
+AWK		= mawk
 LN_S		= ln -s
 
 VERSION		= 5.7

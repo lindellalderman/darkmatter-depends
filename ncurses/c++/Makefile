@@ -113,7 +113,7 @@ LINK_SHARED	= $(LINK_FLAGS)
 
 TEST_ARGS	=  -L../lib ../lib/libform.la ../lib/libmenu.la ../lib/libpanel.la ../lib/libncurses.la   
 
-LDFLAGS		= $(TEST_ARGS) -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm \
+LDFLAGS		= $(TEST_ARGS) -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm \
 	 -lc -lm  $(CXXLIBS)
 
 LDFLAGS_LIBTOOL	= $(LDFLAGS) $(CFLAGS_LIBTOOL)

@@ -25,7 +25,7 @@ CFLAGS=-fpic -fPIC -fpic -fPIC -D_LARGEFILE64_SOURCE=1
 #           -Wstrict-prototypes -Wmissing-prototypes
 
 SFLAGS=-fpic -fPIC -fpic -fPIC -D_LARGEFILE64_SOURCE=1
-LDFLAGS=-L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm -L. libz.a
+LDFLAGS=-L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm -L. libz.a
 TEST_LDFLAGS=-L. libz.a
 LDSHARED=cc -shared
 CPP=cc -E

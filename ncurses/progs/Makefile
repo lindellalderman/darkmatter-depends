@@ -73,7 +73,7 @@ INSTALL		= /usr/bin/install -c
 INSTALL_PROG	= ${INSTALL}
 transform	= s,x,x,
 
-AWK		= gawk
+AWK		= mawk
 LN_S		= ln -s
 
 CC		= cc
@@ -99,7 +99,7 @@ LOCAL_LIBDIR	= /root/darkmatter-depends/ncurses/lib
 
 LD		= ld
 LINK		=  $(LIBTOOL_LINK)
-LDFLAGS		=  -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm
+LDFLAGS		=  -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm
 
 LDFLAGS_LIBTOOL	= $(LDFLAGS) $(CFLAGS_LIBTOOL)
 LDFLAGS_NORMAL	= $(LDFLAGS) $(CFLAGS_NORMAL)
