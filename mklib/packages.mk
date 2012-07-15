@@ -54,12 +54,15 @@ pkg-configure:
 	$(call pkg_predistclean)
 	$(call pkg_distclean)
 	# Make sure these files never exist before build
-	@if [ -e configure ]; then rm -rf Makefile config.log autom4te.cache; fi
-	$(call pkg_clean)
+	$(call pkg_clean) || true
+	@if [ -e configure ]; then rm -f config.log ; fi
+	@rm -rf autom4te.cache .dep .deps .libs .lib
 	@find . -name "*.[oa]" -exec rm -vf "{}" \;
 	@find . -name "*.so" -exec rm -vf "{}" \;
 	@find . -name "*.so.*" -exec rm -vf "{}" \;
+	@echo pre
 	$(call pkg_preconfigure)
+	@echo pre-end
 	$(call pkg_configure)
 	$(call pkg_postconfigure)
 	$(QUIET) echo

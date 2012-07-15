@@ -17,4 +17,4 @@ at_top_builddir=$at_top_build_prefix
 
 AUTOTEST_PATH='tests'
 
-SHELL=${CONFIG_SHELL-'/bin/sh'}
+SHELL=${CONFIG_SHELL-'/bin/bash'}

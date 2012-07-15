@@ -7,8 +7,8 @@ pkg_release := 1
 CONFIG_OPTS := --prefix=$(BUILD_ROOT)$(PREFIX_DIR)
 BUILD_ROOT_ONLY := 1
 
-define pkg_preclean
-	rm -f Makefile */Makefile
+define pkg_preconfigure
+	@make aclocal
 endef
 
 include ../mklib/pkggnu.mk

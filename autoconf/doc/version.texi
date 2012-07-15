@@ -1,4 +1,4 @@
-@set UPDATED 14 July 2012
+@set UPDATED 15 July 2012
 @set UPDATED-MONTH July 2012
 @set EDITION 2.68-dirty
 @set VERSION 2.68-dirty

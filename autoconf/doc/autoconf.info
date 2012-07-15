@@ -1,7 +1,7 @@
 This is autoconf.info, produced by makeinfo version 4.13 from
 autoconf.texi.
 
-This manual (14 July 2012) is for GNU Autoconf (version 2.68-dirty), a
+This manual (15 July 2012) is for GNU Autoconf (version 2.68-dirty), a
 package for creating scripts to configure source code packages using
 templates and an M4 macro package.
 
@@ -52,7 +52,7 @@ File: autoconf.info,  Node: Top,  Next: Introduction,  Up: (dir)
 Autoconf
 ********
 
-This manual (14 July 2012) is for GNU Autoconf (version 2.68-dirty), a
+This manual (15 July 2012) is for GNU Autoconf (version 2.68-dirty), a
 package for creating scripts to configure source code packages using
 templates and an M4 macro package.
 
