@@ -1107,7 +1107,7 @@ configure:12220: $? = 0
 configure:12220: result: yes
 configure:12220: checking for _stat
 configure:12220: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/root/darkmatter-depends/libxml2/.libs -lc -lm conftest.c -lc -lm >&5
-/tmp/ccnLVQLK.o: In function `main':
+/tmp/ccTD8Yi3.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `_stat'
 collect2: ld returned 1 exit status
 configure:12220: $? = 1
@@ -1585,7 +1585,7 @@ PYTHON_SITE_PACKAGES='$(libdir)/python$(PYTHON_VERSION)/site-packages'
 PYTHON_SUBDIR='python'
 PYTHON_VERSION='2.7'
 RANLIB='ranlib'
-RELDATE='Sat Jul 14 2012'
+RELDATE='Sun Jul 15 2012'
 RM='/bin/rm'
 SED='/bin/sed'
 SET_MAKE=''

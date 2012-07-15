@@ -11,7 +11,8 @@ include mklib/build.mk
 
 export BUILD_DATE
 export LD_RUN_PATH
-#export LIBRARY_PATH
+export LIBRARY_PATH
+export LD_LIBRARY_PATH
 export PATH
 export PERL5LIB
 export BUILD_DATE_STR

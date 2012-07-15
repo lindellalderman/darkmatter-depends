@@ -1398,7 +1398,7 @@ configure:12731: $? = 0
 configure:12731: result: yes
 configure:12731: checking for isnand
 configure:12731: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
-/tmp/cc2Nsawh.o: In function `main':
+/tmp/ccs3vLt8.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `isnand'
 collect2: ld returned 1 exit status
 configure:12731: $? = 1
@@ -1506,7 +1506,7 @@ configure: failed program was:
 configure:12731: result: no
 configure:12731: checking for fp_class
 configure:12731: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
-/tmp/ccQ4eCUj.o: In function `main':
+/tmp/ccpRNFAc.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `fp_class'
 collect2: ld returned 1 exit status
 configure:12731: $? = 1
@@ -1614,7 +1614,7 @@ configure: failed program was:
 configure:12731: result: no
 configure:12731: checking for class
 configure:12731: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
-/tmp/ccorikao.o: In function `main':
+/tmp/cc5taohe.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `class'
 collect2: ld returned 1 exit status
 configure:12731: $? = 1
@@ -1722,7 +1722,7 @@ configure: failed program was:
 configure:12731: result: no
 configure:12731: checking for fpclass
 configure:12731: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
-/tmp/ccjJXlIu.o: In function `main':
+/tmp/ccL0keLk.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `fpclass'
 collect2: ld returned 1 exit status
 configure:12731: $? = 1
@@ -1848,7 +1848,7 @@ configure:12755: $? = 0
 configure:12755: result: yes
 configure:12755: checking for _stat
 configure:12755: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
-/tmp/ccGeL2NF.o: In function `main':
+/tmp/ccpTaXPw.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `_stat'
 collect2: ld returned 1 exit status
 configure:12755: $? = 1
@@ -2048,7 +2048,7 @@ configure:13632: checking for shl_load
 configure:13632: cc -o conftest -fpic -fPIC -fpic -fPIC -pedantic -W -Wformat -Wunused -Wimplicit -Wreturn-type -Wswitch -Wcomment -Wtrigraphs -Wformat -Wchar-subscripts -Wuninitialized -Wparentheses -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
 conftest.c:106:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
 conftest.c:115:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
-/tmp/ccsi7POJ.o: In function `main':
+/tmp/cc1IhGuA.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `shl_load'
 collect2: ld returned 1 exit status
 configure:13632: $? = 1
@@ -2284,7 +2284,7 @@ configure:13679: checking for dlopen
 configure:13679: cc -o conftest -fpic -fPIC -fpic -fPIC -pedantic -W -Wformat -Wunused -Wimplicit -Wreturn-type -Wswitch -Wcomment -Wtrigraphs -Wformat -Wchar-subscripts -Wuninitialized -Wparentheses -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
 conftest.c:106:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
 conftest.c:115:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
-/tmp/ccK5aFUS.o: In function `main':
+/tmp/ccVpWp5I.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `dlopen'
 collect2: ld returned 1 exit status
 configure:13679: $? = 1
@@ -2744,7 +2744,7 @@ RDL_LIBS=''
 READER_TEST='Readertests'
 REBUILD_DOCS_FALSE=''
 REBUILD_DOCS_TRUE='#'
-RELDATE='Sat Jul 14 2012'
+RELDATE='Sun Jul 15 2012'
 RM='/bin/rm'
 SED='/bin/sed'
 SET_MAKE=''

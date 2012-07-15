@@ -484,7 +484,7 @@ configure:11868: checking for sys/prctl.h
 configure:11868: result: yes
 configure:11879: checking for library containing pthread_create
 configure:11910: cc -o conftest -O3 -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
-/tmp/cc6FOGtW.o: In function `main':
+/tmp/ccXUZPEq.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `pthread_create'
 collect2: ld returned 1 exit status
 configure:11910: $? = 1

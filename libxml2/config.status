@@ -678,7 +678,7 @@ postuninstall_cmds=''
 finish_cmds='PATH="\$PATH:/sbin" ldconfig -n $libdir'
 finish_eval=''
 hardcode_into_libs='yes'
-sys_lib_search_path_spec='/usr/lib64/gcc/x86_64-suse-linux/4.6 /usr/lib64 /lib64 /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib /usr/x86_64-suse-linux/lib '
+sys_lib_search_path_spec='/usr/lib64/gcc/x86_64-suse-linux/4.6 /usr/lib64 /lib64 /usr/x86_64-suse-linux/lib '
 sys_lib_dlsearch_path_spec='/lib64 /usr/lib64 /lib /usr/lib /usr/local/lib64 /usr/local/lib '
 hardcode_action='immediate'
 enable_dlopen='unknown'
@@ -837,7 +837,7 @@ S["am__EXEEXT_TRUE"]="#"
 S["LTLIBOBJS"]=""
 S["LIBOBJS"]=""
 S["PYTHON_TESTS"]=" RelaxNGPythonTests SchemasPythonTests"
-S["RELDATE"]="Sat Jul 14 2012"
+S["RELDATE"]="Sun Jul 15 2012"
 S["RDL_LIBS"]=""
 S["M_LIBS"]="-lm"
 S["PYTHON_SITE_PACKAGES"]="${exec_prefix}/lib/python2.7/site-packages"

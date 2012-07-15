@@ -283,7 +283,7 @@ configure:5428: $? = 0
 configure:5507: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
 configure:5507: $? = 0
 configure:5586: cc -o conftest -fpic -fPIC -fpic -fPIC -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -I/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
-/tmp/ccnPQZHx.o: In function `main':
+/tmp/cci8lSkX.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `inet_ntoa_r'
 collect2: ld returned 1 exit status
 configure:5586: $? = 1
@@ -820,7 +820,7 @@ configure:16299: $? = 0
 configure:16301: result: yes
 configure:16318: checking for clock_gettime in libraries
 configure:16360: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lc -lm >&5
-/tmp/cc7rsPNj.o: In function `main':
+/tmp/ccCYNcwr.o: In function `main':
 conftest.c:(.text.startup+0xd): undefined reference to `clock_gettime'
 collect2: ld returned 1 exit status
 configure:16360: $? = 1
@@ -102533,7 +102533,7 @@ configure:18714: checking for socket.h
 configure:18714: result: no
 configure:18733: checking if closesocket can be linked
 configure:18753: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
-/tmp/cc3cXgCJ.o: In function `main':
+/tmp/ccPaStR9.o: In function `main':
 conftest.c:(.text.startup+0x9): undefined reference to `closesocket'
 collect2: ld returned 1 exit status
 configure:18753: $? = 1
@@ -102687,7 +102687,7 @@ configure:18848: checking if closesocket might be used
 configure:18863: result: no
 configure:18875: checking if CloseSocket can be linked
 configure:18894: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
-/tmp/ccjCwZnQ.o: In function `main':
+/tmp/ccSkhJ3b.o: In function `main':
 conftest.c:(.text.startup+0x9): undefined reference to `CloseSocket'
 collect2: ld returned 1 exit status
 configure:18894: $? = 1
@@ -103393,7 +103393,7 @@ configure:21468: checking if ioctl SIOCGIFADDR might be used
 configure:21472: result: yes
 configure:21499: checking if ioctlsocket can be linked
 configure:21518: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
-/tmp/ccdVHDXO.o: In function `main':
+/tmp/cc8Y1nae.o: In function `main':
 conftest.c:(.text.startup+0xd): undefined reference to `ioctlsocket'
 collect2: ld returned 1 exit status
 configure:21518: $? = 1
@@ -103577,7 +103577,7 @@ configure:21611: checking if ioctlsocket might be used
 configure:21700: result: no
 configure:21712: checking if IoctlSocket can be linked
 configure:21741: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
-/tmp/ccqGm2mR.o: In function `main':
+/tmp/cckcaEBg.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `IoctlSocket'
 collect2: ld returned 1 exit status
 configure:21741: $? = 1
@@ -103993,7 +103993,7 @@ configure:22418: checking if strcasecmp might be used
 configure:22424: result: yes
 configure:22445: checking if strcmpi can be linked
 configure:22474: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
-/tmp/ccb8OoFk.o: In function `main':
+/tmp/cc1QPZoL.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `strcmpi'
 collect2: ld returned 1 exit status
 configure:22474: $? = 1
@@ -104191,7 +104191,7 @@ configure:22716: checking if strdup might be used
 configure:22722: result: yes
 configure:22743: checking if stricmp can be linked
 configure:22772: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
-/tmp/ccnEbBKy.o: In function `main':
+/tmp/ccYF75eY.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `stricmp'
 collect2: ld returned 1 exit status
 configure:22772: $? = 1
@@ -104390,7 +104390,7 @@ configure:23014: checking if strncasecmp might be used
 configure:23020: result: yes
 configure:23041: checking if strncmpi can be linked
 configure:23070: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
-/tmp/ccw7J2oL.o: In function `main':
+/tmp/ccmMl7UX.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `strncmpi'
 collect2: ld returned 1 exit status
 configure:23070: $? = 1
@@ -104575,7 +104575,7 @@ configure:23163: checking if strncmpi might be used
 configure:23178: result: no
 configure:23190: checking if strnicmp can be linked
 configure:23219: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
-/tmp/ccmnzUGM.o: In function `main':
+/tmp/ccZlXtC4.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `strnicmp'
 collect2: ld returned 1 exit status
 configure:23219: $? = 1
@@ -104798,7 +104798,7 @@ configure:23774: $? = 0
 configure:23774: result: yes
 configure:23820: checking for bitncmp
 configure:23820: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
-/tmp/ccBEIuw3.o: In function `main':
+/tmp/ccu6EPds.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `bitncmp'
 collect2: ld returned 1 exit status
 configure:23820: $? = 1
@@ -104988,7 +104988,7 @@ configure: failed program was:
 configure:23820: result: no
 configure:23830: checking deeper for bitncmp
 configure:23847: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
-/tmp/ccbp76v9.o: In function `main':
+/tmp/ccUvyzey.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `bitncmp'
 collect2: ld returned 1 exit status
 configure:23847: $? = 1
@@ -105176,7 +105176,7 @@ configure:23820: $? = 0
 configure:23820: result: yes
 configure:23874: checking for inet_net_pton
 configure:23874: cc -o conftest -fpic -fPIC -fpic -fPIC -g0 -O2 -Wno-system-headers -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/ncurses -isystem /root/darkmatter-depends/.build/usr/local/lib64/darkmatter/include/libxml2 -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -L/lib64 -L/usr/lib64 -L/root/darkmatter-depends/.build/usr/local/lib64/darkmatter/lib  -Wl,-rpath -Wl,/usr/local/lib64/darkmatter/lib -lc -lm conftest.c -lrt -lc -lm >&5
-/tmp/ccPuKQ2n.o: In function `main':
+/tmp/ccdafcIJ.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `inet_net_pton'
 collect2: ld returned 1 exit status
 configure:23874: $? = 1
