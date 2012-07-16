@@ -80,6 +80,7 @@ pkg-build:
 	@find . -name "configure" -exec git checkout {} \; 2> /dev/null || true
 	@find . -name "atconfig" -exec git checkout {} \; 2> /dev/null || true
 	@find . -name "atlocal" -exec git checkout {} \; 2> /dev/null || true
+	@find . -name "*.m4" -exec git checkout {} \; 2> /dev/null || true
 	$(QUIET) echo
 	$(QUIET) echo Build complete 
 	$(QUIET) echo
