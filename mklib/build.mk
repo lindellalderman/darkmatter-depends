@@ -105,7 +105,7 @@ RELEASE  :=
 endif
 
 ifdef SUSE
-BUILD_DEPENDS = cmake autoconf xorg-x11-util-devel patch gcc gcc-c++ git psutils texinfo uuid-devel libuuid-devel pam-devel libaio-devel libaio glibc-devel 
+BUILD_DEPENDS = cmake autoconf xorg-x11-util-devel patch gcc gcc-c++ git psutils texinfo uuid-devel libuuid-devel pam-devel libaio-devel libaio glibc-devel
 BUILD_DEPEND_INSTALL = yast -i
 ifdef x86_64
 DIST_ARCH := x86_64

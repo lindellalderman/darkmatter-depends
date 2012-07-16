@@ -9,6 +9,27 @@ URL: https://github.com/lindellalderman/darkmatter-depends/
 Source: http://repo.darkmatter.io/source/%{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
+BuildRequires: cmake
+BuildRequires: autoconf
+BuildRequires: imake
+BuildRequires: patch
+BuildRequires: gcc
+BuildRequires: gcc-c++
+BuildRequires: git
+BuildRequires: psutils
+BuildRequires: texinfo
+BuildRequires: uuid-devel
+BuildRequires: libuuid
+BuildRequires: libuuid-devel
+BuildRequires: pam-devel
+BuildRequires: libaio-devel
+BuildRequires: libaio
+BuildRequires: glibc-devel
+BuildRequires: compat-glibc
+BuildRequires: rpm-build
+
+AutoReqProv: no
+
 %description
 Base libraries required to run DarkMatter framework for 
 Stackless Python
