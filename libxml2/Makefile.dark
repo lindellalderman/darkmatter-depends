@@ -7,5 +7,9 @@ pkg_release := 1
 CONFIG_OPTS += --with-python=$(BUILD_ROOT)$(PREFIX_DIR) --with-zlib=$(PREFIX_DIR)
 REMOVE_PATHS += $(BIN_DIR)/xml2* $(BIN_DIR)/xmllint $(BIN_DIR)/xmllint $(MAN_DIR)/*/xml2* $(MAN_DIR)/*/xmlcatalog* $(MAN_DIR)/*/xmllint* $(MAN_DIR)/*/libxml* $(SHARE_DIR)/man/*/xml2* $(SHARE_DIR)/man/*/xmlcatalog* $(SHARE_DIR)/man/*/xmllint* $(SHARE_DIR)/man/*/libxml* $(LIB_DIR)/xml2*
 
+define pkg_postbuild
+	@git checkout libxml2.spec 2> /dev/null || true
+endef
+
 include ../mklib/pkggnu.mk
 include ../mklib/packages.mk

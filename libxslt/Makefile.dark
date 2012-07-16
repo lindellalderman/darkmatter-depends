@@ -12,5 +12,9 @@ define pkg_preconfigure
 	chmod 0755 ../libxml2/xml2-config
 endef
 
+define pkg_postbuild
+	@git checkout libxslt.spec 2> /dev/null || true
+endef
+
 include ../mklib/pkggnu.mk
 include ../mklib/packages.mk
