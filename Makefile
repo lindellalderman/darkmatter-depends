@@ -34,7 +34,7 @@ INSTALL_ORDER := automake autoconf libtool zlib ncurses gdbm md5 bzip2 libeio ar
 .CLEAN_TARGETS=$(addsuffix -clean,$(INSTALL_ORDER))
 .PHONY=$(.BUILD_TARGETS) $(.CLEAN_TARGETS) help prep clean build-bin final install all build-info pause deb-info deb env
 
-all: build-bin final env rollback
+all: build-bin final env rollback filelist
 
 build-info:
 	$(QUIET) echo
@@ -238,3 +238,6 @@ rollback:
 	$(QUIET) $(FIND) . -name "*.in" -exec git checkout {} \; 2> /dev/null || true
 	$(QUIET) $(FIND) . -name "*.am" -exec git checkout {} \; 2> /dev/null || true
 	$(QUIET) $(FIND) . -name "*.m4" -exec git checkout {} \; 2> /dev/null || true
+
+filelist:
+	$(QUIET) cd $(BUILD_ROOT) && $(FIND) . \! -type d -print | cut -c2- | sed 's/^/%attr(-,root,root) /' > $(SRC_DIR)/INSTALLED_FILES
