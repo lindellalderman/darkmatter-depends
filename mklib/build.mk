@@ -180,6 +180,8 @@ REMOVE_PATHS     = $(SBIN_DIR)/$(pkg_name)* $(BIN_DIR)/$(pkg_name)* $(VAR_DIR)/l
 
 # Build tools
 PYTHON = $(BUILD_ROOT)$(BIN_DIR)/python
+GIT = LD_LIBRARY_PATH="" LIBRARY_PATH="" LD_RUN_PATH="" git
+FIND = LD_LIBRARY_PATH="" LIBRARY_PATH="" LD_RUN_PATH="" find
 PY_VERSION = 2.7
 AUTORECONF = $(if $(shell which $(BUILD_ROOT)$(BIN_DIR)/autoreconf 2> /dev/null || true),$(BUILD_ROOT)$(BIN_DIR)/autoreconf,$(shell which autoreconf))
 

@@ -234,4 +234,7 @@ env:
 	$(QUIET) chmod -v 0644 $(BUILD_ROOT)/etc/profile.d/darkmatter.sh
 
 rollback:
-	$(QUIET) git checkout */configure 2> /dev/null || true
+	$(QUIET) $(FIND) . -name "configure" -exec git checkout {} \; 2> /dev/null || true
+	$(QUIET) $(FIND) . -name "*.in" -exec git checkout {} \; 2> /dev/null || true
+	$(QUIET) $(FIND) . -name "*.am" -exec git checkout {} \; 2> /dev/null || true
+	$(QUIET) $(FIND) . -name "*.m4" -exec git checkout {} \; 2> /dev/null || true

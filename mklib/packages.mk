@@ -74,13 +74,13 @@ pkg-build:
 	$(call pkg_prebuild)
 	$(call pkg_build)
 	$(call pkg_postbuild)
-	@find . -name "Makefile" -exec git checkout {} \; 2> /dev/null || true
-	@find . -name "*.in" -exec git checkout {} \; 2> /dev/null || true
-	@find . -name "*.am" -exec git checkout {} \; 2> /dev/null || true
-	@find . -name "configure" -exec git checkout {} \; 2> /dev/null || true
-	@find . -name "atconfig" -exec git checkout {} \; 2> /dev/null || true
-	@find . -name "atlocal" -exec git checkout {} \; 2> /dev/null || true
-	@find . -name "*.m4" -exec git checkout {} \; 2> /dev/null || true
+	$(QUIET) $(FIND) . -name "Makefile" -exec git checkout {} \; 2> /dev/null || true
+	$(QUIET) $(FIND) . -name "*.in" -exec git checkout {} \; 2> /dev/null || true
+	$(QUIET) $(FIND) . -name "*.am" -exec git checkout {} \; 2> /dev/null || true
+	$(QUIET) $(FIND) . -name "configure" -exec git checkout {} \; 2> /dev/null || true
+	$(QUIET) $(FIND) . -name "atconfig" -exec git checkout {} \; 2> /dev/null || true
+	$(QUIET) $(FIND) . -name "atlocal" -exec git checkout {} \; 2> /dev/null || true
+	$(QUIET) $(FIND) . -name "*.m4" -exec git checkout {} \; 2> /dev/null || true
 	$(QUIET) echo
 	$(QUIET) echo Build complete 
 	$(QUIET) echo
