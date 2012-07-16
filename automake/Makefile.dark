@@ -6,7 +6,6 @@ pkg_release := 1
 
 CONFIG_OPTS := --prefix=$(BUILD_ROOT)$(PREFIX_DIR)
 BUILD_ROOT_ONLY := 1
-BUILD_TARGET :=
 
 include ../mklib/pkggnu.mk
 include ../mklib/packages.mk
