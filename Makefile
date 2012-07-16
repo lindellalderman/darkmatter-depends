@@ -240,4 +240,6 @@ rollback:
 	$(QUIET) $(FIND) . -name "*.m4" -exec git checkout {} \; 2> /dev/null || true
 
 filelist:
-	$(QUIET) cd $(BUILD_ROOT) && $(FIND) . \! -type d -print | cut -c2- | sed 's/^/%attr(-,root,root) /' > $(SRC_DIR)/INSTALLED_FILES
+	$(QUIET) cd $(BUILD_ROOT) && $(FIND) . \! -type d -print > $(SRC_DIR)/.INSTALLED_FILES.tmp
+	$(QUIET) cat $(SRC_DIR)/.INSTALLED_FILES.tmp | while read l; do perms=`stat --format='%a' $(BUILD_ROOT)/$$l`; echo '%attr('$$perms',-,-)' `echo $$l | cut -c2-` ; done > $(SRC_DIR)/INSTALLED_FILES
+	$(QUIET) rm -f $(SRC_DIR)/.INSTALLED_FILES.tmp
