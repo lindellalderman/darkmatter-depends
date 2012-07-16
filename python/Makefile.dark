@@ -7,7 +7,7 @@ pkg_release := 1
 pkg_description := An enhanced version of Python with native microthreads.
 
 # Shouldn't have to add STACKLESS_FRHACK.  --enable-stacklessfewerregisters should add the flag correctly
-CONFIG_OPTS += --with-signal-module --disable-framework --disable-toolbox-glue --enable-stacklessfewerregisters --enable-unicode=ucs2 --with-suffix="" --disable-universalsdk --disable-shared
+CONFIG_OPTS += --with-signal-module --disable-framework --disable-toolbox-glue --enable-stacklessfewerregisters --enable-unicode=ucs2 --with-suffix="" --disable-universalsdk --disable-shared --libdir=$(PREFIX_DIR)/lib
 REMOVE_PATHS += $(BIN_DIR)/pydoc $(BIN_DIR)/2to3 $(BIN_DIR)/idle $(BIN_DIR)/smtpd.py /usr/bin/dm-python
 
 CFLAGS += $(CPPFLAGS) $(LDFLAGS)
