@@ -60,9 +60,7 @@ pkg-configure:
 	@find . -name "*.[oa]" -exec rm -vf "{}" \;
 	@find . -name "*.so" -exec rm -vf "{}" \;
 	@find . -name "*.so.*" -exec rm -vf "{}" \;
-	@echo pre
 	$(call pkg_preconfigure)
-	@echo pre-end
 	$(call pkg_configure)
 	$(call pkg_postconfigure)
 	$(QUIET) echo

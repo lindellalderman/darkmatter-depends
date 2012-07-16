@@ -12,7 +12,7 @@ config_add_opt = $(shell test `./configure --help | /bin/grep -c "\-\-$(1)"` -gt
 
 ifndef pkg_distclean
 define pkg_distclean
-	$(QUIET) $(BUILD_FLAGS) $(MAKE) -f $(MAKEFILE)  distclean &> /dev/null || true
+	#$(QUIET) $(BUILD_FLAGS) $(MAKE) -f $(MAKEFILE)  distclean &> /dev/null || true
 endef
 endif
 
@@ -29,9 +29,13 @@ define pkg_clean
 endef
 endif
 
+ifndef BUILD_TARGET
+BUILD_TARGET := all
+endif
+
 ifndef pkg_build
 define pkg_build 
-	$(BUILD_FLAGS) $(MAKE) -f $(MAKEFILE) all $(BUILD_EXTRA) 2>&1 || exit $?
+	$(BUILD_FLAGS) $(MAKE) -f $(MAKEFILE) $(BUILD_TARGET)$(BUILD_EXTRA) 2>&1 || exit $?
 endef
 endif
 
