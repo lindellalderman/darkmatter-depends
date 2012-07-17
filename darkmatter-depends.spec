@@ -11,7 +11,6 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: cmake
 BuildRequires: autoconf
-BuildRequires: imake
 BuildRequires: patch
 BuildRequires: gcc
 BuildRequires: gcc-c++
@@ -19,14 +18,20 @@ BuildRequires: git
 BuildRequires: psutils
 BuildRequires: texinfo
 BuildRequires: uuid-devel
-BuildRequires: libuuid
 BuildRequires: libuuid-devel
 BuildRequires: pam-devel
 BuildRequires: libaio-devel
 BuildRequires: libaio
 BuildRequires: glibc-devel
+
+%if 0%{?suse_version}
+BuildRequires: xorg-x11-util-devel
+%else
+BuildRequires: imake
+BuildRequires: libuuid
 BuildRequires: compat-glibc
 BuildRequires: rpm-build
+%endif
 
 AutoReqProv: no
 
