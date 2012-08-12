@@ -1,4 +1,4 @@
-prefix=/usr/local/lib64/darkmatter
+prefix=/usr/local/lib/darkmatter
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 sharedlibdir=${libdir}

@@ -52,6 +52,11 @@ UBUNTU=1
 DEBIAN=1
 endif
 
+ifeq (0,$(shell cat /etc/debian_version 2> /dev/null || echo 0))
+else
+DEBIAN=1
+endif
+
 ifeq (CentOS,$(shell cat /etc/redhat-release 2> /dev/null | cut -d' ' -f1 ))
 REDHAT=1
 endif
